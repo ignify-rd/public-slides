@@ -1,0 +1,41 @@
+name: Build slides
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'slides/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build all decks
+        run: |
+          for deck in slides/*/; do
+            name=$(basename "$deck")
+            echo "Building $name..."
+            cd "$deck"
+            npm ci
+            npx tsc --noEmit
+            npx vite build
+            cd ../..
+            rm -rf "docs/$name"
+            cp -r "slides/$name/dist" "docs/$name"
+          done
+
+      - name: Commit built output
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git diff --cached --quiet || git commit -m "chore: rebuild slides [skip ci]"
+          git push
