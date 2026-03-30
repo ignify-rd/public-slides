@@ -3,11 +3,11 @@ import { theme } from '../lib/theme'
 import { container, fadeInUp, containerFast } from '../lib/animations'
 
 const channels = [
-  { icon: '📧', name: 'Email', when: 'Thong bao chinh thuc, lien he ngoai cong ty, cac van de can luu vet' },
-  { icon: '💬', name: 'Slack / Chat', when: 'Trao doi nhanh, hoi dap, cap nhat trang thai trong ngay' },
-  { icon: '📋', name: 'Jira / Ticket', when: 'Mo ta task, bug report, cap nhat tien do cong viec' },
-  { icon: '🔍', name: 'PR Comment', when: 'Review code, giai thich implementation, yeu cau thay doi' },
-  { icon: '📄', name: 'Confluence / Doc', when: 'Tai lieu kien truc, decision log, huong dan su dung' },
+  { icon: '📧', name: 'Email', when: 'Thông báo chính thức, liên hệ ngoài công ty, các vấn đề cần lưu vết' },
+  { icon: '💬', name: 'Slack / Chat', when: 'Trao đổi nhanh, hỏi đáp, cập nhật trạng thái trong ngày' },
+  { icon: '📋', name: 'Jira / Ticket', when: 'Mô tả task, bug report, cập nhật tiến độ công việc' },
+  { icon: '🔍', name: 'PR Comment', when: 'Review code, giải thích implementation, yêu cầu thay đổi' },
+  { icon: '📄', name: 'Confluence / Doc', when: 'Tài liệu kiến trúc, decision log, hướng dẫn sử dụng' },
 ]
 
 export function Slide06VanBan() {
@@ -65,7 +65,7 @@ export function Slide06VanBan() {
             marginBottom: 8,
           }}
         >
-          Giao tiep bang <span style={{ color: theme.colors.accent }}>van ban</span>
+          Giao tiếp bằng <span style={{ color: theme.colors.accent }}>văn bản</span>
         </motion.h2>
 
         <motion.p
@@ -76,7 +76,7 @@ export function Slide06VanBan() {
             marginBottom: 32,
           }}
         >
-          Dung dung kenh - gui dung cho - la ky nang co ban nhieu junior con thieu.
+          Dùng đúng kênh - gửi đúng chỗ - là kỹ năng cơ bản nhiều junior còn thiếu.
         </motion.p>
 
         <motion.div

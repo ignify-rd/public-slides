@@ -3,10 +3,10 @@ import { theme } from '../lib/theme'
 import { container, fadeInUp } from '../lib/animations'
 
 const template = [
-  { label: 'Dang lam gi', example: '"Minh dang implement feature X theo ticket ABC-123"' },
-  { label: 'Van de gap phai', example: '"Bi loi 403 Forbidden khi goi API /auth/token, du da gui dung token"' },
-  { label: 'Da thu gi roi', example: '"Da check docs, thu regenerate token, va debug voi Postman - van bi loi"' },
-  { label: 'Can ho tro gi', example: '"Can ai co access vao server log de kiem tra phia backend co thay loi gi khong"' },
+  { label: 'Đang làm gì', example: '"Mình đang implement feature X theo ticket ABC-123"' },
+  { label: 'Vấn đề gặp phải', example: '"Bị lỗi 403 Forbidden khi gọi API /auth/token, dù đã gửi đúng token"' },
+  { label: 'Đã thử gì rồi', example: '"Đã check docs, thử regenerate token, và debug với Postman - vẫn bị lỗi"' },
+  { label: 'Cần hỗ trợ gì', example: '"Cần ai có access vào server log để kiểm tra phía backend có thấy lỗi gì không"' },
 ]
 
 export function Slide10Blocker() {
@@ -64,7 +64,7 @@ export function Slide10Blocker() {
             marginBottom: 8,
           }}
         >
-          Giao tiep khi gap <span style={{ color: theme.colors.accent }}>blocker</span>
+          Giao tiếp khi gặp <span style={{ color: theme.colors.accent }}>blocker</span>
         </motion.h2>
 
         <motion.p
@@ -75,7 +75,7 @@ export function Slide10Blocker() {
             marginBottom: 28,
           }}
         >
-          Template bao blocker hieu qua - dung bao loai "em bi loi roi anh oi" roi cho:
+          Template báo blocker hiệu quả - đừng báo loại "em bị lỗi rồi anh ơi" rồi chờ:
         </motion.p>
 
         <motion.div
@@ -138,7 +138,7 @@ export function Slide10Blocker() {
             color: theme.colors.text,
           }}
         >
-          <strong style={{ color: theme.colors.accent }}>Quy tac 15 phut:</strong> Tu debug toi da 15-30 phut. Neu van bi ket, bao ngay - dung de mat ca ngay vi mot van de co the duoc giai quyet trong 5 phut.
+          <strong style={{ color: theme.colors.accent }}>Quy tắc 15 phút:</strong> Tự debug tối đa 15-30 phút. Nếu vẫn bị kẹt, báo ngay - đừng để mất cả ngày vì một vấn đề có thể được giải quyết trong 5 phút.
         </motion.div>
       </motion.div>
     </div>

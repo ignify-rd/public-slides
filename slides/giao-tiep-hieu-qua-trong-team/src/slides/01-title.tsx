@@ -70,7 +70,7 @@ export function Slide01Title() {
             marginBottom: 28,
           }}
         >
-          Developer Skills Series - Tieng Viet
+          Developer Skills Series - Tiếng Việt
         </motion.div>
 
         <motion.h1
@@ -83,8 +83,8 @@ export function Slide01Title() {
             marginBottom: 32,
           }}
         >
-          Giao tiep{' '}
-          <span style={{ color: theme.colors.accent }}>hieu qua</span>
+          Giao tiếp{' '}
+          <span style={{ color: theme.colors.accent }}>hiệu quả</span>
           <br />
           trong team
         </motion.h1>
@@ -108,7 +108,7 @@ export function Slide01Title() {
             maxWidth: 420,
           }}
         >
-          Huong dan thuc te danh cho fresher va junior developer buoc vao moi truong lam viec tech dau tien.
+          Hướng dẫn thực tế dành cho fresher và junior developer bước vào môi trường làm việc tech đầu tiên.
         </motion.p>
       </motion.div>
 
@@ -150,7 +150,7 @@ export function Slide01Title() {
             paddingLeft: 48,
           }}
         >
-          {['Lang nghe chu dong', 'Viet message ro rang', 'Daily standup', 'Bao cao & escalation', 'Code review', 'Feedback xay dung'].map((topic, i) => (
+          {['Lắng nghe chủ động', 'Viết message rõ ràng', 'Daily standup', 'Báo cáo & escalation', 'Code review', 'Feedback xây dựng'].map((topic, i) => (
             <motion.div
               key={topic}
               initial={{ opacity: 0, x: 20 }}

@@ -3,24 +3,24 @@ import { theme } from '../lib/theme'
 import { container, fadeInUp, containerFast } from '../lib/animations'
 
 const morning = [
-  'Doc Slack / email: co tin nhan nao can tra loi gap khong?',
-  'Check Jira: ticket cua minh co update gi khong?',
-  'Xac dinh 1-3 viec chinh can hoan thanh hom nay',
-  'Chuan bi cho daily standup: hom qua - hom nay - blocker',
+  'Đọc Slack / email: có tin nhắn nào cần trả lời gấp không?',
+  'Check Jira: ticket của mình có update gì không?',
+  'Xác định 1-3 việc chính cần hoàn thành hôm nay',
+  'Chuẩn bị cho daily standup: hôm qua - hôm nay - blocker',
 ]
 
 const during = [
-  'Cap nhat ticket khi bat dau hoac hoan thanh task',
-  'Neu gap blocker qua 15 phut: bao ngay',
-  'Reply comment PR / Slack trong vong hop ly (2-4h)',
-  'Ghi note neu nhan thong tin quan trong qua meeting / call',
+  'Cập nhật ticket khi bắt đầu hoặc hoàn thành task',
+  'Nếu gặp blocker quá 15 phút: báo ngay',
+  'Reply comment PR / Slack trong vòng hợp lý (2-4h)',
+  'Ghi note nếu nhận thông tin quan trọng qua meeting / call',
 ]
 
 const end = [
-  'Cap nhat trang thai cac ticket dang lam',
-  'Notify neu co gi chua hoan thanh theo ke hoach',
-  'Dong PR review chua xu ly xong',
-  'Clear notification va unread messages quan trong',
+  'Cập nhật trạng thái các ticket đang làm',
+  'Notify nếu có gì chưa hoàn thành theo kế hoạch',
+  'Đóng PR review chưa xử lý xong',
+  'Clear notification và unread messages quan trọng',
 ]
 
 export function Slide19Checklist() {
@@ -78,7 +78,7 @@ export function Slide19Checklist() {
             marginBottom: 24,
           }}
         >
-          Checklist giao tiep <span style={{ color: theme.colors.accent }}>hang ngay</span>
+          Checklist giao tiếp <span style={{ color: theme.colors.accent }}>hàng ngày</span>
         </motion.h2>
 
         <motion.div
@@ -86,9 +86,9 @@ export function Slide19Checklist() {
           style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 18 }}
         >
           {[
-            { label: 'Buoi sang', items: morning, color: '#d97706' },
-            { label: 'Trong ngay', items: during, color: theme.colors.accent },
-            { label: 'Cuoi ngay', items: end, color: theme.colors.positive },
+            { label: 'Buổi sáng', items: morning, color: '#d97706' },
+            { label: 'Trong ngày', items: during, color: theme.colors.accent },
+            { label: 'Cuối ngày', items: end, color: theme.colors.positive },
           ].map((col) => (
             <motion.div
               key={col.label}

@@ -3,17 +3,17 @@ import { theme } from '../lib/theme'
 import { container, fadeInUp, containerFast } from '../lib/animations'
 
 const syncItems = [
-  { text: 'Van de phuc tap, can trao doi nhieu chieu' },
-  { text: 'Emergency, can giai quyet ngay' },
+  { text: 'Vấn đề phức tạp, cần trao đổi nhiều chiều' },
+  { text: 'Emergency, cần giải quyết ngay' },
   { text: 'Onboarding, brainstorm, retro' },
-  { text: 'Boi canh nay sinh hieu lam lien tuc' },
+  { text: 'Bối cảnh nảy sinh hiểu lầm liên tục' },
 ]
 
 const asyncItems = [
-  { text: 'Cap nhat trang thai, khong can phan hoi ngay' },
-  { text: 'Yeu cau review, phan hoi, ho tro' },
-  { text: 'Tai lieu, wiki, decision log' },
-  { text: 'Thong bao den nhieu nguoi cung luc' },
+  { text: 'Cập nhật trạng thái, không cần phản hồi ngay' },
+  { text: 'Yêu cầu review, phản hồi, hỗ trợ' },
+  { text: 'Tài liệu, wiki, decision log' },
+  { text: 'Thông báo đến nhiều người cùng lúc' },
 ]
 
 export function Slide13SyncAsync() {
@@ -71,7 +71,7 @@ export function Slide13SyncAsync() {
             marginBottom: 32,
           }}
         >
-          Giao tiep <span style={{ color: theme.colors.accent }}>dong bo vs. bat dong bo</span>
+          Giao tiếp <span style={{ color: theme.colors.accent }}>đồng bộ vs. bất đồng bộ</span>
         </motion.h2>
 
         <motion.div
@@ -89,10 +89,10 @@ export function Slide13SyncAsync() {
               }}
             >
               <div style={{ fontSize: theme.sizes.body, fontWeight: 700, color: theme.colors.accent, marginBottom: 4 }}>
-                Dong bo (Meeting / Call)
+                Đồng bộ (Meeting / Call)
               </div>
               <div style={{ fontSize: theme.sizes.small, color: theme.colors.textMuted }}>
-                Nen dung khi...
+                Nên dùng khi...
               </div>
             </div>
             {syncItems.map((item, i) => (
@@ -137,10 +137,10 @@ export function Slide13SyncAsync() {
               }}
             >
               <div style={{ fontSize: theme.sizes.body, fontWeight: 700, color: theme.colors.positive, marginBottom: 4 }}>
-                Bat dong bo (Chat / Doc)
+                Bất đồng bộ (Chat / Doc)
               </div>
               <div style={{ fontSize: theme.sizes.small, color: theme.colors.textMuted }}>
-                Nen dung khi...
+                Nên dùng khi...
               </div>
             </div>
             {asyncItems.map((item, i) => (
@@ -187,7 +187,7 @@ export function Slide13SyncAsync() {
             color: theme.colors.text,
           }}
         >
-          <strong style={{ color: theme.colors.accent }}>Default async, sync khi can thiet.</strong> Khong nen to chuc meeting de bao ket qua co the gui Slack - ton thoi gian ca team.
+          <strong style={{ color: theme.colors.accent }}>Default async, sync khi cần thiết.</strong> Không nên tổ chức meeting để báo kết quả có thể gửi Slack - tốn thời gian cả team.
         </motion.div>
       </motion.div>
     </div>

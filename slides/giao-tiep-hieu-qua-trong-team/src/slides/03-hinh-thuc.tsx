@@ -3,10 +3,10 @@ import { theme } from '../lib/theme'
 import { container, fadeInUp, containerFast } from '../lib/animations'
 
 const forms = [
-  { icon: '💬', title: 'Dong bo (Sync)', desc: 'Meeting, call, standup, pair programming - moi nguoi online cung luc' },
-  { icon: '📝', title: 'Bat dong bo (Async)', desc: 'Email, Slack, comment, doc - moi nguoi tra loi khi ranh' },
-  { icon: '🖥️', title: 'Bang van ban', desc: 'PR description, ticket, wiki, README - luu lai de tham khao' },
-  { icon: '🎤', title: 'Bang loi noi', desc: 'Trao doi truc tiep, review, 1:1 - nhanh nhung khong luu vet' },
+  { icon: '💬', title: 'Đồng bộ (Sync)', desc: 'Meeting, call, standup, pair programming - mọi người online cùng lúc' },
+  { icon: '📝', title: 'Bất đồng bộ (Async)', desc: 'Email, Slack, comment, doc - mọi người trả lời khi rảnh' },
+  { icon: '🖥️', title: 'Bằng văn bản', desc: 'PR description, ticket, wiki, README - lưu lại để tham khảo' },
+  { icon: '🎤', title: 'Bằng lời nói', desc: 'Trao đổi trực tiếp, review, 1:1 - nhanh nhưng không lưu vết' },
 ]
 
 export function Slide03HinhThuc() {
@@ -64,7 +64,7 @@ export function Slide03HinhThuc() {
             marginBottom: 40,
           }}
         >
-          Cac hinh thuc <span style={{ color: theme.colors.accent }}>giao tiep trong team</span>
+          Các hình thức <span style={{ color: theme.colors.accent }}>giao tiếp trong team</span>
         </motion.h2>
 
         <motion.div

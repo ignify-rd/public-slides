@@ -64,15 +64,15 @@ export function Slide07VietMessage() {
             lineHeight: 1.2,
           }}
         >
-          Viet message <span style={{ color: theme.colors.accent }}>ro rang, ngan gon</span>
+          Viết message <span style={{ color: theme.colors.accent }}>rõ ràng, ngắn gọn</span>
         </motion.h2>
 
         <motion.div variants={fadeInUp} style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
           {[
-            { label: 'BLUF', desc: 'Bottom Line Up Front - ket luan truoc, chi tiet sau' },
-            { label: 'Context', desc: 'Neu boi canh de nguoi doc hieu van de' },
-            { label: 'Action', desc: 'Neu ro ban can gi: review, approve, phan hoi' },
-            { label: 'Deadline', desc: 'Neu co urgent, ghi ro thoi han cu the' },
+            { label: 'BLUF', desc: 'Bottom Line Up Front - kết luận trước, chi tiết sau' },
+            { label: 'Context', desc: 'Nêu bối cảnh để người đọc hiểu vấn đề' },
+            { label: 'Action', desc: 'Nêu rõ bạn cần gì: review, approve, phản hồi' },
+            { label: 'Deadline', desc: 'Nếu có urgent, ghi rõ thời hạn cụ thể' },
           ].map((item) => (
             <motion.div
               key={item.label}
@@ -151,25 +151,20 @@ export function Slide07VietMessage() {
               marginBottom: 14,
             }}
           >
-            Vi du message tot:
+            Ví dụ message tốt:
           </div>
           <div
             style={{
               fontSize: theme.sizes.small,
               color: theme.colors.text,
               lineHeight: 1.8,
-              fontFamily: 'monospace',
-              background: '#f8f9fa',
-              padding: '16px',
-              borderRadius: 8,
-              border: `1px solid ${theme.colors.border}`,
             }}
           >
-            <div style={{ color: theme.colors.accent, fontWeight: 700 }}>@Nam - Can review PR #142 truoc 5pm hom nay</div>
+            <div style={{ color: theme.colors.accent, fontWeight: 700 }}>@Nam - Cần review PR #142 trước 5pm hôm nay</div>
             <br />
-            <div>Boi canh: Feature login se bi block neu PR nay chua duoc merge.</div>
+            <div>Bối cảnh: Feature login sẽ bị block nếu PR này chưa được merge.</div>
             <br />
-            <div>Da test o local, pass all unit tests. Can them 1 pair of eyes cho phan error handling (line 45-60).</div>
+            <div>Đã test ở local, pass all unit tests. Cần thêm 1 pair of eyes cho phần error handling (line 45-60).</div>
             <br />
             <div>Link: github.com/org/repo/pull/142</div>
           </div>

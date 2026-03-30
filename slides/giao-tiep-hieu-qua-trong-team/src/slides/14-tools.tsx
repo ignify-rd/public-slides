@@ -6,25 +6,25 @@ const tools = [
   {
     name: 'Slack',
     tips: [
-      'Dung thread de tra loi - tranh lam noise channel chinh',
-      'Dat status khi ban busy / khong co mat',
-      'Dung @mention dung nguoi, tranh @channel khi khong can thiet',
+      'Dùng thread để trả lời - tránh làm noise channel chính',
+      'Đặt status khi bận busy / không có mặt',
+      'Dùng @mention đúng người, tránh @channel khi không cần thiết',
     ],
   },
   {
     name: 'Jira / Ticket',
     tips: [
-      'Cap nhat trang thai ticket hang ngay',
-      'Ghi ro comment khi bi block hoac co change',
-      'Lien ket PR vao ticket de team theo doi',
+      'Cập nhật trạng thái ticket hàng ngày',
+      'Ghi rõ comment khi bị block hoặc có change',
+      'Liên kết PR vào ticket để team theo dõi',
     ],
   },
   {
     name: 'GitHub / GitLab',
     tips: [
-      'PR description day du: what, why, how to test',
-      'Review comment cu the, co suggestion code neu co the',
-      'Reply tat ca comment khi da xu ly xong',
+      'PR description đầy đủ: what, why, how to test',
+      'Review comment cụ thể, có suggestion code nếu có thể',
+      'Reply tất cả comment khi đã xử lý xong',
     ],
   },
 ]
@@ -84,7 +84,7 @@ export function Slide14Tools() {
             marginBottom: 28,
           }}
         >
-          Dung <span style={{ color: theme.colors.accent }}>tools hieu qua</span>
+          Dùng <span style={{ color: theme.colors.accent }}>tools hiệu quả</span>
         </motion.h2>
 
         <motion.div

@@ -4,28 +4,28 @@ import { container, fadeInUp, containerFast } from '../lib/animations'
 
 const mistakes = [
   {
-    mistake: 'Im lang vi so phien',
-    fix: 'Hoi la bieu hien cua su chu dong, khong phai yeu kem',
+    mistake: 'Im lặng vì sợ phiền',
+    fix: 'Hỏi là biểu hiện của sự chủ động, không phải yếu kém',
   },
   {
-    mistake: 'Giu blocker "cho tu giai quyet"',
-    fix: 'Quy tac 15 phut: tu debug roi bao ngay neu chua xong',
+    mistake: 'Giữ blocker "chờ tự giải quyết"',
+    fix: 'Quy tắc 15 phút: tự debug rồi báo ngay nếu chưa xong',
   },
   {
-    mistake: 'Bao "Xong roi" khi chua test',
-    fix: '"Done" = lam xong + test + review ready',
+    mistake: 'Báo "Xong rồi" khi chưa test',
+    fix: '"Done" = làm xong + test + review ready',
   },
   {
-    mistake: 'Khong doc ki yeu cau truoc khi hoi',
-    fix: 'Doc ticket, doc doc, roi hoi - tranh hoi nhung gi da co san',
+    mistake: 'Không đọc kỹ yêu cầu trước khi hỏi',
+    fix: 'Đọc ticket, đọc doc, rồi hỏi - tránh hỏi những gì đã có sẵn',
   },
   {
-    mistake: 'Viet message dai dong, khong co point',
-    fix: 'BLUF: ket luan truoc, chi tiet sau, toi da 5 dong',
+    mistake: 'Viết message dài dòng, không có point',
+    fix: 'BLUF: kết luận trước, chi tiết sau, tối đa 5 dòng',
   },
   {
-    mistake: 'Khong confirm sau khi nhan task',
-    fix: 'Lap lai yeu cau bang loi cua minh de xac nhan hieu dung',
+    mistake: 'Không confirm sau khi nhận task',
+    fix: 'Lặp lại yêu cầu bằng lời của mình để xác nhận hiểu đúng',
   },
 ]
 
@@ -84,7 +84,7 @@ export function Slide18LoiPhoBien() {
             marginBottom: 24,
           }}
         >
-          Nhung loi giao tiep <span style={{ color: theme.colors.negative }}>pho bien</span> cua junior
+          Những lỗi giao tiếp <span style={{ color: theme.colors.negative }}>phổ biến</span> của junior
         </motion.h2>
 
         <motion.div
@@ -114,7 +114,7 @@ export function Slide18LoiPhoBien() {
                   alignItems: 'center',
                 }}
               >
-                <span style={{ opacity: 0.7 }}>Loi:</span> {item.mistake}
+                <span style={{ opacity: 0.7 }}>Lỗi:</span> {item.mistake}
               </div>
               <div
                 style={{

@@ -3,9 +3,9 @@ import { theme } from '../lib/theme'
 import { container, fadeInUp } from '../lib/animations'
 
 const reviewerTips = [
-  { good: 'Suggestion: Co the dung Map thay vi for loop de tang hieu suat - O(n) -> O(1)', bad: 'Sai roi, viet lai di' },
-  { good: 'Nit: Dat ten bien ro rang hon: `u` -> `user` giup code de doc hon', bad: 'u la gi vay?' },
-  { good: 'Question: Minh thay curious tai sao chon approach nay? Co alternative khong?', bad: 'Tai sao lam vay?' },
+  { good: 'Suggestion: Có thể dùng Map thay vì for loop để tăng hiệu suất - O(n) -> O(1)', bad: 'Sai rồi, viết lại đi' },
+  { good: 'Nit: Đặt tên biến rõ ràng hơn: `u` -> `user` giúp code dễ đọc hơn', bad: 'u là gì vậy?' },
+  { good: 'Question: Mình thấy curious tại sao chọn approach này? Có alternative không?', bad: 'Tại sao làm vậy?' },
 ]
 
 export function Slide15CodeReview() {
@@ -63,7 +63,7 @@ export function Slide15CodeReview() {
             marginBottom: 8,
           }}
         >
-          Giao tiep trong <span style={{ color: theme.colors.accent }}>code review</span>
+          Giao tiếp trong <span style={{ color: theme.colors.accent }}>code review</span>
         </motion.h2>
 
         <motion.p
@@ -74,7 +74,7 @@ export function Slide15CodeReview() {
             marginBottom: 28,
           }}
         >
-          Code review la ve <strong>code</strong>, khong phai ve <strong>con nguoi</strong>. Phan bien code, khong phan bien tac gia.
+          Code review là về <strong>code</strong>, không phải về <strong>con người</strong>. Phản biện code, không phản biện tác giả.
         </motion.p>
 
         <motion.div
@@ -85,10 +85,10 @@ export function Slide15CodeReview() {
         >
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 4 }}>
             <div style={{ fontSize: theme.sizes.small, fontWeight: 700, color: theme.colors.positive }}>
-              Comment tot (Constructive)
+              Comment tốt (Constructive)
             </div>
             <div style={{ fontSize: theme.sizes.small, fontWeight: 700, color: theme.colors.negative }}>
-              Comment nen tranh
+              Comment nên tránh
             </div>
           </div>
 
@@ -140,7 +140,7 @@ export function Slide15CodeReview() {
             color: theme.colors.text,
           }}
         >
-          <strong style={{ color: theme.colors.accent }}>Label comment:</strong> "Nit" = khong bat buoc, "Blocker" = phai sua truoc khi merge, "Question" = minh muon hieu them.
+          <strong style={{ color: theme.colors.accent }}>Label comment:</strong> "Nit" = không bắt buộc, "Blocker" = phải sửa trước khi merge, "Question" = mình muốn hiểu thêm.
         </motion.div>
       </motion.div>
     </div>

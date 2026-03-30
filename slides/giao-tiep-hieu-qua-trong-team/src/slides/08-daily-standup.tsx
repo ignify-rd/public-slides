@@ -4,19 +4,19 @@ import { container, fadeInUp, containerFast } from '../lib/animations'
 
 const questions = [
   {
-    q: 'Hom qua lam gi?',
-    hint: 'Task cu the, khong chi noi "lam feature X"',
-    example: '"Hoan thanh API endpoint /users/login, da viet unit test"',
+    q: 'Hôm qua làm gì?',
+    hint: 'Task cụ thể, không chỉ nói "làm feature X"',
+    example: '"Hoàn thành API endpoint /users/login, đã viết unit test"',
   },
   {
-    q: 'Hom nay se lam gi?',
-    hint: 'Plan ro rang, estimate neu co the',
-    example: '"Se implement phan validate token, du kien xong truoc 3pm"',
+    q: 'Hôm nay sẽ làm gì?',
+    hint: 'Plan rõ ràng, estimate nếu có thể',
+    example: '"Sẽ implement phần validate token, dự kiến xong trước 3pm"',
   },
   {
-    q: 'Co gi can ho tro khong?',
-    hint: 'Nen noi ro blocker ngay - dung giu trong long',
-    example: '"Dang bi ket o viec cau hinh Redis, can ai co kinh nghiem ho tro"',
+    q: 'Có gì cần hỗ trợ không?',
+    hint: 'Nên nói rõ blocker ngay - đừng giữ trong lòng',
+    example: '"Đang bị kẹt ở việc cấu hình Redis, cần ai có kinh nghiệm hỗ trợ"',
   },
 ]
 
@@ -75,7 +75,7 @@ export function Slide08DailyStandup() {
             marginBottom: 8,
           }}
         >
-          Giao tiep trong <span style={{ color: theme.colors.accent }}>daily standup</span>
+          Giao tiếp trong <span style={{ color: theme.colors.accent }}>daily standup</span>
         </motion.h2>
 
         <motion.p
@@ -86,7 +86,7 @@ export function Slide08DailyStandup() {
             marginBottom: 28,
           }}
         >
-          15 phut moi ngay - giu ngan gon, tap trung, khong dung thuyet trinh dai dong.
+          15 phút mỗi ngày - giữ ngắn gọn, tập trung, không dùng thuyết trình dài dòng.
         </motion.p>
 
         <motion.div

@@ -3,18 +3,18 @@ import { theme } from '../lib/theme'
 import { container, fadeInUp, containerFast } from '../lib/animations'
 
 const dos = [
-  'Hoi sau khi tu tim hieu - cho thay ban da no luc truoc',
-  'Neu ro context va nhung gi da thu khi hoi',
-  'Ghi chep lai cau tra loi - tranh hoi cung mot cau nhieu lan',
-  'Cap nhat tien do cho mentor khong can doi ho hoi',
-  'Cam on cu the: "Cam on, nhung dieu do giup minh hieu..."',
+  'Hỏi sau khi tự tìm hiểu - cho thấy bạn đã nỗ lực trước',
+  'Nêu rõ context và những gì đã thử khi hỏi',
+  'Ghi chép lại câu trả lời - tránh hỏi cùng một câu nhiều lần',
+  'Cập nhật tiến độ cho mentor không cần đợi họ hỏi',
+  'Cảm ơn cụ thể: "Cảm ơn, những điều đó giúp mình hiểu..."',
 ]
 
 const donts = [
-  'Hoi cau hoi qua mo khong co context: "Em khong hieu gi het"',
-  'Im lang khi bi ket, ngai hoi vi so phien',
-  'Nhan hang het ma khong phan hoi hay dat cau hoi lai',
-  'Quen mat nhung gi da duoc chi dao, phai hoi lai',
+  'Hỏi câu hỏi quá mơ không có context: "Em không hiểu gì hết"',
+  'Im lặng khi bị kẹt, ngại hỏi vì sợ phiền',
+  'Nhận hàng hết mà không phản hồi hay đặt câu hỏi lại',
+  'Quên mất những gì đã được chỉ đạo, phải hỏi lại',
 ]
 
 export function Slide16SeniorMentor() {
@@ -72,7 +72,7 @@ export function Slide16SeniorMentor() {
             marginBottom: 28,
           }}
         >
-          Giao tiep voi <span style={{ color: theme.colors.accent }}>senior / mentor</span>
+          Giao tiếp với <span style={{ color: theme.colors.accent }}>senior / mentor</span>
         </motion.h2>
 
         <motion.div
@@ -81,7 +81,7 @@ export function Slide16SeniorMentor() {
         >
           <motion.div variants={fadeInUp}>
             <div style={{ fontSize: theme.sizes.small, fontWeight: 700, color: theme.colors.positive, marginBottom: 12 }}>
-              Nen lam
+              Nên làm
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               {dos.map((tip, i) => (
@@ -108,7 +108,7 @@ export function Slide16SeniorMentor() {
 
           <motion.div variants={fadeInUp}>
             <div style={{ fontSize: theme.sizes.small, fontWeight: 700, color: theme.colors.negative, marginBottom: 12 }}>
-              Tranh lam
+              Tránh làm
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               {donts.map((tip, i) => (

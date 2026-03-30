@@ -8,21 +8,21 @@ const levels = [
     color: theme.colors.positive,
     bg: 'rgba(5,150,105,0.08)',
     border: 'rgba(5,150,105,0.25)',
-    desc: 'Dung track, khong co van de. Cap nhat ngan trong standup la du.',
+    desc: 'Đúng track, không có vấn đề. Cập nhật ngắn trong standup là đủ.',
   },
   {
-    signal: 'Vang',
+    signal: 'Vàng',
     color: '#d97706',
     bg: 'rgba(217,119,6,0.08)',
     border: 'rgba(217,119,6,0.25)',
-    desc: 'Co rui ro, co the tre han. Bao ngay cho lead / PM, de xuat giai phap.',
+    desc: 'Có rủi ro, có thể trễ hạn. Báo ngay cho lead / PM, đề xuất giải pháp.',
   },
   {
-    signal: 'Do',
+    signal: 'Đỏ',
     color: theme.colors.negative,
     bg: 'rgba(220,38,38,0.07)',
     border: 'rgba(220,38,38,0.2)',
-    desc: 'Da bi block, khong the tu giai quyet. Escalate ngay, khong cho them.',
+    desc: 'Đã bị block, không thể tự giải quyết. Escalate ngay, không chờ thêm.',
   },
 ]
 
@@ -81,7 +81,7 @@ export function Slide09BaoCao() {
             marginBottom: 8,
           }}
         >
-          Bao cao tien do & <span style={{ color: theme.colors.accent }}>escalation dung luc</span>
+          Báo cáo tiến độ & <span style={{ color: theme.colors.accent }}>escalation đúng lúc</span>
         </motion.h2>
 
         <motion.p
@@ -93,7 +93,7 @@ export function Slide09BaoCao() {
             maxWidth: 700,
           }}
         >
-          Quy tac vang: <strong>khong co tin xau nao la tin xau neu duoc bao som.</strong> Im lang moi la van de.
+          Quy tắc vàng: <strong>không có tin xấu nào là tin xấu nếu được báo sớm.</strong> Im lặng mới là vấn đề.
         </motion.p>
 
         <motion.div
@@ -151,7 +151,7 @@ export function Slide09BaoCao() {
             color: theme.colors.text,
           }}
         >
-          <strong style={{ color: theme.colors.accent }}>Loi junior hay gap:</strong> Giu blocker trong long vi so bi danh gia "cham". Thuc te: escalate som = phan chieu tich cuc.
+          <strong style={{ color: theme.colors.accent }}>Lỗi junior hay gặp:</strong> Giữ blocker trong lòng vì sợ bị đánh giá "chậm". Thực tế: escalate sớm = phản chiếu tích cực.
         </motion.div>
       </motion.div>
     </div>
