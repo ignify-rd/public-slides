@@ -3,11 +3,11 @@ import { theme } from '../lib/theme'
 import { container, fadeInUp, containerFast } from '../lib/animations'
 
 const tips = [
-  { num: '01', text: 'Khong ngat loi nguoi khac dang noi - de ho noi xong hoan toan' },
-  { num: '02', text: 'Xac nhan lai bang cach tom tat: "Y ban la..."' },
-  { num: '03', text: 'Dat cau hoi lam ro, khong dua ra ket luan qua som' },
-  { num: '04', text: 'De y ngon ngu co the (expression, tone) khi noi chuyen truc tiep' },
-  { num: '05', text: 'Ghi chu nhung diem quan trong de khong quen' },
+  { num: '01', text: 'Không ngắt lời người khác đang nói - để họ nói xong hoàn toàn' },
+  { num: '02', text: 'Xác nhận lại bằng cách tóm tắt: "Ý bạn là..."' },
+  { num: '03', text: 'Đặt câu hỏi làm rõ, không đưa ra kết luận quá sớm' },
+  { num: '04', text: 'Để ý ngôn ngữ cơ thể (expression, tone) khi nói chuyện trực tiếp' },
+  { num: '05', text: 'Ghi chú những điểm quan trọng để không quên' },
 ]
 
 export function Slide04LangNghe() {
@@ -72,8 +72,8 @@ export function Slide04LangNghe() {
             lineHeight: 1.15,
           }}
         >
-          Lang nghe{' '}
-          <span style={{ color: theme.colors.accent }}>chu dong</span>
+          Lắng nghe{' '}
+          <span style={{ color: theme.colors.accent }}>chủ động</span>
         </motion.h2>
 
         <motion.p
@@ -86,7 +86,7 @@ export function Slide04LangNghe() {
             maxWidth: 380,
           }}
         >
-          Active listening khong phai nghe de cho den luot minh noi. Do la ky nang nghe de hieu - hieu nguoi, hieu van de, hieu boi canh.
+          Active listening không phải nghe để chờ đến lượt mình nói. Đó là kỹ năng nghe để hiểu - hiểu người, hiểu vấn đề, hiểu bối cảnh.
         </motion.p>
 
         <motion.div
@@ -101,7 +101,7 @@ export function Slide04LangNghe() {
             maxWidth: 380,
           }}
         >
-          <strong>Nho:</strong> Junior hay mac loi noi nhieu hon nghe. Dao nguoc lai se tao su khac biet lon.
+          <strong>Nhớ:</strong> Junior hay mắc lỗi nói nhiều hơn nghe. Đảo ngược lại sẽ tạo sự khác biệt lớn.
         </motion.div>
       </motion.div>
 

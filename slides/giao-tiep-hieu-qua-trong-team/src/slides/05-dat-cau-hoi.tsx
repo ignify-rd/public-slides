@@ -3,15 +3,15 @@ import { theme } from '../lib/theme'
 import { container, fadeInUp, containerFast } from '../lib/animations'
 
 const good = [
-  '"Minh hieu requirement nay la X - ban xac nhan duoc khong?"',
-  '"Minh dang bi ket o buoc Y, ban co the cho minh biet cach tiep can khong?"',
-  '"Deadline nay co flexible khong neu gap van de phat sinh?"',
+  '"Mình hiểu requirement này là X - bạn xác nhận được không?"',
+  '"Mình đang bị kẹt ở bước Y, bạn có thể cho mình biết cách tiếp cận không?"',
+  '"Deadline này có flexible không nếu gặp vấn đề phát sinh?"',
 ]
 
 const bad = [
-  '"Lam the nao?" (qua mo, khong co context)',
-  '"No bi loi roi" (khong mo ta ro loi gi, o dau)',
-  '"OK" (khong xac nhan minh hieu dung hay chua)',
+  '"Làm thế nào?" (quá mơ, không có context)',
+  '"Nó bị lỗi rồi" (không mô tả rõ lỗi gì, ở đâu)',
+  '"OK" (không xác nhận mình hiểu đúng hay chưa)',
 ]
 
 export function Slide05DatCauHoi() {
@@ -69,7 +69,7 @@ export function Slide05DatCauHoi() {
             marginBottom: 32,
           }}
         >
-          Ky nang <span style={{ color: theme.colors.accent }}>dat cau hoi dung</span>
+          Kỹ năng <span style={{ color: theme.colors.accent }}>đặt câu hỏi đúng</span>
         </motion.h2>
 
         <motion.div
@@ -88,7 +88,7 @@ export function Slide05DatCauHoi() {
                 gap: 8,
               }}
             >
-              <span>+</span> Cau hoi tot
+              <span>+</span> Câu hỏi tốt
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               {good.map((q, i) => (
@@ -123,7 +123,7 @@ export function Slide05DatCauHoi() {
                 gap: 8,
               }}
             >
-              <span>-</span> Cau hoi nen tranh
+              <span>-</span> Câu hỏi nên tránh
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               {bad.map((q, i) => (
@@ -159,7 +159,7 @@ export function Slide05DatCauHoi() {
             color: theme.colors.text,
           }}
         >
-          <strong style={{ color: theme.colors.accent }}>Cong thuc dat cau hoi tot:</strong> Boi canh + Dieu minh da thu + Ket qua mong muon = Cau hoi ro rang, de tra loi
+          <strong style={{ color: theme.colors.accent }}>Công thức đặt câu hỏi tốt:</strong> Bối cảnh + Điều mình đã thử + Kết quả mong muốn = Câu hỏi rõ ràng, dễ trả lời
         </motion.div>
       </motion.div>
     </div>

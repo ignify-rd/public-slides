@@ -5,19 +5,19 @@ import { container, fadeInUp, containerFast } from '../lib/animations'
 const scenarios = [
   {
     situation: 'Sau meeting',
-    action: 'Gui summary qua email/Slack: "De minh xac nhan lai: cac diem da thong nhat la..."',
+    action: 'Gửi summary qua email/Slack: "Để mình xác nhận lại: các điểm đã thống nhất là..."',
   },
   {
-    situation: 'Nhan task moi',
-    action: 'Lap lai yeu cau bang loi cua minh truoc khi bat dau lam de kiem tra hieu dung chua',
+    situation: 'Nhận task mới',
+    action: 'Lặp lại yêu cầu bằng lời của mình trước khi bắt đầu làm để kiểm tra hiểu đúng chưa',
   },
   {
-    situation: 'Giao tiep bat dong bo',
-    action: 'Neu khong chac, hoi them: "Minh hieu la X - ban xac nhan duoc khong?"',
+    situation: 'Giao tiếp bất đồng bộ',
+    action: 'Nếu không chắc, hỏi thêm: "Mình hiểu là X - bạn xác nhận được không?"',
   },
   {
-    situation: 'Khi biet re quan diem',
-    action: 'Chuyen sang sync ngay: "Hay co 5 phut call de hieu ro hon" thay vi chat qua lai mai',
+    situation: 'Khi biết rẽ quan điểm',
+    action: 'Chuyển sang sync ngay: "Hãy có 5 phút call để hiểu rõ hơn" thay vì chat qua lại mãi',
   },
 ]
 
@@ -76,7 +76,7 @@ export function Slide12HieuLam() {
             marginBottom: 8,
           }}
         >
-          Tranh hieu lam - <span style={{ color: theme.colors.accent }}>xac nhan lai thong tin</span>
+          Tránh hiểu lầm - <span style={{ color: theme.colors.accent }}>xác nhận lại thông tin</span>
         </motion.h2>
 
         <motion.p
@@ -87,7 +87,7 @@ export function Slide12HieuLam() {
             marginBottom: 28,
           }}
         >
-          Hieu lam xay ra thuong xuyen - van de khong phai la hieu lam ma la khong kiem tra lai de phat hien som.
+          Hiểu lầm xảy ra thường xuyên - vấn đề không phải là hiểu lầm mà là không kiểm tra lại để phát hiện sớm.
         </motion.p>
 
         <motion.div

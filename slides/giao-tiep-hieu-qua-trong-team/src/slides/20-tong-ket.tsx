@@ -3,17 +3,17 @@ import { theme } from '../lib/theme'
 import { container, fadeInUp, containerFast } from '../lib/animations'
 
 const keyTakeaways = [
-  'Lang nghe de hieu, khong chi de tra loi',
-  'Bao som khi co van de - dung doi den khi "qua muon"',
-  'Viet ro rang: BLUF, context, action needed',
-  'Xac nhan lai de tranh hieu lam - dac biet sau meeting',
-  'Code review la ve code, khong phai ve con nguoi',
+  'Lắng nghe để hiểu, không chỉ để trả lời',
+  'Báo sớm khi có vấn đề - đừng đợi đến khi "quá muộn"',
+  'Viết rõ ràng: BLUF, context, action needed',
+  'Xác nhận lại để tránh hiểu lầm - đặc biệt sau meeting',
+  'Code review là về code, không phải về con người',
 ]
 
 const actions = [
-  'Chuan bi kip thoi cho standup ngay mai',
-  'Reply tat ca comment PR con boc trong hom nay',
-  'Dat cau hoi dung cach cho blocker hien tai',
+  'Chuẩn bị kịp thời cho standup ngày mai',
+  'Reply tất cả comment PR còn bỏ trong hôm nay',
+  'Đặt câu hỏi đúng cách cho blocker hiện tại',
 ]
 
 export function Slide20TongKet() {
@@ -82,7 +82,7 @@ export function Slide20TongKet() {
             marginBottom: 16,
           }}
         >
-          Slide 20 - Tong ket
+          Slide 20 - Tổng kết
         </motion.div>
 
         <motion.h2
@@ -95,7 +95,7 @@ export function Slide20TongKet() {
             lineHeight: 1.15,
           }}
         >
-          5 dieu can <span style={{ color: theme.colors.accent }}>nho mai</span>
+          5 điều cần <span style={{ color: theme.colors.accent }}>nhớ mãi</span>
         </motion.h2>
 
         <motion.div variants={fadeInUp} style={{ width: 40, height: 2, background: theme.colors.accent, marginBottom: 24 }} />
@@ -188,7 +188,7 @@ export function Slide20TongKet() {
               letterSpacing: '0.1em',
             }}
           >
-            Hanh dong ngay hom nay
+            Hành động ngay hôm nay
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
             {actions.map((action, i) => (
@@ -222,7 +222,7 @@ export function Slide20TongKet() {
           }}
         >
           <div style={{ fontSize: theme.sizes.small, color: theme.colors.textMuted, lineHeight: 1.7, fontStyle: 'italic' }}>
-            "Giao tiep tot khong phai la noi nhieu. Do la kha nang khien nguoi khac hieu minh va minh hieu nguoi khac - mot each ro rang, nhanh chong, hieu qua."
+            "Giao tiếp tốt không phải là nói nhiều. Đó là khả năng khiến người khác hiểu mình và mình hiểu người khác - một cách rõ ràng, nhanh chóng, hiệu quả."
           </div>
         </motion.div>
 

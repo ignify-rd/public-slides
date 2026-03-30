@@ -3,9 +3,9 @@ import { theme } from '../lib/theme'
 import { container, fadeInUp, containerFast } from '../lib/animations'
 
 const stats = [
-  { value: '86%', label: 'that bai cua cac du an la do giao tiep kem' },
-  { value: '4x', label: 'hieu suat khi team giao tiep tot hon' },
-  { value: '#1', label: 'ky nang nha tuyen dung tim kiem o junior dev' },
+  { value: '86%', label: 'thất bại của các dự án là do giao tiếp kém' },
+  { value: '4x', label: 'hiệu suất khi team giao tiếp tốt hơn' },
+  { value: '#1', label: 'kỹ năng nhà tuyển dụng tìm kiếm ở junior dev' },
 ]
 
 export function Slide02TaiSao() {
@@ -63,7 +63,7 @@ export function Slide02TaiSao() {
             marginBottom: 12,
           }}
         >
-          Tai sao giao tiep <span style={{ color: theme.colors.accent }}>quan trong?</span>
+          Tại sao giao tiếp <span style={{ color: theme.colors.accent }}>quan trọng?</span>
         </motion.h2>
 
         <motion.p
@@ -76,7 +76,7 @@ export function Slide02TaiSao() {
             lineHeight: 1.6,
           }}
         >
-          Ky nang ky thuat chi la mot phan - giao tiep la thu tao ra su khac biet giua nguoi binh thuong va nguoi xuat sac.
+          Kỹ năng kỹ thuật chỉ là một phần - giao tiếp là thứ tạo ra sự khác biệt giữa người bình thường và người xuất sắc.
         </motion.p>
 
         <motion.div
@@ -137,7 +137,7 @@ export function Slide02TaiSao() {
             maxWidth: 700,
           }}
         >
-          <strong style={{ color: theme.colors.accent }}>Key insight:</strong> Code tot nhung giao tiep kem = blocker cho ca team. Code trung binh nhung giao tiep tot = contributor gia tri.
+          <strong style={{ color: theme.colors.accent }}>Key insight:</strong> Code tốt nhưng giao tiếp kém = blocker cho cả team. Code trung bình nhưng giao tiếp tốt = contributor giá trị.
         </motion.div>
       </motion.div>
     </div>

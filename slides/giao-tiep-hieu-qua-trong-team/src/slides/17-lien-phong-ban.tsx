@@ -5,15 +5,15 @@ import { container, fadeInUp, containerFast } from '../lib/animations'
 const teams = [
   {
     team: 'QA / Tester',
-    tips: ['Mo ta ro steps to reproduce khi bao bug', 'Thong bao khi deploy len staging de QA test', 'Hoi ro acceptance criteria truoc khi lam'],
+    tips: ['Mô tả rõ steps to reproduce khi báo bug', 'Thông báo khi deploy lên staging để QA test', 'Hỏi rõ acceptance criteria trước khi làm'],
   },
   {
     team: 'Product / PM',
-    tips: ['Hoi ve "why" cua feature, khong chi "what"', 'Bao ngay khi co risk liem quan den deadline', 'Propose solution, khong chi neu van de'],
+    tips: ['Hỏi về "why" của feature, không chỉ "what"', 'Báo ngay khi có risk liên quan đến deadline', 'Propose solution, không chỉ nêu vấn đề'],
   },
   {
     team: 'DevOps / Infra',
-    tips: ['Tao ticket ro rang khi can infra support', 'Bao truoc khi can resource moi (server, config)', 'Follow process deploy - khong tu y deploy len prod'],
+    tips: ['Tạo ticket rõ ràng khi cần infra support', 'Báo trước khi cần resource mới (server, config)', 'Follow process deploy - không tự ý deploy lên prod'],
   },
 ]
 
@@ -72,7 +72,7 @@ export function Slide17LienPhongBan() {
             marginBottom: 28,
           }}
         >
-          Giao tiep <span style={{ color: theme.colors.accent }}>lien phong ban</span>
+          Giao tiếp <span style={{ color: theme.colors.accent }}>liên phòng ban</span>
         </motion.h2>
 
         <motion.div
@@ -144,7 +144,7 @@ export function Slide17LienPhongBan() {
             color: theme.colors.text,
           }}
         >
-          <strong style={{ color: theme.colors.accent }}>Nguyen tac chung:</strong> Moi team co ngon ngu rieng - tu do context, muc do uu tien. Hieu nguoi doc truoc khi viet.
+          <strong style={{ color: theme.colors.accent }}>Nguyên tắc chung:</strong> Mỗi team có ngôn ngữ riêng - từ đó context, mức độ ưu tiên. Hiểu người đọc trước khi viết.
         </motion.div>
       </motion.div>
     </div>

@@ -3,17 +3,17 @@ import { theme } from '../lib/theme'
 import { container, fadeInUp, containerFast } from '../lib/animations'
 
 const giving = [
-  'Noi ve hanh dong, khong noi ve con nguoi',
-  'Cu the, co vi du thuc te - tranh chung chung',
-  'De xuat giai phap thay vi chi chi trich',
-  'Chon thoi diem phu hop, khong feedback truoc mat nhieu nguoi',
+  'Nói về hành động, không nói về con người',
+  'Cụ thể, có ví dụ thực tế - tránh chung chung',
+  'Đề xuất giải pháp thay vì chỉ chỉ trích',
+  'Chọn thời điểm phù hợp, không feedback trước mặt nhiều người',
 ]
 
 const receiving = [
-  'Lang nghe den cung, khong bien minh de cam on',
-  'Khong "defend" ngay - hieu truoc, phan hoi sau',
-  'Dat cau hoi lam ro neu feedback khong cu the',
-  'Cam on - du ban co dong y hay khong',
+  'Lắng nghe đến cùng, không biện minh - để cảm ơn',
+  'Không "defend" ngay - hiểu trước, phản hồi sau',
+  'Đặt câu hỏi làm rõ nếu feedback không cụ thể',
+  'Cảm ơn - dù bạn có đồng ý hay không',
 ]
 
 export function Slide11Feedback() {
@@ -71,7 +71,7 @@ export function Slide11Feedback() {
             marginBottom: 32,
           }}
         >
-          Nhan va dua <span style={{ color: theme.colors.accent }}>feedback xay dung</span>
+          Nhận và đưa <span style={{ color: theme.colors.accent }}>feedback xây dựng</span>
         </motion.h2>
 
         <motion.div
@@ -90,7 +90,7 @@ export function Slide11Feedback() {
                 gap: 8,
               }}
             >
-              Khi dua feedback
+              Khi đưa feedback
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               {giving.map((tip, i) => (
@@ -137,7 +137,7 @@ export function Slide11Feedback() {
                 gap: 8,
               }}
             >
-              Khi nhan feedback
+              Khi nhận feedback
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               {receiving.map((tip, i) => (
