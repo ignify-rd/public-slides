@@ -7,17 +7,17 @@ export function Slide08RoleShift() {
     {
       from: 'Author',
       to: 'Reviewer',
-      desc: 'Kiem tra AI output, phan tich loi va edge case',
+      desc: 'Kiểm tra AI output, phân tích lỗi và edge case',
     },
     {
       from: 'Coder',
       to: 'Architect',
-      desc: 'Thiet ke he thong, quyet dinh phan chia module',
+      desc: 'Thiết kế hệ thống, quyết định phân chia module',
     },
     {
       from: 'Implementer',
       to: 'Prompt engineer',
-      desc: 'Dien dat yeu cau chinh xac de AI sinh ra dung code',
+      desc: 'Diễn đạt yêu cầu chính xác để AI sinh ra đúng code',
     },
   ]
 
@@ -68,7 +68,7 @@ export function Slide08RoleShift() {
             marginBottom: 32,
           }}
         >
-          Vai tro thay doi
+          Vai trò thay đổi
         </motion.div>
 
         <motion.h2
@@ -81,9 +81,9 @@ export function Slide08RoleShift() {
             marginBottom: 40,
           }}
         >
-          Tu <span style={{ color: theme.colors.textMuted }}>nguoi viet</span>{' '}
+          Từ <span style={{ color: theme.colors.textMuted }}>người viết</span>{' '}
           sang{' '}
-          <span style={{ color: theme.colors.accent }}>nguoi kien tao</span>
+          <span style={{ color: theme.colors.accent }}>người kiến tạo</span>
         </motion.h2>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

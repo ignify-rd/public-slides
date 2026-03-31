@@ -40,7 +40,7 @@ export function Slide05Intent() {
             marginBottom: 32,
           }}
         >
-          Goc nhin quan trong
+          Góc nhìn quan trọng
         </motion.div>
 
         <motion.h2
@@ -53,8 +53,8 @@ export function Slide05Intent() {
             marginBottom: 32,
           }}
         >
-          AI khong hieu{' '}
-          <span style={{ color: theme.colors.accent }}>y dinh</span>
+          AI không hiểu{' '}
+          <span style={{ color: theme.colors.accent }}>ý định</span>
           <br />
           cua ban
         </motion.h2>
@@ -69,8 +69,8 @@ export function Slide05Intent() {
             marginBottom: 28,
           }}
         >
-          AI toi uu hoa de tao ra code "co ve dung" - khong phai code "dung voi nhu cau cu the".
-          No khong biet: tai sao feature nay ton tai, ai su dung, dieu gi se xay ra neu logic sai.
+          AI tối ưu hóa để tạo ra code "có vẻ đúng" - không phải code "đúng với nhu cầu cụ thể".
+          Nó không biết: tại sao feature này tồn tại, ai sử dụng, điều gì sẽ xảy ra nếu logic sai.
         </motion.p>
 
         <motion.div
@@ -86,8 +86,8 @@ export function Slide05Intent() {
             maxWidth: 430,
           }}
         >
-          Code review khong phai la kiem tra syntax -
-          la kiem tra <strong>xem AI co hieu dung bai toan khong.</strong>
+          Code review không phải là kiểm tra syntax -
+          là kiểm tra <strong>xem AI có hiểu đúng bài toán không.</strong>
         </motion.div>
       </motion.div>
 
@@ -128,11 +128,11 @@ export function Slide05Intent() {
           }}
         >
           {[
-            { label: 'AI biet', value: 'Syntax + patterns' },
-            { label: 'AI biet', value: 'Training data (den 2024)' },
-            { label: 'AI khong biet', value: 'Business domain' },
-            { label: 'AI khong biet', value: 'System constraints' },
-            { label: 'AI khong biet', value: 'User needs' },
+            { label: 'AI biết', value: 'Syntax + patterns' },
+            { label: 'AI biết', value: 'Training data (đến 2024)' },
+            { label: 'AI không biết', value: 'Business domain' },
+            { label: 'AI không biết', value: 'System constraints' },
+            { label: 'AI không biết', value: 'User needs' },
           ].map((row, i) => (
             <motion.div
               key={i}
@@ -149,7 +149,7 @@ export function Slide05Intent() {
                 style={{
                   fontSize: theme.sizes.small,
                   fontWeight: 700,
-                  color: row.label === 'AI biet' ? theme.colors.positive : theme.colors.negative,
+                  color: row.label === 'AI biết' ? theme.colors.positive : theme.colors.negative,
                   minWidth: 100,
                 }}
               >

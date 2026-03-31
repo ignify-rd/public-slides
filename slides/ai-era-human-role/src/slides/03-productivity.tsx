@@ -4,9 +4,9 @@ import { container, fadeInUp } from '../lib/animations'
 
 export function Slide03Productivity() {
   const stats = [
-    { value: '55%', label: 'nhanh hon khi viet code (GitHub study, 2023)' },
-    { value: '74%', label: 'lap trinh vien cam thay it met hon (GitHub survey)' },
-    { value: '2x', label: 'so luong PR merge tren tuan (Stripe AI pilot)' },
+    { value: '55%', label: 'nhanh hơn khi viết code (GitHub study, 2023)' },
+    { value: '74%', label: 'lập trình viên cảm thấy ít mệt hơn (GitHub survey)' },
+    { value: '2x', label: 'số lượng PR merge trên tuần (Stripe AI pilot)' },
   ]
 
   return (
@@ -56,7 +56,7 @@ export function Slide03Productivity() {
             marginBottom: 32,
           }}
         >
-          Nang suat
+          Năng suất
         </motion.div>
 
         <motion.h2
@@ -69,9 +69,9 @@ export function Slide03Productivity() {
             marginBottom: 48,
           }}
         >
-          AI tang toc do lap trinh
+          AI tăng tốc độ lập trình
           <br />
-          <span style={{ color: theme.colors.positive }}>ro rang va co the do luong</span>
+          <span style={{ color: theme.colors.positive }}>rõ ràng và có thể đo lường</span>
         </motion.h2>
 
         <div style={{ display: 'flex', gap: 32 }}>
@@ -129,7 +129,7 @@ export function Slide03Productivity() {
           fontStyle: 'italic',
         }}
       >
-        Nguon: GitHub (2023), Stripe internal report
+        Nguồn: GitHub (2023), Stripe internal report
       </motion.div>
     </div>
   )
