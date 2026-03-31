@@ -56,7 +56,7 @@ export function Slide05Intent() {
           AI không hiểu{' '}
           <span style={{ color: theme.colors.accent }}>ý định</span>
           <br />
-          cua ban
+          của bạn
         </motion.h2>
 
         <motion.p

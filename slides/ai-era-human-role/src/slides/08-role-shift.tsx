@@ -7,17 +7,17 @@ export function Slide08RoleShift() {
     {
       from: 'Author',
       to: 'Reviewer',
-      desc: 'Kiểm tra AI output, phân tích lỗi và edge case',
+      desc: 'Ki\u1ec3m tra AI output, ph\u00e2n t\u00edch l\u1ed7i v\u00e0 edge case',
     },
     {
       from: 'Coder',
       to: 'Architect',
-      desc: 'Thiết kế hệ thống, quyết định phân chia module',
+      desc: 'Thi\u1ebft k\u1ebf h\u1ec7 th\u1ed1ng AI orchestration, quy\u1ebft \u0111\u1ecbnh workflow',
     },
     {
       from: 'Implementer',
-      to: 'Prompt engineer',
-      desc: 'Diễn đạt yêu cầu chính xác để AI sinh ra đúng code',
+      to: 'Context engineer',
+      desc: 'X\u00e2y d\u1ef1ng context: business rules, constraints, intent cho AI',
     },
   ]
 
@@ -65,10 +65,10 @@ export function Slide08RoleShift() {
             letterSpacing: '0.18em',
             color: theme.colors.accent,
             textTransform: 'uppercase',
-            marginBottom: 32,
+            marginBottom: 24,
           }}
         >
-          Vai trò thay đổi
+          Vai tr\u00f2 thay \u0111\u1ed5i
         </motion.div>
 
         <motion.h2
@@ -78,15 +78,28 @@ export function Slide08RoleShift() {
             fontWeight: 800,
             lineHeight: 1.15,
             color: theme.colors.text,
-            marginBottom: 40,
+            marginBottom: 12,
           }}
         >
-          Từ <span style={{ color: theme.colors.textMuted }}>người viết</span>{' '}
+          T\u1eeb{' '}
+          <span style={{ color: theme.colors.textMuted }}>ng\u01b0\u1eddi vi\u1ebft code</span>{' '}
           sang{' '}
-          <span style={{ color: theme.colors.accent }}>người kiến tạo</span>
+          <span style={{ color: theme.colors.accent }}>ng\u01b0\u1eddi ki\u1ebfn t\u1ea1o h\u1ec7 th\u1ed1ng AI</span>
         </motion.h2>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+        <motion.p
+          variants={fadeInUp}
+          style={{
+            fontSize: theme.sizes.small,
+            color: theme.colors.textDim,
+            marginBottom: 28,
+            fontStyle: 'italic',
+          }}
+        >
+          WEF Future of Jobs 2025: 170 tri\u1ec7u vi\u1ec7c l\u00e0m m\u1edbi s\u1ebd xu\u1ea5t hi\u1ec7n, chuy\u1ec3n d\u1ecbch m\u1ea1nh v\u1ec1 AI orchestration v\u00e0 product roles
+        </motion.p>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
           {roles.map((role, i) => (
             <motion.div
               key={role.from}
@@ -100,7 +113,7 @@ export function Slide08RoleShift() {
                 background: 'rgba(255,255,255,0.03)',
                 border: '1px solid rgba(255,255,255,0.08)',
                 borderRadius: 10,
-                padding: '18px 24px',
+                padding: '16px 24px',
               }}
             >
               <span
@@ -115,20 +128,15 @@ export function Slide08RoleShift() {
               >
                 {role.from}
               </span>
-              <span
-                style={{
-                  fontSize: theme.sizes.body,
-                  color: theme.colors.textDim,
-                }}
-              >
-                →
+              <span style={{ fontSize: theme.sizes.body, color: theme.colors.textDim }}>
+                -&gt;
               </span>
               <span
                 style={{
                   fontSize: theme.sizes.body,
                   fontWeight: 700,
                   color: theme.colors.accent,
-                  minWidth: 160,
+                  minWidth: 180,
                 }}
               >
                 {role.to}

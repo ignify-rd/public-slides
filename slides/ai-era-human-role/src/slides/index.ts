@@ -6,7 +6,9 @@ import { Slide05Intent } from './05-intent'
 import { Slide06Sentiment } from './06-sentiment'
 import { Slide07Bottleneck } from './07-bottleneck'
 import { Slide08RoleShift } from './08-role-shift'
+import { Slide12Agents } from './12-agents'
 import { Slide09HumanSkills } from './09-human-skills'
+import { Slide13ProductContext } from './13-product-context'
 import { Slide10MoreWork } from './10-more-work'
 import { Slide11Conclusion } from './11-conclusion'
 
@@ -19,7 +21,9 @@ export const slides = [
   Slide06Sentiment,
   Slide07Bottleneck,
   Slide08RoleShift,
+  Slide12Agents,
   Slide09HumanSkills,
+  Slide13ProductContext,
   Slide10MoreWork,
   Slide11Conclusion,
 ]

@@ -2,27 +2,22 @@ import { motion } from 'framer-motion'
 import { theme } from '../lib/theme'
 import { container, fadeInUp } from '../lib/animations'
 
-export function Slide09HumanSkills() {
+export function Slide13ProductContext() {
   const skills = [
     {
-      icon: '\ud83d\udd27',
-      title: 'AI Orchestration design',
-      desc: 'Thi\u1ebft k\u1ebf h\u1ec7 th\u1ed1ng AI workflow, quy\u1ebft \u0111\u1ecbnh ki\u1ebfn tr\xfac v\xe0 ph\xe2n chia t\xe1c v\u1ee5 cho AI agents.',
+      icon: '\ud83d\udd0d',
+      title: 'Hi\u1ec3u nhu c\u1ea7u business',
+      desc: 'Thu th\u1eadp y\xeau c\u1ea7u kh\xf4ng r\xf5 r\xe0ng, chuy\u1ec3n h\xf3a th\xe0nh context c\xf3 th\u1ec3 th\u1ef1c thi cho AI agents.',
     },
     {
-      icon: '\ud83d\udc1b',
-      title: 'Debug & validate AI output',
-      desc: 'L\u1ed7i t\u1eeb s\u1ef1 k\u1ebft h\u1ee3p h\u1ec7 th\u1ed1ng v\xe0 AI output - kh\xf4ng c\xf3 trong training data, ch\u1ec9 con ng\u01b0\u1eddi nh\u1eadn ra.',
+      icon: '\ud83c\udfd7',
+      title: 'Thi\u1ebft k\u1ebf AI workflow',
+      desc: 'X\xe2y d\u1ef1ng pipeline AI agents, \u0111\u1ecbnh ngh\u0129a input/output v\xe0 constraint cho t\u1eebng b\u01b0\u1edbc.',
     },
     {
-      icon: '\ud83e\udd1d',
-      title: 'Business communication',
-      desc: 'Thu th\u1eadp y\xeau c\u1ea7u m\u01a1 h\u1ed3, chuy\u1ec3n h\xf3a th\xe0nh context ch\xednh x\xe1c cho AI agents.',
-    },
-    {
-      icon: '\ud83c\udfaf',
-      title: 'Product thinking',
-      desc: 'X\xe1c \u0111\u1ecbnh b\xe0i to\xe1n \u0111\xfang, hi\u1ec3u ng\u01b0\u1eddi d\xf9ng cu\u1ed1i, l\xe0m ch\u1ee7 product roadmap - AI kh\xf4ng th\u1ec3 thay th\u1ebf.',
+      icon: '\ud83d\udcac',
+      title: 'Giao ti\u1ebfp ng\u01b0\u1eddi - ng\u01b0\u1eddi',
+      desc: '\u0110\xe2m ph\xe1n, thuy\u1ebft ph\u1ee5c, x\xe2y d\u1ef1ng ni\u1ec1m tin - \u0111i\u1ec1u AI kh\xf4ng th\u1ec3 thay th\u1ebf trong t\u1ed5 ch\u1ee9c.',
     },
   ]
 
@@ -31,7 +26,7 @@ export function Slide09HumanSkills() {
       style={{
         width: '100%',
         height: '100%',
-        background: theme.backgrounds.default,
+        background: theme.backgrounds.alt,
         fontFamily: theme.fonts.family,
         display: 'flex',
         flexDirection: 'column',
@@ -73,63 +68,65 @@ export function Slide09HumanSkills() {
             marginBottom: 24,
           }}
         >
-          Nh\u1eefng g\xec con ng\u01b0\u1eddi ph\u1ea3i n\u1eafm
+          Context Engineering
         </motion.div>
 
         <motion.h2
           variants={fadeInUp}
           style={{
-            fontSize: 'clamp(1.6rem, 3vw, 2.6rem)',
+            fontSize: 'clamp(1.8rem, 3.5vw, 3rem)',
             fontWeight: 800,
+            lineHeight: 1.15,
             color: theme.colors.text,
-            marginBottom: 8,
+            marginBottom: 12,
           }}
         >
-          K\u1ef9 n\u0103ng{' '}
-          <span style={{ color: theme.colors.accent }}>AI kh\xf4ng th\u1ec3 thay th\u1ebf</span>
+          Human role ={' '}
+          <span style={{ color: theme.colors.accent }}>
+            c\u1ea7u n\u1ed1i gi\u1eefa nhu c\u1ea7u th\u1ef1c v\xe0 AI
+          </span>
         </motion.h2>
 
         <motion.p
           variants={fadeInUp}
           style={{
-            fontSize: theme.sizes.small,
-            color: theme.colors.textDim,
-            marginBottom: 28,
-            fontStyle: 'italic',
+            fontSize: theme.sizes.body,
+            color: theme.colors.textMuted,
+            lineHeight: 1.7,
+            maxWidth: 680,
+            marginBottom: 32,
           }}
         >
-          McKinsey (2023): 60-70% c\xf4ng vi\u1ec7c l\u1eadp tr\xecnh s\u1ebd \u0111\u01b0\u1ee3c t\u1ef1 \u0111\u1ed9ng h\xf3a - nh\u01b0ng t\u01b0 duy s\u1ea3n ph\u1ea9m v\xe0 giao ti\u1ebfp v\u1eabn l\xe0 c\u1ee7a con ng\u01b0\u1eddi
+          Con ng\u01b0\u1eddi kh\xf4ng c\xf2n vi\u1ebft code - m\xe0 thi\u1ebft k\u1ebf{' '}
+          <em>h\u1ec7 th\u1ed1ng AI orchestration</em> ph\xf9 h\u1ee3p v\u1edbi nhu c\u1ea7u th\u1ef1c t\u1ebf.
+          Ch\u1ea5t l\u01b0\u1ee3ng context quy\u1ebft \u0111\u1ecbnh ch\u1ea5t l\u01b0\u1ee3ng output c\u1ee7a AI.
         </motion.p>
 
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: 14,
-          }}
-        >
+        <div style={{ display: 'flex', gap: 20 }}>
           {skills.map((skill, i) => (
             <motion.div
               key={skill.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.35 + i * 0.12, duration: 0.5 }}
+              transition={{ delay: 0.35 + i * 0.15, duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
               style={{
+                flex: 1,
                 background: theme.colors.accentDim,
                 border: `1px solid ${theme.colors.borderAccent}`,
                 borderRadius: 12,
-                padding: '18px 20px',
+                padding: '22px 20px',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: 8,
+                gap: 10,
               }}
             >
-              <div style={{ fontSize: '1.4rem' }}>{skill.icon}</div>
+              <div style={{ fontSize: '1.6rem' }}>{skill.icon}</div>
               <div
                 style={{
                   fontSize: theme.sizes.body,
                   fontWeight: 700,
                   color: theme.colors.text,
+                  lineHeight: 1.3,
                 }}
               >
                 {skill.title}
@@ -138,7 +135,7 @@ export function Slide09HumanSkills() {
                 style={{
                   fontSize: theme.sizes.small,
                   color: theme.colors.textMuted,
-                  lineHeight: 1.5,
+                  lineHeight: 1.55,
                 }}
               >
                 {skill.desc}
@@ -146,6 +143,21 @@ export function Slide09HumanSkills() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.5 }}
+          style={{
+            marginTop: 28,
+            textAlign: 'center',
+            fontSize: theme.sizes.body,
+            color: theme.colors.textDim,
+            fontStyle: 'italic',
+          }}
+        >
+          "Context is the new code"
+        </motion.div>
       </motion.div>
     </div>
   )
