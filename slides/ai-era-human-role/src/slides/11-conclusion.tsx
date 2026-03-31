@@ -62,7 +62,7 @@ export function Slide11Conclusion() {
           marginBottom: 40,
         }}
       >
-        Ket luan
+        Kết luận
       </motion.div>
 
       <motion.div
@@ -77,7 +77,7 @@ export function Slide11Conclusion() {
           marginBottom: 16,
         }}
       >
-        Thich nghi,
+        Thích nghi,
       </motion.div>
 
       <motion.div
@@ -91,8 +91,8 @@ export function Slide11Conclusion() {
           marginBottom: 8,
         }}
       >
-        dung{' '}
-        <span style={{ color: theme.colors.negative }}>bien mat.</span>
+        đừng{' '}
+        <span style={{ color: theme.colors.negative }}>biến mất.</span>
       </motion.div>
 
       <motion.div
@@ -107,10 +107,10 @@ export function Slide11Conclusion() {
           lineHeight: 1.7,
         }}
       >
-        AI thay doi cach chung ta lam viec - khong thay chung ta.
+        AI thay đổi cách chúng ta làm việc - không thay chúng ta.
         <br />
-        Nguoi nam vung review, kien truc, va giao tiep
-        se tro nen <strong style={{ color: theme.colors.text }}>gia tri hon</strong>, khong phai it hon.
+        Người nắm vững review, kiến trúc, và giao tiếp
+        sẽ trở nên <strong style={{ color: theme.colors.text }}>giá trị hơn</strong>, không phải ít hơn.
       </motion.div>
 
       <motion.div
@@ -125,7 +125,7 @@ export function Slide11Conclusion() {
           justifyContent: 'center',
         }}
       >
-        {['Hieu AI', 'Kien tao he thong', 'Giao tiep tot', 'Chiu trach nhiem'].map((tag, i) => (
+        {['Hiểu AI', 'Kiến tạo hệ thống', 'Giao tiếp tốt', 'Chịu trách nhiệm'].map((tag, i) => (
           <motion.span
             key={tag}
             initial={{ opacity: 0, scale: 0.9 }}

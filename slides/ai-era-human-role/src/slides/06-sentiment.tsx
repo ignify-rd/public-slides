@@ -61,7 +61,7 @@ export function Slide06Sentiment() {
             marginBottom: 32,
           }}
         >
-          Tin hieu tu cong dong
+          Tín hiệu từ cộng đồng
         </motion.div>
 
         <motion.h2
@@ -74,7 +74,7 @@ export function Slide06Sentiment() {
             marginBottom: 40,
           }}
         >
-          Dev danh nhieu thoi gian hon
+          Dev dành nhiều thời gian hơn
           <br />
           <span style={{ color: theme.colors.accent }}>review AI output</span>
         </motion.h2>
@@ -132,7 +132,7 @@ export function Slide06Sentiment() {
           fontStyle: 'italic',
         }}
       >
-        Nguon: Stack Overflow Dev Survey 2024, Reddit r/ExperiencedDevs
+        Nguồn: Stack Overflow Dev Survey 2024, Reddit r/ExperiencedDevs
       </motion.div>
     </div>
   )

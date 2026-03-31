@@ -50,7 +50,7 @@ export function Slide10MoreWork() {
             marginBottom: 32,
           }}
         >
-          Hieu lam pho bien
+          Hiểu lầm phổ biến
         </motion.div>
 
         <motion.h2
@@ -63,8 +63,8 @@ export function Slide10MoreWork() {
             marginBottom: 32,
           }}
         >
-          AI tang output -{' '}
-          <span style={{ color: theme.colors.warning }}>trach nhiem khong giam</span>
+          AI tăng output -{' '}
+          <span style={{ color: theme.colors.warning }}>trách nhiệm không giảm</span>
         </motion.h2>
 
         <div style={{ display: 'flex', gap: 32 }}>
@@ -82,13 +82,13 @@ export function Slide10MoreWork() {
                 letterSpacing: '0.1em',
               }}
             >
-              Tang
+              Tăng
             </div>
             {[
-              'So dong code duoc tao ra',
-              'So feature duoc deliver',
-              'So PR duoc mo',
-              'So edge case tiềm an',
+              'Số dòng code được tạo ra',
+              'Số feature được deliver',
+              'Số PR được mở',
+              'Số edge case tiềm ẩn',
             ].map((item, i) => (
               <motion.div
                 key={item}
@@ -151,13 +151,13 @@ export function Slide10MoreWork() {
                 letterSpacing: '0.1em',
               }}
             >
-              Khong thay doi
+              Không thay đổi
             </div>
             {[
-              'Trach nhiem voi bug production',
-              'Yeu cau khi on-call',
-              'Security va compliance',
-              'Kỳ vong tu stakeholder',
+              'Trách nhiệm với bug production',
+              'Yêu cầu khi on-call',
+              'Security và compliance',
+              'Kỳ vọng từ stakeholder',
             ].map((item, i) => (
               <motion.div
                 key={item}

@@ -7,22 +7,22 @@ export function Slide09HumanSkills() {
     {
       icon: '🏗',
       title: 'System design',
-      desc: 'Quyet dinh kien truc, trade-off, scalability - AI chỉ co biet pattern.',
+      desc: 'Quyết định kiến trúc, trade-off, scalability - AI chỉ có biết pattern.',
     },
     {
       icon: '🐛',
-      title: 'Debug loi phuc tap',
-      desc: 'Loi xay ra tu su ket hop cua nhieu he thong, khong co trong training data.',
+      title: 'Debug lỗi phức tạp',
+      desc: 'Lỗi xảy ra từ sự kết hợp của nhiều hệ thống, không có trong training data.',
     },
     {
       icon: '🤝',
-      title: 'Giao tiep voi stakeholder',
-      desc: 'Hieu yeu cau mo ho, dam phan scope, dieu phoi giua team va khach hang.',
+      title: 'Giao tiếp với stakeholder',
+      desc: 'Hiểu yêu cầu mơ hồ, đàm phán scope, điều phối giữa team và khách hàng.',
     },
     {
       icon: '⚖',
-      title: 'Quyet dinh dao duc / rui ro',
-      desc: 'Chon giai phap phu hop voi boi canh to chuc, phap ly, nguoi dung.',
+      title: 'Quyết định đạo đức / rủi ro',
+      desc: 'Chọn giải pháp phù hợp với bối cảnh tổ chức, pháp lý, người dùng.',
     },
   ]
 
@@ -73,7 +73,7 @@ export function Slide09HumanSkills() {
             marginBottom: 24,
           }}
         >
-          Nhung gi van can con nguoi
+          Những gì vẫn cần con người
         </motion.div>
 
         <motion.h2
@@ -85,7 +85,7 @@ export function Slide09HumanSkills() {
             marginBottom: 32,
           }}
         >
-          AI chua the thay the duoc
+          AI chưa thể thay thế được
         </motion.h2>
 
         <div

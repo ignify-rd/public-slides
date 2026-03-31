@@ -51,7 +51,7 @@ export function Slide07Bottleneck() {
             marginBottom: 40,
           }}
         >
-          Bottleneck moi
+          Bottleneck mới
         </motion.div>
 
         <motion.div
@@ -64,9 +64,9 @@ export function Slide07Bottleneck() {
             marginBottom: 24,
           }}
         >
-          Doc va kiem tra AI code
+          Đọc và kiểm tra AI code
           <br />
-          <span style={{ color: theme.colors.warning }}>mat thoi gian hon la viet.</span>
+          <span style={{ color: theme.colors.warning }}>mất thời gian hơn là viết.</span>
         </motion.div>
 
         <motion.div
@@ -79,16 +79,16 @@ export function Slide07Bottleneck() {
             margin: '0 auto 40px',
           }}
         >
-          Khi AI tao ra 10x nhieu code hon, khong phai la "review nhanh hon" -
-          ma la review nhieu hon, sau hon. Developer khong chet vi viet code,
-          ma chet vi khong du thoi gian kiem tra.
+          Khi AI tạo ra 10x nhiều code hơn, không phải là "review nhanh hơn" -
+          mà là review nhiều hơn, sâu hơn. Developer không chết vì viết code,
+          mà chết vì không đủ thời gian kiểm tra.
         </motion.div>
 
         {/* Before / After */}
         <div style={{ display: 'flex', gap: 24, justifyContent: 'center' }}>
           {[
-            { label: 'Truoc AI', value: 'Viet > Review', color: theme.colors.textMuted },
-            { label: 'Sau AI', value: 'Review > Viet', color: theme.colors.warning },
+            { label: 'Trước AI', value: 'Viết > Review', color: theme.colors.textMuted },
+            { label: 'Sau AI', value: 'Review > Viết', color: theme.colors.warning },
           ].map((item) => (
             <motion.div
               key={item.label}

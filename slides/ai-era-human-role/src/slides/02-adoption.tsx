@@ -69,9 +69,9 @@ export function Slide02Adoption() {
             marginBottom: 32,
           }}
         >
-          46% code tren GitHub
+          46% code trên GitHub
           <br />
-          <span style={{ color: theme.colors.accent }}>duoc viet boi AI</span>
+          <span style={{ color: theme.colors.accent }}>được viết bởi AI</span>
         </motion.h2>
 
         <motion.p
@@ -84,8 +84,8 @@ export function Slide02Adoption() {
             marginBottom: 24,
           }}
         >
-          GitHub Octoverse 2023: trong so code duoc accept qua Copilot,
-          gan mot nua la do AI sinh ra. Ty le nay dang tang nhanh.
+          GitHub Octoverse 2023: trong số code được accept qua Copilot,
+          gần một nửa là do AI sinh ra. Tỷ lệ này đang tăng nhanh.
         </motion.p>
 
         <motion.div
@@ -96,7 +96,7 @@ export function Slide02Adoption() {
             fontStyle: 'italic',
           }}
         >
-          Nguon: GitHub Octoverse 2023 Report
+          Nguồn: GitHub Octoverse 2023 Report
         </motion.div>
       </motion.div>
 
@@ -139,7 +139,7 @@ export function Slide02Adoption() {
               maxWidth: 200,
             }}
           >
-            code duoc sinh boi AI (GitHub Copilot)
+            code được sinh bởi AI (GitHub Copilot)
           </div>
         </motion.div>
       </div>

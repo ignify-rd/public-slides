@@ -83,9 +83,9 @@ export function Slide01Title() {
             marginBottom: 32,
           }}
         >
-          Con nguoi trong
+          Con người trong
           <br />
-          <span style={{ color: theme.colors.accent }}>ky nguyen AI</span>
+          <span style={{ color: theme.colors.accent }}>kỷ nguyên AI</span>
         </motion.h1>
 
         <motion.div
@@ -107,7 +107,7 @@ export function Slide01Title() {
             maxWidth: 420,
           }}
         >
-          AI viet code ngay cang nhieu. Vai tro cua lap trinh vien thay doi nhu the nao?
+          AI viết code ngày càng nhiều. Vai trò của lập trình viên thay đổi như thế nào?
         </motion.p>
       </motion.div>
 

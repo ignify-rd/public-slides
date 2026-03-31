@@ -6,15 +6,15 @@ export function Slide04But() {
   const issues = [
     {
       title: 'Hallucination',
-      desc: 'AI bịa API không ton tai. Stanford: 52% Copilot suggestions co loi bao mat tiềm ẩn.',
+      desc: 'AI bịa API không tồn tại. Stanford: 52% Copilot suggestions có lỗi bảo mật tiềm ẩn.',
     },
     {
       title: 'Wrong context',
-      desc: 'AI không biet business logic, lich su thay doi, hay constraint cua he thong.',
+      desc: 'AI không biết business logic, lịch sử thay đổi, hay constraint của hệ thống.',
     },
     {
       title: 'Cascading bugs',
-      desc: 'Bug do AI tao ra kho debug hon - dev khong hieu code minh merge.',
+      desc: 'Bug do AI tạo ra khó debug hơn - dev không hiểu code mình merge.',
     },
   ]
 
@@ -64,7 +64,7 @@ export function Slide04But() {
             marginBottom: 16,
           }}
         >
-          Nhung...
+          Nhưng...
         </motion.div>
 
         <motion.h2
@@ -76,7 +76,7 @@ export function Slide04But() {
             marginBottom: 40,
           }}
         >
-          Nang suat cao hon khong co nghia la it loi hon.
+          Năng suất cao hơn không có nghĩa là ít lỗi hơn.
         </motion.h2>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
@@ -145,7 +145,7 @@ export function Slide04But() {
           fontStyle: 'italic',
         }}
       >
-        Nguon: Stanford HAI (2023) - "Do GitHub Copilot introduce bugs?"
+        Nguồn: Stanford HAI (2023) - "Do GitHub Copilot introduce bugs?"
       </motion.div>
     </div>
   )
