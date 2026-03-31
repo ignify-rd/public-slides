@@ -62,7 +62,7 @@ export function Slide11Conclusion() {
           marginBottom: 40,
         }}
       >
-        Kết luận
+        K\u1ebft lu\u1eadn
       </motion.div>
 
       <motion.div
@@ -77,7 +77,7 @@ export function Slide11Conclusion() {
           marginBottom: 16,
         }}
       >
-        Thích nghi,
+        Th\xedch nghi,
       </motion.div>
 
       <motion.div
@@ -91,8 +91,8 @@ export function Slide11Conclusion() {
           marginBottom: 8,
         }}
       >
-        đừng{' '}
-        <span style={{ color: theme.colors.negative }}>biến mất.</span>
+        \u0111\u1eebng{' '}
+        <span style={{ color: theme.colors.negative }}>bi\u1ebfn m\u1ea5t.</span>
       </motion.div>
 
       <motion.div
@@ -100,17 +100,19 @@ export function Slide11Conclusion() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.65, duration: 0.5 }}
         style={{
-          marginTop: 48,
+          marginTop: 40,
           fontSize: theme.sizes.body,
           color: theme.colors.textMuted,
-          maxWidth: 580,
+          maxWidth: 620,
           lineHeight: 1.7,
         }}
       >
-        AI thay đổi cách chúng ta làm việc - không thay chúng ta.
-        <br />
-        Người nắm vững review, kiến trúc, và giao tiếp
-        sẽ trở nên <strong style={{ color: theme.colors.text }}>giá trị hơn</strong>, không phải ít hơn.
+        Vai tr\xf2 dev thu\u1ea7n t\xfay s\u1ebd d\u1ea7n bi\u1ebfn m\u1ea5t. Ai kh\xf4ng n\u1eafm t\u01b0 duy s\u1ea3n ph\u1ea9m,
+        context engineering, v\xe0 giao ti\u1ebfp s\u1ebd b\u1ecb thay th\u1ebf -{' '}
+        <strong style={{ color: theme.colors.text }}>
+          kh\xf4ng ph\u1ea3i b\u1edfi AI, m\xe0 b\u1edfi developer kh\xe1c
+        </strong>{' '}
+        l\xe0m vi\u1ec7c t\u1ed1t h\u01a1n v\u1edbi AI.
       </motion.div>
 
       <motion.div
@@ -118,14 +120,19 @@ export function Slide11Conclusion() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.5 }}
         style={{
-          marginTop: 48,
+          marginTop: 40,
           display: 'flex',
-          gap: 16,
+          gap: 14,
           flexWrap: 'wrap',
           justifyContent: 'center',
         }}
       >
-        {['Hiểu AI', 'Kiến tạo hệ thống', 'Giao tiếp tốt', 'Chịu trách nhiệm'].map((tag, i) => (
+        {[
+          'Context engineering',
+          'T\u01b0 duy s\u1ea3n ph\u1ea9m',
+          'AI orchestration',
+          'Giao ti\u1ebfp',
+        ].map((tag, i) => (
           <motion.span
             key={tag}
             initial={{ opacity: 0, scale: 0.9 }}
