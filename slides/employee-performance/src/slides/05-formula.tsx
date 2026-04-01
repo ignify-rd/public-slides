@@ -7,7 +7,7 @@ import { createContainerVariants, createItemVariants } from '../lib/animations'
 const efficiencyTex = String.raw`Efficiency=\min\left(\frac{Est_{hours}}{logged_{hours}},\;eff_{threshold}\right)`
 const scoreTex = String.raw`\begin{aligned}
 Score &= 100\times\Bigg(
-\omega_{SP}\times\frac{SP}{\max(SP)}
+\omega_{SP}\times\frac{SP}{\max(SP)} + 
  \omega_{eff}\times\frac{Efficiency}{\max(Efficiency)} \\
 &\quad + \omega_{power}\times\frac{\min(power_{coeff})}{power_{coeff}}
 \Bigg) \\
