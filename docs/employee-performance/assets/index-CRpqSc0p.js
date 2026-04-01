@@ -283,7 +283,7 @@ logged_{hours} &< 0.5\times median(logged_{hours}) \\
 &\Rightarrow Score\times=0.7
 \end{aligned}`,purpose:`Hiểu đơn giản: nếu log giờ quá thấp so với mặt bằng tháng thì hệ thống giảm điểm thêm một bước.`,meaning:`Mục đích là ngăn trường hợp điểm cao nhưng dữ liệu hoạt động thực tế lại thấp bất thường.`}],l_=[{month:`T11`,score:77},{month:`T12`,score:79},{month:`T1`,score:81},{month:`T2`,score:82},{month:`T3`,score:84}],u_=[{band:`A (>=90)`,people:14},{band:`B (80-89)`,people:26},{band:`C (70-79)`,people:11},{band:`D (<70)`,people:5}],d_=[{metric:`Story Points`,value:88},{metric:`Efficiency`,value:84},{metric:`Missed Factor`,value:90},{metric:`Power Coeff`,value:86}],f_={employee:`Trần Quốc Việt`,role:`Fullstack Developer`,storyPoints:42,maxStoryPoints:56,estHours:160,loggedHours:152,missedHours:12,efficiency:1.05,efficiencyMax:1.3,powerCoeff:1.1,minPowerCoeff:.9,weightSp:.3,weightEfficiency:.35,weightPower:.35},p_=String.raw`Efficiency=\min\left(\frac{Est_{hours}}{logged_{hours}},\;eff_{threshold}\right)`,m_=String.raw`\begin{aligned}
 Score &= 100\times\Bigg(
-\omega_{SP}\times\frac{SP}{\max(SP)}
+\omega_{SP}\times\frac{SP}{\max(SP)} + 
  \omega_{eff}\times\frac{Efficiency}{\max(Efficiency)} \\
 &\quad + \omega_{power}\times\frac{\min(power_{coeff})}{power_{coeff}}
 \Bigg) \\
