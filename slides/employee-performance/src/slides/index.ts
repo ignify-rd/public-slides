@@ -1,9 +1,9 @@
 ﻿import type { SlideDefinition } from '../types'
 import { IntroSlide } from './01-intro'
-import { ProblemSlide } from './02-problem'
 import { DiscussionSlide } from './03-discussion'
 import { FeaturesSlide } from './04-features'
 import { FormulaSlide } from './05-formula'
+import { FormulaPurposeSlide } from './06-purpose'
 import { MetricsSlide } from './06-metrics'
 import { ExampleSlide } from './07-example'
 import { RulesSlide } from './08-rules'
@@ -16,11 +16,11 @@ import { ClosingSlide } from './14-closing'
 
 export const slides: SlideDefinition[] = [
   { id: 'intro', title: 'Cách tính điểm Performance hàng tháng', Component: IntroSlide },
-  { id: 'problem', title: 'Điểm chỉ có ý nghĩa khi mọi người hiểu cách tính', Component: ProblemSlide },
   { id: 'discussion', title: '3 điều nhân viên cần nắm rõ', Component: DiscussionSlide },
   { id: 'features', title: '4 phần quan trọng nhân viên cần dùng', Component: FeaturesSlide },
-  { id: 'formula', title: 'Công thức tính điểm (dạng toán học)', Component: FormulaSlide },
-  { id: 'metrics', title: 'Mỗi ký hiệu trong công thức nghĩa là gì?', Component: MetricsSlide },
+  { id: 'formula', title: 'Công thức tính điểm', Component: FormulaSlide },
+  { id: 'formula-purpose', title: 'Mỗi phép tính đang giải quyết vấn đề gì?', steps: 2, Component: FormulaPurposeSlide },
+  { id: 'metrics', title: 'Ký hiệu trong công thức', steps: 2, Component: MetricsSlide },
   { id: 'example', title: 'Thay số trực tiếp vào công thức', steps: 3, Component: ExampleSlide },
   { id: 'rules', title: '4 quy tắc điều chỉnh điểm cần nhớ', Component: RulesSlide },
   { id: 'trend', title: 'Xu hướng điểm trung bình đang tăng', Component: TrendChartSlide },

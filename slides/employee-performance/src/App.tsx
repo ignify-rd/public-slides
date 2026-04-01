@@ -10,8 +10,10 @@ const STAGE_HEIGHT = 720
 const SKIP_NAV_SELECTOR = '[data-interactive],button,a,input,textarea,select,label'
 
 function App() {
-  const [slideIndex, setSlideIndex] = useState(0)
-  const [stepIndex, setStepIndex] = useState(0)
+  const [{ slideIndex, stepIndex }, setPosition] = useState({
+    slideIndex: 0,
+    stepIndex: 0,
+  })
   const scale = useSlideScale(STAGE_WIDTH, STAGE_HEIGHT, 56)
   const prefersReducedMotion = useReducedMotion()
 
@@ -23,38 +25,49 @@ function App() {
   )
 
   const goNext = useCallback(() => {
-    setStepIndex((currentStep) => {
-      if (currentStep < totalSteps - 1) {
-        return currentStep + 1
+    setPosition((current) => {
+      const currentSlide = slides[current.slideIndex]
+      const currentSteps = currentSlide.steps ?? 1
+
+      if (current.stepIndex < currentSteps - 1) {
+        return {
+          slideIndex: current.slideIndex,
+          stepIndex: current.stepIndex + 1,
+        }
       }
 
-      setSlideIndex((currentSlide) => {
-        if (currentSlide >= slides.length - 1) {
-          return currentSlide
-        }
-        return currentSlide + 1
-      })
+      if (current.slideIndex >= slides.length - 1) {
+        return current
+      }
 
-      return 0
+      return {
+        slideIndex: current.slideIndex + 1,
+        stepIndex: 0,
+      }
     })
-  }, [totalSteps])
+  }, [])
 
   const goPrevious = useCallback(() => {
-    setStepIndex((currentStep) => {
-      if (currentStep > 0) {
-        return currentStep - 1
+    setPosition((current) => {
+      if (current.stepIndex > 0) {
+        return {
+          slideIndex: current.slideIndex,
+          stepIndex: current.stepIndex - 1,
+        }
       }
 
-      if (slideIndex === 0) {
-        return 0
+      if (current.slideIndex === 0) {
+        return current
       }
 
-      const previousSlide = slides[slideIndex - 1]
+      const previousSlide = slides[current.slideIndex - 1]
       const previousStepCount = previousSlide.steps ?? 1
-      setSlideIndex(slideIndex - 1)
-      return previousStepCount - 1
+      return {
+        slideIndex: current.slideIndex - 1,
+        stepIndex: previousStepCount - 1,
+      }
     })
-  }, [slideIndex])
+  }, [])
 
   const onDeckClick = useCallback(
     (event: MouseEvent<HTMLDivElement>) => {
@@ -118,7 +131,6 @@ function App() {
             <ActiveComponent step={stepIndex} totalSteps={totalSteps} />
           </motion.div>
         </AnimatePresence>
-        <p className="deck-mark">Employee Performance • Monthly Training</p>
       </div>
 
       <div className="deck-progress" role="presentation">

@@ -263,6 +263,26 @@ button {
   color: var(--fg-primary);
 }
 
+.math-panel-score .katex {
+  font-size: clamp(0.86rem, 1.12vw, 1.12rem);
+}
+
+.math-panel-score .katex-display {
+  overflow: visible;
+}
+
+.math-panel-purpose .katex {
+  font-size: clamp(0.78rem, 0.98vw, 0.98rem);
+}
+
+.math-panel-example .katex {
+  font-size: clamp(0.78rem, 0.98vw, 0.98rem);
+}
+
+.math-panel-example .katex-display {
+  overflow: visible;
+}
+
 .math-inline .katex {
   font-size: clamp(0.9rem, 1.1vw, 1.1rem);
 }

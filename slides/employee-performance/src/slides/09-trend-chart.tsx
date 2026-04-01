@@ -22,7 +22,7 @@ export function TrendChartSlide() {
     >
       <motion.div variants={createContainerVariants(reducedMotion)} initial="hidden" animate="visible" style={{ height: '100%' }}>
         <motion.div variants={createItemVariants(reducedMotion)} style={{ height: '100%' }}>
-          <ChartFrame title="Điểm trung bình theo tháng" note="Nguồn dữ liệu: Dashboard employee_performance">
+          <ChartFrame title="Điểm trung bình theo tháng" note="Nguồn dữ liệu: Dashboard Employee Performance treen Odoo">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={monthlyTrend} margin={{ top: 10, right: 24, left: 6, bottom: 8 }}>
                 <CartesianGrid stroke={theme.colors.grid} strokeDasharray="4 6" />
