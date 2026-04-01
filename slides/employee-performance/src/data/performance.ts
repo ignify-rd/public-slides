@@ -47,6 +47,24 @@ export const formulaValueDetails = [
     meaning: 'Nếu log quá ít so với mặt bằng chung của tháng, điểm chỉ còn 70%.',
     source: 'Rule kiểm tra hoạt động thấp: Score *= 0.7.',
   },
+  {
+    code: 'ω_SP',
+    range: '>= 0',
+    meaning: 'Trọng số của phần SP trong điểm tổng. Số này càng lớn thì SP ảnh hưởng càng nhiều.',
+    source: 'Lấy từ Settings > Weight: Story Points, mặc định 0.30.',
+  },
+  {
+    code: 'ω_eff',
+    range: '>= 0',
+    meaning: 'Trọng số của phần Efficiency trong điểm tổng. Số này càng lớn thì Efficiency ảnh hưởng càng nhiều.',
+    source: 'Lấy từ Settings > Weight: Efficiency, mặc định 0.35.',
+  },
+  {
+    code: 'ω_power',
+    range: '>= 0',
+    meaning: 'Trọng số của phần điều chỉnh theo level/vị trí. Số này càng lớn thì power_coeff ảnh hưởng càng nhiều.',
+    source: 'Lấy từ Settings > Weight: Power Level, mặc định 0.35.',
+  },
 ]
 
 export const formulaPurposeDetails = [

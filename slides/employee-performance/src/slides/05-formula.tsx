@@ -53,6 +53,9 @@ export function FormulaSlide() {
             <p className="text-small">Hiểu đơn giản: log giờ quá thấp so với mặt bằng tháng thì điểm bị giảm còn 70%.</p>
           </div>
           <div style={{ display: 'grid', gap: '8px' }}>
+            <p className="text-small">
+              <strong>ω</strong> là trọng số. Số nào lớn hơn thì phần đó ảnh hưởng nhiều hơn tới điểm tổng.
+            </p>
             {scoreWeights.map((item) => (
               <div key={item.label} style={{ display: 'grid', gap: '2px' }}>
                 <MathBlock tex={`${item.label}=${item.weight.toFixed(2)}`} className="math-inline" />

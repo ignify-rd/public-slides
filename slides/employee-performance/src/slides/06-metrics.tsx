@@ -6,7 +6,12 @@ import type { SlideProps } from '../types'
 
 export function MetricsSlide({ step, totalSteps }: SlideProps) {
   const reducedMotion = Boolean(useReducedMotion())
-  const visibleItems = step === 0 ? formulaValueDetails.slice(0, 4) : formulaValueDetails.slice(4)
+  const visibleItems =
+    step === 0
+      ? formulaValueDetails.slice(0, 4)
+      : step === 1
+        ? formulaValueDetails.slice(4, 7)
+        : formulaValueDetails.slice(7)
   const pageLabel = `Phần ${step + 1}/${totalSteps}: chỉ cần hiểu mỗi biến đang đại diện cho dữ liệu nào của mình`
 
   return (
