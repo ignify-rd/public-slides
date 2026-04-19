@@ -1,25 +1,79 @@
+import { theme } from '../lib/theme'
+
 export function SlidePart4Conflict() {
   return (
     <div
       style={{
         width: '100%',
         height: '100%',
+        background: theme.backgrounds.default,
+        fontFamily: theme.fonts.family,
         display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        background: '#000',
+        flexDirection: 'column',
+        position: 'relative',
         overflow: 'hidden',
       }}
     >
-      <img
-        src="https://drive.google.com/uc?export=view&id=19t1Y1SfhEQG5eBYC5Tgk27hbBkHG31te"
-        alt="Xung đột dữ liệu"
+      {/* Dot pattern */}
+      <div
         style={{
-          width: '100%',
-          height: '100%',
-          objectFit: 'contain',
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: theme.backgrounds.dots,
+          backgroundSize: '24px 24px',
+          opacity: 0.5,
         }}
       />
+
+      {/* Top accent bar */}
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          height: 4,
+          background: `linear-gradient(90deg, ${theme.colors.accent} 0%, ${theme.colors.accentAlt} 100%)`,
+          zIndex: 2,
+        }}
+      />
+
+      {/* Title */}
+      <div
+        style={{
+          position: 'relative',
+          zIndex: 1,
+          padding: '32px 60px 16px',
+          color: theme.colors.text,
+          fontSize: theme.sizes.subheading,
+          fontWeight: 700,
+        }}
+      >
+        Xung đột dữ liệu
+      </div>
+
+      {/* Image */}
+      <div
+        style={{
+          position: 'relative',
+          zIndex: 1,
+          flex: 1,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '0 60px 32px',
+        }}
+      >
+        <img
+          src="/public-slides/data-fabric-de-hieu/images/conflict.png"
+          alt="Xung đột dữ liệu"
+          style={{
+            maxWidth: '100%',
+            maxHeight: '100%',
+            objectFit: 'contain',
+          }}
+        />
+      </div>
     </div>
   )
 }
