@@ -1,7 +1,4 @@
 import { SlideWrapper } from '../components/SlideWrapper'
-import { EvolutionDiagram } from '../components/EvolutionDiagram'
-
-const DIAGRAM_INDEX = 4
 
 function SlideReveal01() {
   return (
@@ -16,9 +13,6 @@ function SlideReveal01() {
         <p className="text-lg text-gray-500 max-w-xl leading-relaxed">
           Chatbot, Agent, Personal Assistant, Orchestration - tất cả đang hội tụ về một định nghĩa mới.
         </p>
-      </div>
-      <div className="mt-4">
-        <EvolutionDiagram activeIndex={DIAGRAM_INDEX} />
       </div>
     </SlideWrapper>
   )
@@ -50,9 +44,6 @@ function SlideReveal02() {
           ))}
         </div>
       </div>
-      <div className="mt-6">
-        <EvolutionDiagram activeIndex={DIAGRAM_INDEX} />
-      </div>
     </SlideWrapper>
   )
 }
@@ -65,37 +56,30 @@ function SlideReveal03() {
     { icon: '🌙', title: 'Làm việc 24/7', body: 'AI không nghỉ lễ, không có vùng giờ - giao việc lúc nào cũng được' },
   ]
   return (
-    <SlideWrapper>
-      <div className="mb-3">
-        <span className="inline-block text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded">
-          Lợi ích thực tế
-        </span>
-      </div>
-      <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
-        Khi AI là "đồng nghiệp siêu cấp" của bạn
-      </h2>
-      <div className="flex gap-6 flex-1 min-h-0">
+    <div className="w-full h-full bg-gray-900 text-white flex flex-col animate-fade-in relative overflow-hidden">
+      <img
+        src={`${import.meta.env.BASE_URL}assets/super-colleague.gif`}
+        alt="AI đồng nghiệp siêu cấp"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-black bg-opacity-60" />
+      <div className="relative z-10 flex flex-col h-full p-12">
+        <div className="mb-6">
+          <h2 className="text-3xl font-extrabold text-white mb-2">
+            Khi AI là "đồng nghiệp siêu cấp" của bạn
+          </h2>
+        </div>
         <div className="flex-1 grid grid-cols-2 gap-4">
           {benefits.map((b) => (
-            <div key={b.title} className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
+            <div key={b.title} className="bg-white bg-opacity-10 border border-white border-opacity-20 backdrop-blur-sm rounded-xl p-4">
               <span className="text-2xl mb-2 block">{b.icon}</span>
-              <p className="font-bold text-gray-900 text-sm mb-1">{b.title}</p>
-              <p className="text-xs text-gray-600 leading-relaxed">{b.body}</p>
+              <p className="font-bold text-white text-sm mb-1">{b.title}</p>
+              <p className="text-xs text-gray-300 leading-relaxed">{b.body}</p>
             </div>
           ))}
         </div>
-        <div className="flex-none w-52 flex items-center justify-center">
-          <img
-            src={`${import.meta.env.BASE_URL}assets/super-colleague.gif`}
-            alt="AI đồng nghiệp siêu cấp"
-            className="max-w-full max-h-full object-contain rounded-xl shadow"
-          />
-        </div>
       </div>
-      <div className="mt-6">
-        <EvolutionDiagram activeIndex={DIAGRAM_INDEX} />
-      </div>
-    </SlideWrapper>
+    </div>
   )
 }
 

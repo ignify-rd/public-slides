@@ -1,16 +1,8 @@
 import { SlideWrapper } from '../components/SlideWrapper'
-import { EvolutionDiagram } from '../components/EvolutionDiagram'
-
-const DIAGRAM_INDEX = 2
 
 function SlidePersonalAssistant01() {
   return (
     <SlideWrapper>
-      <div className="mb-3">
-        <span className="inline-block text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded">
-          Giai đoạn 3
-        </span>
-      </div>
       <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Personal AI Assistant</h2>
       <p className="text-base text-gray-600 leading-relaxed mb-6 max-w-2xl">
         Personal AI Assistant kết hợp AI Agent với ngữ cảnh cá nhân hóa sâu: hiểu lịch sử làm việc,
@@ -42,9 +34,6 @@ function SlidePersonalAssistant01() {
           </p>
         </div>
       </div>
-      <div className="mt-6">
-        <EvolutionDiagram activeIndex={DIAGRAM_INDEX} />
-      </div>
     </SlideWrapper>
   )
 }
@@ -60,11 +49,6 @@ function SlidePersonalAssistant02() {
   ]
   return (
     <SlideWrapper>
-      <div className="mb-3">
-        <span className="inline-block text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded">
-          Giai đoạn 3 - Tính năng
-        </span>
-      </div>
       <h2 className="text-3xl font-extrabold text-gray-900 mb-6">
         Personal AI Assistant - Tích hợp toàn diện
       </h2>
@@ -83,9 +67,6 @@ function SlidePersonalAssistant02() {
             Nhân viên tiết kiệm trung bình 2-3 giờ/ngày cho các tác vụ quản lý thông tin và giao tiếp thường ngày.
           </p>
         </div>
-      </div>
-      <div className="mt-6">
-        <EvolutionDiagram activeIndex={DIAGRAM_INDEX} />
       </div>
     </SlideWrapper>
   )
@@ -132,9 +113,6 @@ function SlidePersonalAssistant03() {
           </div>
         ))}
       </div>
-      <div className="mt-6">
-        <EvolutionDiagram activeIndex={DIAGRAM_INDEX} />
-      </div>
     </SlideWrapper>
   )
 }
@@ -142,43 +120,13 @@ function SlidePersonalAssistant03() {
 function SlidePersonalAssistant04() {
   return (
     <SlideWrapper>
-      <div className="mb-3">
-        <span className="inline-block text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded">
-          Case Study - Meta
-        </span>
-      </div>
-      <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
-        Meta - AI Assistant cho 60,000 kỹ sư
-      </h2>
-      <div className="flex gap-6 flex-1 min-h-0">
-        <div className="flex-none w-72 flex items-center justify-center">
-          <img
-            src={`${import.meta.env.BASE_URL}assets/meta-case.png`}
-            alt="Meta AI case study"
-            className="max-w-full max-h-full object-contain rounded-xl shadow"
-          />
-        </div>
-        <div className="flex-1 flex flex-col gap-4">
-          <div className="bg-gray-100 rounded-xl p-4">
-            <p className="text-sm text-gray-700 leading-relaxed">
-              Meta triển khai AI coding assistant tích hợp sâu vào workflow của toàn bộ đội kỹ sư,
-              với khả năng hiểu codebase nội bộ hàng tỷ dòng code.
-            </p>
-          </div>
-          {[
-            { metric: '50%', label: 'code được AI đề xuất và chấp nhận' },
-            { metric: '3x', label: 'tăng tốc trong review PR' },
-            { metric: '60K', label: 'kỹ sư sử dụng mỗi ngày' },
-          ].map((m) => (
-            <div key={m.metric} className="flex items-center gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
-              <span className="text-3xl font-extrabold text-blue-600 flex-none">{m.metric}</span>
-              <span className="text-sm text-gray-700">{m.label}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="mt-6">
-        <EvolutionDiagram activeIndex={DIAGRAM_INDEX} />
+      <h2 className="text-3xl font-extrabold text-gray-900 mb-6">Meta & AI</h2>
+      <div className="flex-1 flex items-center justify-center">
+        <img
+          src={`${import.meta.env.BASE_URL}assets/meta-case.png`}
+          alt="Meta AI case study"
+          className="max-h-full max-w-full object-contain"
+        />
       </div>
     </SlideWrapper>
   )

@@ -8,7 +8,7 @@ export function Slide01Title() {
       <div className="flex h-full">
         <div className="flex flex-col justify-center pl-6 flex-1">
           <p className="text-xs font-bold tracking-widest text-blue-600 uppercase mb-8">
-            Ignify Research Day - RD-1106
+            AI Orchestration in corporate settings
           </p>
           <h1 className="text-5xl font-extrabold text-gray-900 leading-tight mb-6">
             Điều phối AI
