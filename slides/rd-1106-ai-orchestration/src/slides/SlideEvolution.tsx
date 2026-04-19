@@ -64,10 +64,10 @@ export function SlideEvolution({ highlightedStage }: SlideEvolutionProps) {
         Mỗi bước tiến mở ra khả năng mới - từ trả lời câu hỏi đơn giản đến điều phối hàng trăm tác nhân AI làm việc cùng nhau.
       </p>
       <div className="flex gap-3 flex-1 items-stretch">
-        {STAGE_CARDS.map((stage, i) => {
+        {STAGE_CARDS.flatMap((stage, i) => {
           const isHighlighted = hasHighlight && i === highlightedStage
           const isDimmed = hasHighlight && !isHighlighted
-          return (
+          const card = (
             <div
               key={stage.label}
               className={`flex-1 flex flex-col items-center justify-center rounded-2xl p-5 border-2 transition-all duration-200
@@ -88,6 +88,10 @@ export function SlideEvolution({ highlightedStage }: SlideEvolutionProps) {
               </p>
             </div>
           )
+          if (i < STAGE_CARDS.length - 1) {
+            return [card, <span key={`arrow-${i}`} className="text-2xl text-gray-400 self-center flex-none">→</span>]
+          }
+          return [card]
         })}
       </div>
     </SlideWrapper>
