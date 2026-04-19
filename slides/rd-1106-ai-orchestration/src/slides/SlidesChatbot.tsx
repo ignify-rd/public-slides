@@ -6,7 +6,7 @@ function SlideChatbot01() {
       <img
         src={`${import.meta.env.BASE_URL}assets/chatbot.png`}
         alt="Chatbot minh hoa"
-        className="absolute inset-0 w-full h-full object-cover opacity-15"
+        className="absolute bottom-4 right-4 w-1/4 rounded-lg shadow-lg"
       />
       <div className="relative z-10 flex flex-col flex-1 min-h-0">
         <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Hình thái đầu tiên của LLM - AI</h2>
