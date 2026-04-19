@@ -9,26 +9,26 @@ function SlideAIAgent01() {
         className="absolute bottom-4 right-4 w-1/4 rounded-lg shadow-lg"
       />
       <div className="relative z-10 flex flex-col flex-1 min-h-0">
-        <h2 className="text-3xl font-extrabold text-gray-900 mb-4">AI Agent</h2>
-        <div className="flex-1 flex flex-col gap-4">
+        <h2 className="text-3xl font-extrabold text-gray-900 mb-2">AI Agent</h2>
+        <div className="flex-1 flex flex-col gap-3">
           <p className="text-base text-gray-600 leading-relaxed">
             AI Agent tiến một bước xa hơn chatbot: thay vì chỉ trả lời, Agent có thể
             lên kế hoạch, thực hiện các bước liên tiếp và tự chủ hoàn thành một nhiệm vụ phức tạp.
           </p>
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
-            <p className="text-xs font-bold text-blue-700 uppercase mb-3">Điểm khác biệt then chốt</p>
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 flex-1">
+            <p className="text-sm font-bold text-blue-700 uppercase mb-3">Điểm khác biệt then chốt</p>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <p className="text-xs font-semibold text-red-500 mb-2">Chatbot</p>
-                <ul className="text-xs text-gray-600 space-y-1">
+                <p className="text-sm font-semibold text-red-500 mb-2">Chatbot</p>
+                <ul className="text-sm text-gray-600 space-y-1">
                   <li>- Nhận lệnh, phản hồi</li>
                   <li>- Một vòng tương tác</li>
                   <li>- Không ghi nhớ ngữ cảnh</li>
                 </ul>
               </div>
               <div>
-                <p className="text-xs font-semibold text-blue-600 mb-2">AI Agent</p>
-                <ul className="text-xs text-gray-600 space-y-1">
+                <p className="text-sm font-semibold text-blue-600 mb-2">AI Agent</p>
+                <ul className="text-sm text-gray-600 space-y-1">
                   <li>- Lên kế hoạch, tự thực hiện</li>
                   <li>- Nhiều bước liên tiếp</li>
                   <li>- Duy trì ngữ cảnh dài</li>

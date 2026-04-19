@@ -78,12 +78,12 @@ function SlideOrchestration04() {
           Bảo mật phân tầng
         </span>
       </div>
-      <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
+      <h2 className="text-3xl font-extrabold text-gray-900 mb-2">
         Kiến trúc bảo mật trong AI Orchestration
       </h2>
-      <div className="flex flex-col gap-3 flex-1">
+      <div className="flex flex-col gap-2 flex-1">
         {layers.map((l) => (
-          <div key={l.layer} className={`border rounded-xl p-4 ${l.color}`}>
+          <div key={l.layer} className={`border rounded-xl p-3 ${l.color}`}>
             <p className="text-xs font-bold uppercase mb-2">{l.layer}</p>
             <div className="flex gap-3 flex-wrap">
               {l.items.map((item) => (

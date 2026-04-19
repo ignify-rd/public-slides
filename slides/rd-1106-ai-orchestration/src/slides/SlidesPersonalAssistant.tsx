@@ -3,8 +3,8 @@ import { SlideWrapper } from '../components/SlideWrapper'
 function SlidePersonalAssistant01() {
   return (
     <SlideWrapper>
-      <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Personal AI Assistant</h2>
-      <p className="text-base text-gray-600 leading-relaxed mb-6 max-w-2xl">
+      <h2 className="text-3xl font-extrabold text-gray-900 mb-3">Personal AI Assistant</h2>
+      <p className="text-base text-gray-600 leading-relaxed mb-3">
         Personal AI Assistant kết hợp AI Agent với ngữ cảnh cá nhân hóa sâu: hiểu lịch sử làm việc,
         phong cách giao tiếp, ưu tiên và mục tiêu của từng cá nhân để hỗ trợ tối ưu hơn.
       </p>
@@ -46,11 +46,11 @@ function SlidePersonalAssistant02() {
   ]
   return (
     <SlideWrapper>
-      <h2 className="text-3xl font-extrabold text-gray-900 mb-6">
+      <h2 className="text-3xl font-extrabold text-gray-900 mb-3">
         Personal AI Assistant - Tích hợp toàn diện
       </h2>
       <div className="flex-1 flex flex-col gap-3">
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-3 flex-1">
           {features.map((f) => (
             <div key={f} className="flex items-center gap-2 bg-white border border-gray-200 rounded-lg p-3">
               <div className="w-1.5 h-1.5 rounded-full bg-blue-500 flex-none" />
@@ -91,12 +91,12 @@ function SlidePersonalAssistant03() {
           Bảo mật & An toàn
         </span>
       </div>
-      <h2 className="text-3xl font-extrabold text-gray-900 mb-6">
+      <h2 className="text-3xl font-extrabold text-gray-900 mb-3">
         Bảo mật khi dùng Personal AI Assistant
       </h2>
-      <div className="flex flex-col gap-4 flex-1 justify-between">
+      <div className="flex flex-col gap-3 flex-1 justify-between">
         {risks.map((r) => (
-          <div key={r.risk} className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+          <div key={r.risk} className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
             <div className="flex items-start gap-3">
               <span className="text-red-500 text-lg flex-none">⚠️</span>
               <div className="flex-1">
