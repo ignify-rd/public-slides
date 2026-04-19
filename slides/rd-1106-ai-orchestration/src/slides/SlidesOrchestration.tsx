@@ -48,42 +48,6 @@ function SlideOrchestration02() {
   )
 }
 
-function SlideOrchestration03() {
-  const frameworks = [
-    { name: 'LangGraph', desc: 'Framework open-source cho multi-agent workflows với state management mạnh mẽ' },
-    { name: 'AutoGen (Microsoft)', desc: 'Multi-agent framework cho phép các AI tự thảo luận và phân công nhiệm vụ' },
-    { name: 'CrewAI', desc: 'Xây dựng "crew" các AI chuyên biệt với vai trò và nhiệm vụ được định nghĩa rõ' },
-    { name: 'Claude Orchestration', desc: 'Anthropic cung cấp native multi-agent support với tính an toàn cao' },
-  ]
-  return (
-    <SlideWrapper>
-      <div className="mb-3">
-        <span className="inline-block text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded">
-          Framework & Công nghệ
-        </span>
-      </div>
-      <h2 className="text-3xl font-extrabold text-gray-900 mb-6">
-        Các framework AI Orchestration phổ biến
-      </h2>
-      <div className="flex flex-col gap-3 flex-1">
-        {frameworks.map((f) => (
-          <div key={f.name} className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
-            <div className="flex-none w-36 font-bold text-blue-700 text-sm bg-blue-50 rounded-lg px-3 py-2 text-center">
-              {f.name}
-            </div>
-            <p className="text-sm text-gray-700 leading-relaxed mt-1">{f.desc}</p>
-          </div>
-        ))}
-        <div className="bg-gray-100 rounded-xl p-3 mt-1">
-          <p className="text-sm text-gray-600">
-            Lựa chọn framework phụ thuộc vào: độ phức tạp của workflow, yêu cầu bảo mật, và hệ thống hiện có của doanh nghiệp.
-          </p>
-        </div>
-      </div>
-    </SlideWrapper>
-  )
-}
-
 function SlideOrchestration04() {
   const layers = [
     {
@@ -138,6 +102,5 @@ function SlideOrchestration04() {
 export const slidesOrchestration = [
   SlideOrchestration01,
   SlideOrchestration02,
-  SlideOrchestration03,
   SlideOrchestration04,
 ]

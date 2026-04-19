@@ -58,10 +58,10 @@ export function SlideEvolution({ highlightedStage }: SlideEvolutionProps) {
         </span>
       </div>
       <h2 className="text-3xl font-extrabold text-gray-900 mb-2">
-        AI trong doanh nghiệp phát triển qua từng giai đoạn
+        Câu chuyện dẫn dắt: Hành trình AI qua từng giai đoạn
       </h2>
       <p className="text-base text-gray-500 mb-6 max-w-2xl leading-relaxed">
-        Mỗi bước tiến mở ra khả năng mới - từ trả lời câu hỏi đơn giản đến điều phối hàng trăm tác nhân AI làm việc cùng nhau.
+        Mỗi giai đoạn là một chương trong câu chuyện - từ hình thái đầu tiên của LLM đến điều phối hàng trăm tác nhân AI làm việc cùng nhau.
       </p>
       <div className="flex gap-3 flex-1 items-stretch">
         {STAGE_CARDS.flatMap((stage, i) => {

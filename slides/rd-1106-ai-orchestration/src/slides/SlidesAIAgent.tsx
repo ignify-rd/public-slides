@@ -54,9 +54,9 @@ function SlideAIAgent02() {
       <h2 className="text-3xl font-extrabold text-gray-900 mb-6">
         AI Agent - Năng lực thực thi
       </h2>
-      <div className="grid grid-cols-2 gap-4 flex-1">
+      <div className="grid grid-cols-2 grid-rows-2 gap-4 flex-1">
         {capabilities.map((c) => (
-          <div key={c.title} className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+          <div key={c.title} className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex flex-col justify-center">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-2xl">{c.icon}</span>
               <p className="font-bold text-gray-900 text-sm">{c.title}</p>
