@@ -60,9 +60,8 @@ function SlideReveal03() {
       <img
         src={`${import.meta.env.BASE_URL}assets/super-colleague.gif`}
         alt="AI đồng nghiệp siêu cấp"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute bottom-4 right-4 w-1/4 rounded-lg shadow-lg"
       />
-      <div className="absolute inset-0 bg-black bg-opacity-60" />
       <div className="relative z-10 flex flex-col h-full p-12">
         <div className="mb-6">
           <h2 className="text-3xl font-extrabold text-white mb-2">
