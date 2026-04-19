@@ -32,6 +32,9 @@ jobs:
             cp -r "slides/$name/dist" "docs/$name"
           done
 
+      - name: Generate index page
+        run: node scripts/generate-index.js
+
       - name: Commit built output
         run: |
           git config user.name  "github-actions[bot]"

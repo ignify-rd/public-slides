@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ignify RD - Slide Decks</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      min-height: 100vh;
+      padding: 0 0 48px;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    header h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: -0.01em;
+    }
+
+    header .badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: #ede9fe;
+      color: #6d28d9;
+      border-radius: 9999px;
+      padding: 2px 10px;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 24px 0;
+    }
+
+    .section-title {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 700px) {
+      .grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    }
+    @media (max-width: 400px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+      border-color: #c7d2fe;
+    }
+
+    .thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .thumb-text {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      word-break: break-word;
+      letter-spacing: 0.02em;
+      line-height: 1.5;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .card-body {
+      padding: 12px 14px 14px;
+    }
+
+    .card-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #0f172a;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ignify RD Slides</h1>
+    <span class="badge">9 decks</span>
+  </header>
+  <main>
+    <p class="section-title">All Slide Decks</p>
+    <div class="grid">
+      
+    <a class="card" href="/public-slides/ai-era-human-role/" aria-label="Ai Era Human Role">
+      <div class="thumb" style="background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);">
+        <span class="thumb-text">ai-era-human-role</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Ai Era Human Role</p>
+      </div>
+    </a>
+
+    <a class="card" href="/public-slides/data-fabric-de-hieu/" aria-label="Data Fabric De Hieu">
+      <div class="thumb" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%);">
+        <span class="thumb-text">data-fabric-de-hieu</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Data Fabric De Hieu</p>
+      </div>
+    </a>
+
+    <a class="card" href="/public-slides/employee-performance/" aria-label="Employee Performance">
+      <div class="thumb" style="background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);">
+        <span class="thumb-text">employee-performance</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Employee Performance</p>
+      </div>
+    </a>
+
+    <a class="card" href="/public-slides/giao-tiep-hieu-qua-trong-team/" aria-label="Giao Tiep Hieu Qua Trong Team">
+      <div class="thumb" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%);">
+        <span class="thumb-text">giao-tiep-hieu-qua-trong-team</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Giao Tiep Hieu Qua Trong Team</p>
+      </div>
+    </a>
+
+    <a class="card" href="/public-slides/how-to-communicate-efficiently/" aria-label="How To Communicate Efficiently">
+      <div class="thumb" style="background: linear-gradient(135deg, #F97316 0%, #EA580C 100%);">
+        <span class="thumb-text">how-to-communicate-efficiently</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">How To Communicate Efficiently</p>
+      </div>
+    </a>
+
+    <a class="card" href="/public-slides/huong-dan-git/" aria-label="Huong Dan Git">
+      <div class="thumb" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%);">
+        <span class="thumb-text">huong-dan-git</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Huong Dan Git</p>
+      </div>
+    </a>
+
+    <a class="card" href="/public-slides/rd-1000-gstack-summary/" aria-label="Rd 1000 Gstack Summary">
+      <div class="thumb" style="background: linear-gradient(135deg, #0EA5E9 0%, #2563EB 100%);">
+        <span class="thumb-text">rd-1000-gstack-summary</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Rd 1000 Gstack Summary</p>
+      </div>
+    </a>
+
+    <a class="card" href="/public-slides/rd-1102-claude-design/" aria-label="Rd 1102 Claude Design">
+      <div class="thumb" style="background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);">
+        <span class="thumb-text">rd-1102-claude-design</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Rd 1102 Claude Design</p>
+      </div>
+    </a>
+
+    <a class="card" href="/public-slides/rd-1106-ai-orchestration/" aria-label="Rd 1106 Ai Orchestration">
+      <div class="thumb" style="background: linear-gradient(135deg, #14B8A6 0%, #0D9488 100%);">
+        <span class="thumb-text">rd-1106-ai-orchestration</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Rd 1106 Ai Orchestration</p>
+      </div>
+    </a>
+    </div>
+  </main>
+</body>
+</html>
