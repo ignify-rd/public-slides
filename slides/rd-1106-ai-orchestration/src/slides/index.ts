@@ -24,8 +24,8 @@ import {
 
 export const slides = [
   Slide01Title,
-  ...slidesAIMindset,
   SlideAIRealWorld,
+  ...slidesAIMindset,
   SlideEvolution,
   SlideTransitionToChatbot,
   SlideEvolutionHighlight0,
