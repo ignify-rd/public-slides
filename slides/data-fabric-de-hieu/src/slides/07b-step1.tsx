@@ -25,37 +25,26 @@ export function SlideStep1() {
         }}
       />
 
-      {/* Top accent bar */}
-      <div
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          height: 4,
-          background: `linear-gradient(90deg, ${theme.colors.accent} 0%, ${theme.colors.accentAlt} 100%)`,
-          zIndex: 2,
-        }}
-      />
-
       {/* Image */}
       <div
         style={{
           position: 'relative',
           zIndex: 1,
           flex: 1,
+          minWidth: 0,
+          minHeight: 0,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '4px',
         }}
       >
         <img
           src="/public-slides/data-fabric-de-hieu/images/step1.png"
           alt="Bước 1"
           style={{
-            maxWidth: '100%',
-            maxHeight: '100%',
+            width: '100%',
+            height: '100%',
+            display: 'block',
             objectFit: 'contain',
           }}
         />
