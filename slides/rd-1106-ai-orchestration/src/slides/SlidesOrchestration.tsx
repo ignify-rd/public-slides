@@ -1,16 +1,8 @@
 import { SlideWrapper } from '../components/SlideWrapper'
-import { EvolutionDiagram } from '../components/EvolutionDiagram'
-
-const DIAGRAM_INDEX = 3
 
 function SlideOrchestration01() {
   return (
     <SlideWrapper>
-      <div className="mb-3">
-        <span className="inline-block text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded">
-          Giai đoạn 4
-        </span>
-      </div>
       <h2 className="text-3xl font-extrabold text-gray-900 mb-4">AI Orchestration</h2>
       <p className="text-base text-gray-600 leading-relaxed mb-6 max-w-2xl">
         Thay vì một AI đơn lẻ, AI Orchestration phối hợp nhiều AI Agent chuyên biệt làm việc song song -
@@ -34,9 +26,6 @@ function SlideOrchestration01() {
           ))}
         </div>
       </div>
-      <div className="mt-6">
-        <EvolutionDiagram activeIndex={DIAGRAM_INDEX} />
-      </div>
     </SlideWrapper>
   )
 }
@@ -44,11 +33,6 @@ function SlideOrchestration01() {
 function SlideOrchestration02() {
   return (
     <SlideWrapper>
-      <div className="mb-3">
-        <span className="inline-block text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded">
-          Giai đoạn 4 - Thực tế
-        </span>
-      </div>
       <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
         AI Orchestration trong thực tế
       </h2>
@@ -58,9 +42,6 @@ function SlideOrchestration02() {
           alt="AI Orchestration showcase"
           className="max-h-full max-w-full object-contain rounded-xl shadow"
         />
-      </div>
-      <div className="mt-6">
-        <EvolutionDiagram activeIndex={DIAGRAM_INDEX} />
       </div>
     </SlideWrapper>
   )
@@ -97,9 +78,6 @@ function SlideOrchestration03() {
             Lựa chọn framework phụ thuộc vào: độ phức tạp của workflow, yêu cầu bảo mật, và hệ thống hiện có của doanh nghiệp.
           </p>
         </div>
-      </div>
-      <div className="mt-6">
-        <EvolutionDiagram activeIndex={DIAGRAM_INDEX} />
       </div>
     </SlideWrapper>
   )
@@ -151,9 +129,6 @@ function SlideOrchestration04() {
             </div>
           </div>
         ))}
-      </div>
-      <div className="mt-6">
-        <EvolutionDiagram activeIndex={DIAGRAM_INDEX} />
       </div>
     </SlideWrapper>
   )

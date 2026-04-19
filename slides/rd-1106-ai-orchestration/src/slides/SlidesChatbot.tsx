@@ -1,16 +1,8 @@
 import { SlideWrapper } from '../components/SlideWrapper'
-import { EvolutionDiagram } from '../components/EvolutionDiagram'
-
-const DIAGRAM_INDEX = 0
 
 function SlideChatbot01() {
   return (
     <SlideWrapper>
-      <div className="mb-3">
-        <span className="inline-block text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded">
-          Giai đoạn 1
-        </span>
-      </div>
       <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Chatbot</h2>
       <div className="flex gap-8 flex-1 min-h-0">
         <div className="flex-1 flex flex-col gap-4">
@@ -44,9 +36,6 @@ function SlideChatbot01() {
           />
         </div>
       </div>
-      <div className="mt-6">
-        <EvolutionDiagram activeIndex={DIAGRAM_INDEX} />
-      </div>
     </SlideWrapper>
   )
 }
@@ -59,11 +48,6 @@ function SlideChatbot02() {
   ]
   return (
     <SlideWrapper>
-      <div className="mb-3">
-        <span className="inline-block text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded">
-          Giai đoạn 1 - Ứng dụng thực tế
-        </span>
-      </div>
       <h2 className="text-3xl font-extrabold text-gray-900 mb-6">
         Chatbot trong doanh nghiệp - Ứng dụng phổ biến
       </h2>
@@ -81,9 +65,6 @@ function SlideChatbot02() {
             Chatbot phù hợp nhất khi: quy trình có thể được định nghĩa trước, câu hỏi lặp lại nhiều, cần phản hồi nhanh.
           </p>
         </div>
-      </div>
-      <div className="mt-6">
-        <EvolutionDiagram activeIndex={DIAGRAM_INDEX} />
       </div>
     </SlideWrapper>
   )
