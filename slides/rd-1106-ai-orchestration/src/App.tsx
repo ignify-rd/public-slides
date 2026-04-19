@@ -32,8 +32,10 @@ export default function App() {
 
   return (
     <div className="w-full h-full flex flex-col" onClick={handleClick}>
-      <div className="flex-1 overflow-hidden">
-        <ActiveSlide />
+      <div className="flex-1 overflow-hidden transition-all duration-300">
+        <div key={currentSlide} className="w-full h-full">
+          <ActiveSlide />
+        </div>
       </div>
       <div className="flex items-center justify-center gap-4 py-2 bg-white border-t border-gray-200">
         <button
