@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { theme } from '../lib/theme'
-import { container, scaleIn, fadeInUp } from '../lib/animations'
+import { container, scaleIn } from '../lib/animations'
 
 const phases = [
   {
@@ -73,24 +73,6 @@ export function Slide24DiagramRoadmap() {
         padding: '28px 50px',
       }}
     >
-      <motion.div
-        variants={fadeInUp}
-        initial="hidden"
-        animate="show"
-        style={{ textAlign: 'center', marginBottom: 24 }}
-      >
-        <h2
-          style={{
-            fontSize: 'clamp(1.4rem, 2.8vw, 2.2rem)',
-            fontWeight: 800,
-            color: theme.colors.text,
-            letterSpacing: '-0.02em',
-          }}
-        >
-          Lộ trình triển khai Data Fabric
-        </h2>
-      </motion.div>
-
       {/* Timeline line */}
       <div
         style={{

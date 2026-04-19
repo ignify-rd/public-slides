@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { theme } from '../lib/theme'
-import { container, scaleIn, fadeInUp } from '../lib/animations'
+import { container, scaleIn } from '../lib/animations'
 
 const sources = ['Excel', 'Cloud DB', 'SQL Server', 'SaaS', 'API']
 const consumers = ['Power BI', 'AI/ML', 'Analytics', 'Apps']
@@ -22,29 +22,6 @@ export function Slide08DiagramFabric() {
         padding: '36px 60px',
       }}
     >
-      <motion.div
-        variants={fadeInUp}
-        initial="hidden"
-        animate="show"
-        style={{
-          textAlign: 'center',
-          marginBottom: 40,
-        }}
-      >
-        <h2
-          style={{
-            fontSize: 'clamp(1.5rem, 3vw, 2.4rem)',
-            fontWeight: 800,
-            color: theme.colors.text,
-            letterSpacing: '-0.02em',
-          }}
-        >
-          Data Fabric:{' '}
-          <span style={{ color: theme.colors.accent }}>Smart Layer</span>{' '}
-          kết nối mọi nguồn
-        </h2>
-      </motion.div>
-
       <motion.div
         variants={container}
         initial="hidden"

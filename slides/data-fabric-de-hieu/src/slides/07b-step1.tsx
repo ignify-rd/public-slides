@@ -38,20 +38,6 @@ export function SlideStep1() {
         }}
       />
 
-      {/* Title */}
-      <div
-        style={{
-          position: 'relative',
-          zIndex: 1,
-          padding: '32px 60px 16px',
-          color: theme.colors.text,
-          fontSize: theme.sizes.subheading,
-          fontWeight: 700,
-        }}
-      >
-        Bước 1
-      </div>
-
       {/* Image */}
       <div
         style={{
@@ -61,7 +47,7 @@ export function SlideStep1() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '0 60px 32px',
+          padding: '4px',
         }}
       >
         <img
