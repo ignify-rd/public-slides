@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { theme } from '../lib/theme'
-import { container, scaleIn, fadeInUp } from '../lib/animations'
+import { container, scaleIn } from '../lib/animations'
 
 const rings = [
   {
@@ -36,24 +36,6 @@ export function Slide22DiagramEcosystem() {
         padding: '32px 60px',
       }}
     >
-      <motion.div
-        variants={fadeInUp}
-        initial="hidden"
-        animate="show"
-        style={{ textAlign: 'center', marginBottom: 32 }}
-      >
-        <h2
-          style={{
-            fontSize: 'clamp(1.4rem, 2.8vw, 2.2rem)',
-            fontWeight: 800,
-            color: theme.colors.text,
-            letterSpacing: '-0.02em',
-          }}
-        >
-          Hệ sinh thái Data Fabric
-        </h2>
-      </motion.div>
-
       <motion.div
         variants={container}
         initial="hidden"

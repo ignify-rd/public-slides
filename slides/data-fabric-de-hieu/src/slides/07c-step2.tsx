@@ -25,51 +25,26 @@ export function SlideStep2() {
         }}
       />
 
-      {/* Top accent bar */}
-      <div
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          height: 4,
-          background: `linear-gradient(90deg, ${theme.colors.accent} 0%, ${theme.colors.accentAlt} 100%)`,
-          zIndex: 2,
-        }}
-      />
-
-      {/* Title */}
-      <div
-        style={{
-          position: 'relative',
-          zIndex: 1,
-          padding: '32px 60px 16px',
-          color: theme.colors.text,
-          fontSize: theme.sizes.subheading,
-          fontWeight: 700,
-        }}
-      >
-        Bước 2
-      </div>
-
       {/* Image */}
       <div
         style={{
           position: 'relative',
           zIndex: 1,
           flex: 1,
+          minWidth: 0,
+          minHeight: 0,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '0 60px 32px',
         }}
       >
         <img
           src="/public-slides/data-fabric-de-hieu/images/step2.png"
           alt="Bước 2"
           style={{
-            maxWidth: '100%',
-            maxHeight: '100%',
+            width: '100%',
+            height: '100%',
+            display: 'block',
             objectFit: 'contain',
           }}
         />

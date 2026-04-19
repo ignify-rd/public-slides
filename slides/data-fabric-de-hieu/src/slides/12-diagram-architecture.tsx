@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { theme } from '../lib/theme'
-import { container, scaleIn, fadeInUp } from '../lib/animations'
+import { container, scaleIn } from '../lib/animations'
 
 const departments = [
   { name: 'Phong Sales', color: '#7C3AED', data: ['SQL Server', 'base_pay'] },
@@ -26,24 +26,6 @@ export function Slide12DiagramArchitecture() {
         padding: '32px 60px',
       }}
     >
-      <motion.div
-        variants={fadeInUp}
-        initial="hidden"
-        animate="show"
-        style={{ textAlign: 'center', marginBottom: 32 }}
-      >
-        <h2
-          style={{
-            fontSize: 'clamp(1.4rem, 2.8vw, 2.2rem)',
-            fontWeight: 800,
-            color: theme.colors.text,
-            letterSpacing: '-0.02em',
-          }}
-        >
-          Công ty sử dụng Data Fabric - Trước và Sau
-        </h2>
-      </motion.div>
-
       <motion.div
         variants={container}
         initial="hidden"
