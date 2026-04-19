@@ -63,7 +63,7 @@ export function Slide11SectionLocation() {
             marginBottom: 20,
           }}
         >
-          Phan 3
+          Phần 3
         </motion.div>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}

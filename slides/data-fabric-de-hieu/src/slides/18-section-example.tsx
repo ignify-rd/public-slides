@@ -63,7 +63,7 @@ export function Slide18SectionExample() {
             marginBottom: 20,
           }}
         >
-          Phan 5
+          Phần 5
         </motion.div>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}

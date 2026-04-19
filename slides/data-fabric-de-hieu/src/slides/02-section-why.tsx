@@ -67,7 +67,7 @@ export function Slide02SectionWhy() {
             marginBottom: 20,
           }}
         >
-          Phan 1
+          Phần 1
         </motion.div>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
