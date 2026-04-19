@@ -32,16 +32,17 @@ function SlideOrchestration01() {
 
 function SlideOrchestration02() {
   return (
-    <SlideWrapper>
-      <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
-        AI Orchestration trong thực tế
-      </h2>
-      <div className="flex-1 flex items-center justify-center">
-        <img
-          src={`${import.meta.env.BASE_URL}assets/orchestration-showcase.png`}
-          alt="AI Orchestration showcase"
-          className="max-h-full max-w-full object-contain rounded-xl shadow"
-        />
+    <SlideWrapper className="relative overflow-hidden">
+      <img
+        src={`${import.meta.env.BASE_URL}assets/orchestration-showcase.png`}
+        alt="AI Orchestration showcase"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-transparent" />
+      <div className="relative z-10 flex flex-col flex-1">
+        <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
+          AI Orchestration trong thực tế
+        </h2>
       </div>
     </SlideWrapper>
   )

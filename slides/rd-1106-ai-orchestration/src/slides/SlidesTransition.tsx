@@ -40,7 +40,7 @@ export function SlideTransitionToAIAgent() {
     <TransitionSlide
       emoji="🤔"
       heading="Vậy... Chatbot được rồi."
-      highlight="Nhưng doanh nghiệp cần AI tự hành động."
+      highlight="Nhưng chúng ta cần AI tự hành động."
       subtitle="Chatbot giỏi trả lời - nhưng không tự làm việc. Khi bài toán phức tạp hơn, AI Agent ra đời."
     />
   )

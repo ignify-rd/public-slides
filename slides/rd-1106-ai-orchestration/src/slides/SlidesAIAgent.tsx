@@ -2,9 +2,14 @@ import { SlideWrapper } from '../components/SlideWrapper'
 
 function SlideAIAgent01() {
   return (
-    <SlideWrapper>
-      <h2 className="text-3xl font-extrabold text-gray-900 mb-4">AI Agent</h2>
-      <div className="flex gap-8 flex-1 min-h-0">
+    <SlideWrapper className="relative overflow-hidden">
+      <img
+        src={`${import.meta.env.BASE_URL}assets/ai-agent.png`}
+        alt="AI Agent minh hoa"
+        className="absolute inset-0 w-full h-full object-cover opacity-15"
+      />
+      <div className="relative z-10 flex flex-col flex-1 min-h-0">
+        <h2 className="text-3xl font-extrabold text-gray-900 mb-4">AI Agent</h2>
         <div className="flex-1 flex flex-col gap-4">
           <p className="text-base text-gray-600 leading-relaxed">
             AI Agent tiến một bước xa hơn chatbot: thay vì chỉ trả lời, Agent có thể
@@ -31,13 +36,6 @@ function SlideAIAgent01() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex-none w-64 flex items-center justify-center">
-          <img
-            src={`${import.meta.env.BASE_URL}assets/ai-agent.png`}
-            alt="AI Agent minh hoa"
-            className="max-w-full max-h-full object-contain rounded-xl shadow"
-          />
         </div>
       </div>
     </SlideWrapper>
