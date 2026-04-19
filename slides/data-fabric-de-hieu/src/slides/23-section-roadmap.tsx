@@ -63,7 +63,7 @@ export function Slide23SectionRoadmap() {
             marginBottom: 20,
           }}
         >
-          Phan 7
+          Phần 7
         </motion.div>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}

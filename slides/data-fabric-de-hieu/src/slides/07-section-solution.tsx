@@ -63,7 +63,7 @@ export function Slide07SectionSolution() {
             marginBottom: 20,
           }}
         >
-          Phan 2
+          Phần 2
         </motion.div>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}

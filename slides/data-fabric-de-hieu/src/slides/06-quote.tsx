@@ -94,7 +94,7 @@ export function Slide06Quote() {
           </span>{' '}
           chính là{' '}
           <span style={{ color: '#FDE68A', fontWeight: 800 }}>
-            'xuong song'
+            'xương sống'
           </span>{' '}
           giúp doanh nghiệp vận hành chính xác và hiệu quả.
         </p>

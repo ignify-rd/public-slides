@@ -63,7 +63,7 @@ export function Slide14SectionProblems() {
             marginBottom: 20,
           }}
         >
-          Phan 4
+          Phần 4
         </motion.div>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
