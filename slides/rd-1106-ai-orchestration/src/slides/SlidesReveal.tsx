@@ -48,38 +48,4 @@ function SlideReveal02() {
   )
 }
 
-function SlideReveal03() {
-  const benefits = [
-    { icon: '⚡', title: 'Tốc độ x10', body: 'Hoàn thành việc trong vài phút thay vì vài giờ' },
-    { icon: '🎯', title: 'Tập trung vào giá trị cao', body: 'Con người giữ sức sáng tạo, phán xét, xây dựng mối quan hệ' },
-    { icon: '📈', title: 'Mở rộng không giới hạn', body: 'Một người có thể làm việc bằng cả team nhỏ với sự hỗ trợ của AI' },
-    { icon: '🌙', title: 'Làm việc 24/7', body: 'AI không nghỉ lễ, không có vùng giờ - giao việc lúc nào cũng được' },
-  ]
-  return (
-    <div className="w-full h-full bg-gray-900 text-white flex flex-col animate-fade-in relative overflow-hidden">
-      <img
-        src={`${import.meta.env.BASE_URL}assets/super-colleague.gif`}
-        alt="AI đồng nghiệp siêu cấp"
-        className="absolute bottom-4 right-4 w-1/4 rounded-lg shadow-lg"
-      />
-      <div className="relative z-10 flex flex-col h-full p-12">
-        <div className="mb-6">
-          <h2 className="text-3xl font-extrabold text-white mb-2">
-            Khi AI là "đồng nghiệp siêu cấp" của bạn
-          </h2>
-        </div>
-        <div className="flex-1 grid grid-cols-2 gap-4">
-          {benefits.map((b) => (
-            <div key={b.title} className="bg-white bg-opacity-10 border border-white border-opacity-20 backdrop-blur-sm rounded-xl p-4">
-              <span className="text-2xl mb-2 block">{b.icon}</span>
-              <p className="font-bold text-white text-sm mb-1">{b.title}</p>
-              <p className="text-xs text-gray-300 leading-relaxed">{b.body}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  )
-}
-
-export const slidesReveal = [SlideReveal01, SlideReveal02, SlideReveal03]
+export const slidesReveal = [SlideReveal01, SlideReveal02]
