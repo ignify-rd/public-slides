@@ -29,9 +29,6 @@ function SlidePersonalAssistant01() {
           <p className="text-xs text-blue-800 leading-relaxed">
             "Sáng mai có meeting với client - tôi cần tóm tắt 3 email gần nhất, chuẩn bị agenda, và soạn email nhắc lại cho team."
           </p>
-          <p className="text-xs text-blue-600 font-medium mt-auto">
-            - Personal AI Assistant thực hiện tất cả trong 30 giây
-          </p>
         </div>
       </div>
     </SlideWrapper>
@@ -97,7 +94,7 @@ function SlidePersonalAssistant03() {
       <h2 className="text-3xl font-extrabold text-gray-900 mb-6">
         Bảo mật khi dùng Personal AI Assistant
       </h2>
-      <div className="flex flex-col gap-4 flex-1">
+      <div className="flex flex-col gap-4 flex-1 justify-between">
         {risks.map((r) => (
           <div key={r.risk} className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
             <div className="flex items-start gap-3">
@@ -121,7 +118,7 @@ function SlidePersonalAssistant04() {
   return (
     <SlideWrapper>
       <h2 className="text-3xl font-extrabold text-gray-900 mb-6">Meta & AI</h2>
-      <div className="flex-1 flex items-center justify-center">
+      <div className="flex-1 min-h-0 flex items-center justify-center overflow-hidden">
         <img
           src={`${import.meta.env.BASE_URL}assets/meta-case.png`}
           alt="Meta AI case study"

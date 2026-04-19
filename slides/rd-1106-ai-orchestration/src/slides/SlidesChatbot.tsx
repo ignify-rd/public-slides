@@ -9,11 +9,11 @@ function SlideChatbot01() {
         className="absolute inset-0 w-full h-full object-cover opacity-15"
       />
       <div className="relative z-10 flex flex-col flex-1 min-h-0">
-        <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Chatbot</h2>
+        <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Hình thái đầu tiên của LLM - AI</h2>
         <div className="flex-1 flex flex-col gap-4">
           <p className="text-base text-gray-600 leading-relaxed">
-            Chatbot là hình thức AI đầu tiên được doanh nghiệp triển khai rộng rãi.
-            Nó hoạt động theo mô hình hỏi - đáp: người dùng gửi câu hỏi, AI phản hồi ngay lập tức.
+            Hình thái đầu tiên của LLM trong doanh nghiệp là chatbot: AI hoạt động theo mô hình hỏi - đáp,
+            người dùng gửi câu hỏi, AI phản hồi ngay lập tức.
           </p>
           <div className="grid grid-cols-2 gap-3">
             {[
