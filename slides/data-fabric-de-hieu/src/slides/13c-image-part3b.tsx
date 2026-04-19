@@ -38,20 +38,6 @@ export function SlidePart3ImageB() {
         }}
       />
 
-      {/* Title */}
-      <div
-        style={{
-          position: 'relative',
-          zIndex: 1,
-          padding: '32px 60px 16px',
-          color: theme.colors.text,
-          fontSize: theme.sizes.subheading,
-          fontWeight: 700,
-        }}
-      >
-        Data Fabric vs Data Mesh
-      </div>
-
       {/* Image */}
       <div
         style={{
@@ -61,7 +47,7 @@ export function SlidePart3ImageB() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '0 60px 32px',
+          padding: '4px',
         }}
       >
         <img

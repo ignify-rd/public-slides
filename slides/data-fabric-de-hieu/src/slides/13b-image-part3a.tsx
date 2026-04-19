@@ -38,20 +38,6 @@ export function SlidePart3ImageA() {
         }}
       />
 
-      {/* Title */}
-      <div
-        style={{
-          position: 'relative',
-          zIndex: 1,
-          padding: '32px 60px 16px',
-          color: theme.colors.text,
-          fontSize: theme.sizes.subheading,
-          fontWeight: 700,
-        }}
-      >
-        Kiến trúc Data Fabric
-      </div>
-
       {/* Image */}
       <div
         style={{
@@ -61,7 +47,7 @@ export function SlidePart3ImageA() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '0 60px 32px',
+          padding: '4px',
         }}
       >
         <img
