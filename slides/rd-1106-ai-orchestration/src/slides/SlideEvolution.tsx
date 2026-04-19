@@ -6,8 +6,7 @@ const STAGE_CARDS = [
     icon: '💬',
     label: 'Chatbot',
     desc: 'Hỏi - đáp theo kịch bản định sẵn',
-    gradient: 'from-sky-50 to-sky-100',
-    border: 'border-sky-200',
+    gradientClass: 'bg-gradient-to-br from-sky-50 to-sky-100 border-sky-200',
     accent: 'text-sky-700',
     badge: 'bg-sky-500',
   },
@@ -15,8 +14,7 @@ const STAGE_CARDS = [
     icon: '🤖',
     label: 'AI Agent',
     desc: 'Tự lên kế hoạch và thực hiện nhiệm vụ',
-    gradient: 'from-violet-50 to-violet-100',
-    border: 'border-violet-200',
+    gradientClass: 'bg-gradient-to-br from-violet-50 to-violet-100 border-violet-200',
     accent: 'text-violet-700',
     badge: 'bg-violet-500',
   },
@@ -24,8 +22,7 @@ const STAGE_CARDS = [
     icon: '🧑‍💼',
     label: 'Personal AI',
     desc: 'Trợ lý cá nhân hóa sâu cho từng người',
-    gradient: 'from-emerald-50 to-emerald-100',
-    border: 'border-emerald-200',
+    gradientClass: 'bg-gradient-to-br from-emerald-50 to-emerald-100 border-emerald-200',
     accent: 'text-emerald-700',
     badge: 'bg-emerald-500',
   },
@@ -33,8 +30,7 @@ const STAGE_CARDS = [
     icon: '🎼',
     label: 'AI Orchestration',
     desc: 'Phối hợp nhiều AI Agent làm việc cùng nhau',
-    gradient: 'from-orange-50 to-orange-100',
-    border: 'border-orange-200',
+    gradientClass: 'bg-gradient-to-br from-orange-50 to-orange-100 border-orange-200',
     accent: 'text-orange-700',
     badge: 'bg-orange-500',
   },
@@ -42,8 +38,7 @@ const STAGE_CARDS = [
     icon: '✨',
     label: '?',
     desc: 'Giai đoạn tiếp theo - chưa ai biết trước',
-    gradient: 'from-amber-50 to-yellow-100',
-    border: 'border-amber-300',
+    gradientClass: 'bg-gradient-to-br from-amber-50 to-yellow-100 border-amber-300',
     accent: 'text-amber-700',
     badge: 'bg-amber-400',
   },
@@ -77,10 +72,10 @@ export function SlideEvolution({ highlightedStage }: SlideEvolutionProps) {
               key={stage.label}
               className={`flex-1 flex flex-col items-center justify-center rounded-2xl p-5 border-2 transition-all duration-200
                 ${isHighlighted
-                  ? `bg-gradient-to-br ${stage.gradient} ${stage.border} shadow-xl scale-105`
+                  ? `${stage.gradientClass} shadow-xl scale-105`
                   : isDimmed
-                    ? `bg-gray-50 border-gray-200 opacity-40`
-                    : `bg-gradient-to-br ${stage.gradient} ${stage.border}`
+                    ? 'bg-gray-50 border-gray-200 opacity-40'
+                    : stage.gradientClass
                 }`}
             >
               <span className="text-4xl mb-3">{stage.icon}</span>
