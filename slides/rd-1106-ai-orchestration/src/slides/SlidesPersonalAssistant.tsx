@@ -2,32 +2,44 @@ import { SlideWrapper } from '../components/SlideWrapper'
 
 function SlidePersonalAssistant01() {
   return (
-    <SlideWrapper>
-      <h2 className="text-3xl font-extrabold text-gray-900 mb-3">Personal AI Assistant</h2>
-      <p className="text-base text-gray-600 leading-relaxed mb-3">
-        Personal AI Assistant kết hợp AI Agent với ngữ cảnh cá nhân hóa sâu: hiểu lịch sử làm việc,
-        phong cách giao tiếp, ưu tiên và mục tiêu của từng cá nhân để hỗ trợ tối ưu hơn.
+    <SlideWrapper className="relative overflow-hidden">
+      <div className="absolute right-10 top-20 h-56 w-56 rounded-full bg-emerald-100/60 blur-3xl" />
+
+      <span className="inline-flex w-fit rounded-full bg-emerald-50 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-emerald-700 mb-5">
+        Giai đoạn 3
+      </span>
+      <h2 className="max-w-4xl text-5xl font-extrabold leading-[1.02] text-gray-900 mb-4">
+        Personal AI Assistant là khi
+        <br />
+        <span className="text-emerald-700">AI bắt đầu hiểu chính bạn</span>
+      </h2>
+      <p className="max-w-3xl text-lg leading-relaxed text-gray-600 mb-8">
+        Không chỉ tự làm việc, AI lúc này còn hiểu lịch sử làm việc, cách giao tiếp,
+        ưu tiên và mục tiêu của từng cá nhân để hỗ trợ theo đúng ngữ cảnh riêng.
       </p>
-      <div className="flex gap-4 flex-1">
-        <div className="flex-1 flex flex-col gap-3">
+
+      <div className="flex flex-1 gap-10">
+        <div className="flex flex-1 flex-col gap-6">
           {[
             { icon: '🧠', title: 'Học và thích nghi', body: 'Nhớ sở thích, phong cách và lịch sử làm việc của bạn' },
             { icon: '📅', title: 'Quản lý thời gian & ưu tiên', body: 'Sắp xếp lịch, nhắc nhở, phân loại công việc tự động' },
             { icon: '✍️', title: 'Soạn thảo cá nhân hóa', body: 'Viết email, báo cáo đúng tone và style của bạn' },
           ].map((item) => (
-            <div key={item.title} className="flex gap-3 bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
-              <span className="text-2xl flex-none">{item.icon}</span>
-              <div>
-                <p className="font-bold text-gray-900 text-sm mb-0.5">{item.title}</p>
-                <p className="text-sm text-gray-600">{item.body}</p>
-              </div>
+            <div key={item.title} className="border-l-4 border-emerald-300 pl-5">
+              <p className="mb-1 text-2xl font-bold text-gray-900">
+                <span className="mr-3">{item.icon}</span>
+                {item.title}
+              </p>
+              <p className="text-base text-gray-600 leading-relaxed">{item.body}</p>
             </div>
           ))}
         </div>
-        <div className="flex-none w-56 bg-blue-50 border border-blue-200 rounded-xl p-4 flex flex-col gap-3">
-          <p className="text-xs font-bold text-blue-700 uppercase">Ví dụ thực tế</p>
-          <p className="text-xs text-blue-800 leading-relaxed">
-            "Sáng mai có meeting với client - tôi cần tóm tắt 3 email gần nhất, chuẩn bị agenda, và soạn email nhắc lại cho team."
+
+        <div className="w-[23rem] self-end rounded-[1.75rem] border border-emerald-200 bg-emerald-50/80 p-6 shadow-[0_24px_70px_rgba(5,150,105,0.12)]">
+          <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-emerald-700">Ví dụ thực tế</p>
+          <p className="text-lg font-medium leading-relaxed text-emerald-950">
+            “Sáng mai có meeting với client. Hãy tóm tắt 3 email gần nhất, chuẩn bị agenda,
+            rồi soạn email nhắc lại cho team.”
           </p>
         </div>
       </div>
@@ -44,23 +56,33 @@ function SlidePersonalAssistant02() {
     'Tìm kiếm trong toàn bộ workspace',
     'Nhắc nhở dựa trên ngữ cảnh công việc',
   ]
+
   return (
-    <SlideWrapper>
-      <h2 className="text-3xl font-extrabold text-gray-900 mb-3">
-        Personal AI Assistant - Tích hợp toàn diện
+    <SlideWrapper className="relative overflow-hidden">
+      <div className="absolute left-10 bottom-8 h-56 w-56 rounded-full bg-emerald-100/60 blur-3xl" />
+
+      <span className="inline-flex w-fit rounded-full bg-emerald-50 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-emerald-700 mb-5">
+        Tích hợp toàn diện
+      </span>
+      <h2 className="max-w-4xl text-5xl font-extrabold leading-[1.02] text-gray-900 mb-4">
+        Personal AI mạnh lên khi
+        <br />
+        <span className="text-emerald-700">nó sống trong hệ sinh thái công việc của bạn</span>
       </h2>
-      <div className="flex-1 flex flex-col gap-3">
-        <div className="grid grid-cols-2 gap-3 flex-1">
+
+      <div className="flex flex-1 flex-col gap-8">
+        <div className="grid flex-1 grid-cols-2 gap-x-10 gap-y-5">
           {features.map((f) => (
-            <div key={f} className="flex items-center gap-2 bg-white border border-gray-200 rounded-lg p-3">
-              <div className="w-1.5 h-1.5 rounded-full bg-blue-500 flex-none" />
-              <span className="text-sm text-gray-700">{f}</span>
+            <div key={f} className="flex items-start gap-3 border-b border-emerald-100 pb-4">
+              <div className="mt-2 h-2 w-2 flex-none rounded-full bg-emerald-500" />
+              <span className="text-xl leading-snug text-gray-800">{f}</span>
             </div>
           ))}
         </div>
-        <div className="bg-green-50 border border-green-200 rounded-xl p-4 mt-2">
-          <p className="text-sm font-bold text-green-800 mb-1">Kết quả đo lường được</p>
-          <p className="text-sm text-green-700">
+
+        <div className="border-t-2 border-emerald-200 pt-5">
+          <p className="mb-2 text-sm font-bold uppercase tracking-[0.18em] text-emerald-700">Kết quả đo lường được</p>
+          <p className="text-2xl font-bold leading-snug text-emerald-950">
             Nhân viên tiết kiệm trung bình 2-3 giờ/ngày cho các tác vụ quản lý thông tin và giao tiếp thường ngày.
           </p>
         </div>
@@ -84,28 +106,34 @@ function SlidePersonalAssistant03() {
       mitigation: 'Đào tạo AI literacy và ban hành chính sách sử dụng AI rõ ràng',
     },
   ]
+
   return (
-    <SlideWrapper>
-      <div className="mb-3">
-        <span className="inline-block text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 px-3 py-1 rounded">
+    <SlideWrapper className="relative overflow-hidden">
+      <div className="absolute right-8 top-12 h-56 w-56 rounded-full bg-red-100/60 blur-3xl" />
+
+      <div className="mb-5">
+        <span className="inline-block rounded bg-red-50 px-3 py-1 text-xs font-bold uppercase tracking-widest text-red-600">
           Bảo mật & An toàn
         </span>
       </div>
-      <h2 className="text-3xl font-extrabold text-gray-900 mb-3">
+      <h2 className="max-w-4xl text-5xl font-extrabold leading-[1.02] text-gray-900 mb-4">
         Bảo mật khi dùng Personal AI Assistant
       </h2>
-      <div className="flex flex-col gap-3 flex-1 justify-between">
+      <p className="max-w-3xl text-lg leading-relaxed text-gray-600 mb-8">
+        Càng cá nhân hóa sâu, bài toán an toàn càng trở nên nhạy cảm. Đây không còn là chuyện trải nghiệm,
+        mà là chuyện quyền truy cập, dữ liệu và kỷ luật vận hành.
+      </p>
+
+      <div className="flex flex-1 flex-col justify-between gap-6">
         {risks.map((r) => (
-          <div key={r.risk} className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
-            <div className="flex items-start gap-3">
-              <span className="text-red-500 text-lg flex-none">⚠️</span>
-              <div className="flex-1">
-                <p className="text-sm font-bold text-red-700 mb-2">{r.risk}</p>
-                <div className="flex items-start gap-2">
-                  <span className="text-green-600 text-sm flex-none">✓</span>
-                  <p className="text-sm text-gray-700">{r.mitigation}</p>
-                </div>
-              </div>
+          <div key={r.risk} className="grid grid-cols-[1.3fr_1.7fr] gap-6 border-t border-red-100 pt-5">
+            <div>
+              <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-red-500">Rủi ro</p>
+              <p className="text-2xl font-bold leading-snug text-gray-900">{r.risk}</p>
+            </div>
+            <div>
+              <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-emerald-600">Cách kiểm soát</p>
+              <p className="text-lg leading-relaxed text-gray-700">{r.mitigation}</p>
             </div>
           </div>
         ))}
