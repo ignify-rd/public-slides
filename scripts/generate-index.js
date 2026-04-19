@@ -56,7 +56,7 @@ function generate() {
     .readdirSync(SLIDES_DIR, { withFileTypes: true })
     .filter((e) => e.isDirectory())
     .map((e) => e.name)
-    .sort();
+    .sort((a, b) => b.localeCompare(a));
 
   const cards = slugs.map(buildCard).join('\n');
 
