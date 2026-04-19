@@ -34,7 +34,7 @@ export function Slide09DataContext() {
               marginBottom: 10,
             }}
           >
-            Diem manh nhất
+            Điểm mạnh nhất
           </div>
           <h2
             style={{
@@ -45,7 +45,7 @@ export function Slide09DataContext() {
               letterSpacing: '-0.02em',
             }}
           >
-            Diem "dat" nhat cua Data Fabric:
+            Điểm "đắt" nhất của Data Fabric:
             <br />
             <span style={{ color: theme.colors.accent }}>Data</span>
             {' -> '}
@@ -65,7 +65,7 @@ export function Slide09DataContext() {
           {[
             {
               label: 'Raw Data',
-              sublabel: 'Du lieu tho',
+              sublabel: 'Dữ liệu thô',
               icon: '📦',
               bg: theme.colors.accentDim,
               border: theme.colors.borderAccent,
@@ -74,7 +74,7 @@ export function Slide09DataContext() {
             null,
             {
               label: 'Metadata',
-              sublabel: 'Sieu du lieu',
+              sublabel: 'Siêu dữ liệu',
               icon: '🏷',
               bg: '#FEF3C720',
               border: '#D97706',
@@ -83,7 +83,7 @@ export function Slide09DataContext() {
             null,
             {
               label: 'Knowledge Graph',
-              sublabel: 'Do thi tri thuc',
+              sublabel: 'Đồ thị tri thức',
               icon: '🕸',
               bg: '#F0FDF430',
               border: theme.colors.accentGreen,
@@ -92,7 +92,7 @@ export function Slide09DataContext() {
             null,
             {
               label: 'Context',
-              sublabel: 'Ngu canh / Y nghia',
+              sublabel: 'Ngữ cảnh / Ý nghĩa',
               icon: '💡',
               bg: '#F0F9FF30',
               border: theme.colors.accentAlt,
@@ -178,8 +178,8 @@ export function Slide09DataContext() {
               lineHeight: 1.6,
             }}
           >
-            Data Fabric khong chi luu tru du lieu - no hieu du lieu do co y nghia gi,
-            lien quan den cai gi, va co the su dung nhu the nao.
+            Data Fabric không chỉ lưu trữ dữ liệu - nó hiểu dữ liệu đó có ý nghĩa gì,
+            liên quan đến cái gì, và có thể sử dụng như thế nào.
           </p>
         </motion.div>
       </motion.div>

@@ -6,37 +6,37 @@ const components = [
   {
     icon: '🔮',
     title: 'Data Virtualization',
-    desc: 'Truy cap du lieu tai nguon goc, khong can sao chep vat ly',
+    desc: 'Truy cập dữ liệu tại nguồn gốc, không cần sao chép vật lý',
     color: theme.colors.accent,
   },
   {
     icon: '🏷',
     title: 'Metadata Management',
-    desc: 'Quan ly sieu du lieu, phan loai va tag tu dong bang AI',
+    desc: 'Quản lý siêu dữ liệu, phân loại và tag tự động bằng AI',
     color: '#7C3AED',
   },
   {
     icon: '🔗',
     title: 'Data Lineage',
-    desc: 'Truy vet nguon goc du lieu: den tu dau, qua nhung buoc nao',
+    desc: 'Truy vết nguồn gốc dữ liệu: đến từ đâu, qua những bước nào',
     color: theme.colors.accentAlt,
   },
   {
     icon: '🛡',
     title: 'Data Governance',
-    desc: 'Chinh sach truy cap, bao mat, va tuan thu quy dinh phap ly',
+    desc: 'Chính sách truy cập, bảo mật, và tuân thủ quy định pháp lý',
     color: '#059669',
   },
   {
     icon: '🤖',
     title: 'AI/ML Orchestration',
-    desc: 'Ket hop AI de tu dong hoa cac quy trinh quan ly du lieu',
+    desc: 'Kết hợp AI để tự động hóa các quy trình quản lý dữ liệu',
     color: '#D97706',
   },
   {
     icon: '📡',
     title: 'Real-time Integration',
-    desc: 'Dong bo du lieu theo thoi gian thuc tu nhieu nguon',
+    desc: 'Đồng bộ dữ liệu theo thời gian thực từ nhiều nguồn',
     color: '#DC2626',
   },
 ]
@@ -71,7 +71,7 @@ export function Slide13DiagramComponents() {
             letterSpacing: '-0.02em',
           }}
         >
-          Cac thanh phan cot loi cua Data Fabric
+          Các thành phần cốt lõi của Data Fabric
         </h2>
       </motion.div>
 

@@ -77,8 +77,8 @@ export function Slide20SectionSolutions() {
             letterSpacing: '-0.02em',
           }}
         >
-          Giai phap{' '}
-          <span style={{ color: theme.colors.accent }}>co san</span>
+          Giải pháp{' '}
+          <span style={{ color: theme.colors.accent }}>có sẵn</span>
         </motion.h2>
         <motion.div
           initial={{ scaleX: 0 }}

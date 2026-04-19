@@ -77,8 +77,8 @@ export function Slide18SectionExample() {
             letterSpacing: '-0.02em',
           }}
         >
-          Vi du{' '}
-          <span style={{ color: theme.colors.accent }}>minh hoa</span>
+          Ví dụ{' '}
+          <span style={{ color: theme.colors.accent }}>minh họa</span>
         </motion.h2>
         <motion.div
           initial={{ scaleX: 0 }}

@@ -5,32 +5,32 @@ import { container, fadeInUp, scaleIn } from '../lib/animations'
 const challenges = [
   {
     icon: '🏢',
-    title: 'Su co lap du lieu (Data Silos)',
-    desc: 'Du lieu nam rai rac o nhieu phong ban, ung dung khac nhau va khong "noi chuyen" duoc voi nhau.',
+    title: 'Sự cô lập dữ liệu (Data Silos)',
+    desc: 'Dữ liệu nằm rải rác ở nhiều phòng ban, ứng dụng khác nhau và không "nói chuyện" được với nhau.',
     color: '#DC2626',
   },
   {
     icon: '☁',
-    title: 'Moi truong phuc tap (Hybrid & Multi-cloud)',
-    desc: 'Du lieu vua o duoi server cong ty (On-premise), vua o tren nhieu nen tang may (AWS, Azure, Google Cloud), gay kho khan khi muon tong hop.',
+    title: 'Môi trường phức tạp (Hybrid & Multi-cloud)',
+    desc: 'Dữ liệu vừa ở dưới server công ty (On-premise), vừa ở trên nhiều nền tảng mây (AWS, Azure, Google Cloud), gây khó khăn khi muốn tổng hợp.',
     color: '#D97706',
   },
   {
     icon: '⏱',
-    title: 'Quy trinh thu cong & Cham tre',
-    desc: 'Viec lay du lieu mat vai tuan vi phai cho IT viet code, chay ETL (chiet xuat, bien doi, nap) thu cong.',
+    title: 'Quy trình thủ công & Chậm trễ',
+    desc: 'Việc lấy dữ liệu mất vài tuần vì phải chờ IT viết code, chạy ETL (chiết xuất, biến đổi, nạp) thủ công.',
     color: '#7C3AED',
   },
   {
     icon: '🌑',
-    title: 'Du lieu "toi" (Dark Data)',
-    desc: 'Doanh nghiep co rat nhieu du lieu nhung khong biet minh dang co gi, du lieu do co dang tin hay khong (thieu Metadata).',
+    title: 'Dữ liệu "tối" (Dark Data)',
+    desc: 'Doanh nghiệp có rất nhiều dữ liệu nhưng không biết mình đang có gì, dữ liệu đó có đáng tin hay không (thiếu Metadata).',
     color: '#0F172A',
   },
   {
     icon: '🔒',
-    title: 'Rui ro bao mat',
-    desc: 'Cang nhieu nguon du lieu thi cang kho kiem soat ai dang xem cai gi, de vi pham quy dinh phap luat (nhu GDPR).',
+    title: 'Rủi ro bảo mật',
+    desc: 'Càng nhiều nguồn dữ liệu thì càng khó kiểm soát ai đang xem cái gì, dễ vi phạm quy định pháp luật (như GDPR).',
     color: '#059669',
   },
 ]
@@ -67,7 +67,7 @@ export function Slide05Challenges() {
               marginBottom: 10,
             }}
           >
-            Boi canh
+            Bối cảnh
           </div>
           <h2
             style={{
@@ -78,7 +78,7 @@ export function Slide05Challenges() {
               letterSpacing: '-0.02em',
             }}
           >
-            Kho khan chung cua viec quan ly du lieu
+            Khó khăn chung của việc quản lý dữ liệu
           </h2>
         </motion.div>
 

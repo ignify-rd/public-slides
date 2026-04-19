@@ -77,8 +77,8 @@ export function Slide07SectionSolution() {
             letterSpacing: '-0.02em',
           }}
         >
-          Xu ly{' '}
-          <span style={{ color: theme.colors.accent }}>the nao?</span>
+          Xử lý{' '}
+          <span style={{ color: theme.colors.accent }}>thế nào?</span>
         </motion.h2>
         <motion.div
           initial={{ scaleX: 0 }}

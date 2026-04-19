@@ -161,7 +161,7 @@ export function Slide01Title() {
           }}
         >
           <span style={{ color: 'white', fontSize: theme.sizes.body, fontWeight: 600 }}>
-            De hieu - Thuc te - Ung dung ngay
+            Dễ hiểu - Thực tế - Ứng dụng ngay
           </span>
         </motion.div>
 
@@ -175,9 +175,9 @@ export function Slide01Title() {
             fontStyle: 'italic',
           }}
         >
-          Tai lieu nay thuoc pham vi luu hanh noi bo va khong duoc phep sao chep,
-          cung cap, tiet lo hoac chia se cho bat ky ben thu ba nao ngoai to chuc,
-          tru truong hop da duoc cap phep truoc bang van ban.
+          Tài liệu này thuộc phạm vi lưu hành nội bộ và không được phép sao chép,
+          cung cấp, tiết lộ hoặc chia sẻ cho bất kỳ bên thứ ba nào ngoài tổ chức,
+          trừ trường hợp đã được cấp phép trước bằng văn bản.
         </motion.p>
       </motion.div>
 

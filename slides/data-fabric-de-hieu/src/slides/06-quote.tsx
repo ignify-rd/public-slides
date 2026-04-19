@@ -81,7 +81,7 @@ export function Slide06Quote() {
             letterSpacing: '-0.01em',
           }}
         >
-          Trong ky nguyen AI, mot nguon du lieu tin cay duy nhat{' '}
+          Trong kỷ nguyên AI, một nguồn dữ liệu tin cậy duy nhất{' '}
           <span
             style={{
               background: 'rgba(255,255,255,0.2)',
@@ -92,11 +92,11 @@ export function Slide06Quote() {
           >
             (Single Source of Truth)
           </span>{' '}
-          chinh la{' '}
+          chính là{' '}
           <span style={{ color: '#FDE68A', fontWeight: 800 }}>
             'xuong song'
           </span>{' '}
-          giup doanh nghiep van hanh chinh xac va hieu qua.
+          giúp doanh nghiệp vận hành chính xác và hiệu quả.
         </p>
 
         <motion.div
@@ -142,7 +142,7 @@ export function Slide06Quote() {
           </svg>
         </div>
         <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.1em' }}>
-          Nen tang cho AI era
+          Nền tảng cho AI era
         </span>
       </motion.div>
     </div>

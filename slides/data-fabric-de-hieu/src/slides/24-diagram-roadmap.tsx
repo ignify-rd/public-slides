@@ -6,54 +6,54 @@ const phases = [
   {
     phase: 'Phase 1',
     title: 'Data Audit & Catalog',
-    duration: 'Thang 1-2',
+    duration: 'Tháng 1-2',
     tasks: [
-      'Kiem ke toan bo nguon du lieu hien co',
-      'Xac dinh cac silo du lieu quan trong',
-      'Danh gia chat luong va do tin cay',
-      'Chon cong cu Data Catalog phu hop',
+      'Kiểm kê toàn bộ nguồn dữ liệu hiện có',
+      'Xác định các silo dữ liệu quan trọng',
+      'Đánh giá chất lượng và độ tin cậy',
+      'Chọn công cụ Data Catalog phù hợp',
     ],
     color: '#DC2626',
-    status: 'Nen lam truoc',
+    status: 'Nên làm trước',
   },
   {
     phase: 'Phase 2',
     title: 'Foundation & Connectivity',
-    duration: 'Thang 3-4',
+    duration: 'Tháng 3-4',
     tasks: [
-      'Trien khai Data Fabric platform',
-      'Ket noi cac nguon du lieu chinh',
-      'Cau hinh basic metadata tagging',
-      'Thiet lap chinh sach truy cap co ban',
+      'Triển khai Data Fabric platform',
+      'Kết nối các nguồn dữ liệu chính',
+      'Cấu hình basic metadata tagging',
+      'Thiết lập chính sách truy cập cơ bản',
     ],
     color: '#D97706',
-    status: 'Nen tang',
+    status: 'Nền tảng',
   },
   {
     phase: 'Phase 3',
     title: 'Intelligence & Governance',
-    duration: 'Thang 5-8',
+    duration: 'Tháng 5-8',
     tasks: [
-      'Bat AI tu dong hoa metadata',
-      'Cau hinh Data Lineage day du',
-      'Trien khai Data Quality monitoring',
-      'Training user va data steward',
+      'Bật AI tự động hóa metadata',
+      'Cấu hình Data Lineage đầy đủ',
+      'Triển khai Data Quality monitoring',
+      'Training user và data steward',
     ],
     color: theme.colors.accent,
-    status: 'Mo rong',
+    status: 'Mở rộng',
   },
   {
     phase: 'Phase 4',
     title: 'Scale & Optimize',
-    duration: 'Thang 9+',
+    duration: 'Tháng 9+',
     tasks: [
-      'Mo rong ra toan to chuc',
-      'Tich hop voi AI/ML workloads',
-      'Tu dong hoa quy trinh Data Ops',
-      'Do luong va toi uu ROI',
+      'Mở rộng ra toàn tổ chức',
+      'Tích hợp với AI/ML workloads',
+      'Tự động hóa quy trình Data Ops',
+      'Đo lường và tối ưu ROI',
     ],
     color: theme.colors.accentGreen,
-    status: 'Tang truong',
+    status: 'Tăng trưởng',
   },
 ]
 
@@ -87,7 +87,7 @@ export function Slide24DiagramRoadmap() {
             letterSpacing: '-0.02em',
           }}
         >
-          Lo trinh trien khai Data Fabric
+          Lộ trình triển khai Data Fabric
         </h2>
       </motion.div>
 
@@ -231,8 +231,8 @@ export function Slide24DiagramRoadmap() {
           fontStyle: 'italic',
         }}
       >
-        Lo trinh co the dieu chinh tuy theo quy mo to chuc va he thong hien co.
-        Nen bat dau voi pilot project nho de chung minh gia tri truoc khi scale up.
+        Lộ trình có thể điều chỉnh tùy theo quy mô tổ chức và hệ thống hiện có.
+        Nên bắt đầu với pilot project nhỏ để chứng minh giá trị trước khi scale up.
       </motion.div>
     </div>
   )

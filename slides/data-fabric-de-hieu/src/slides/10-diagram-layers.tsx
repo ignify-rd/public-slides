@@ -65,7 +65,7 @@ export function Slide10DiagramLayers() {
             letterSpacing: '-0.02em',
           }}
         >
-          Kien truc phan tang cua Data Fabric
+          Kiến trúc phân tầng của Data Fabric
         </h2>
       </motion.div>
 

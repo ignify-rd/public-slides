@@ -4,9 +4,9 @@ import { container, fadeInUp, scaleIn } from '../lib/animations'
 
 const locations = [
   { icon: '📊', label: 'trong file Excel' },
-  { icon: '☁', label: 'tren cloud' },
-  { icon: '🗄', label: 'trong co so du lieu cu' },
-  { icon: '🏢', label: 'o cac phong ban khac nhau' },
+  { icon: '☁', label: 'trên cloud' },
+  { icon: '🗄', label: 'trong cơ sở dữ liệu cũ' },
+  { icon: '🏢', label: 'ở các phòng ban khác nhau' },
 ]
 
 export function Slide04WhyContent() {
@@ -60,7 +60,7 @@ export function Slide04WhyContent() {
                 marginBottom: 10,
               }}
             >
-              Van de
+              Vấn đề
             </div>
             <h2
               style={{
@@ -71,7 +71,7 @@ export function Slide04WhyContent() {
                 letterSpacing: '-0.02em',
               }}
             >
-              Tai sao can{' '}
+              Tại sao cần{' '}
               <span style={{ color: theme.colors.accent }}>Data Fabric?</span>
             </h2>
           </motion.div>
@@ -85,7 +85,7 @@ export function Slide04WhyContent() {
                 marginBottom: 16,
               }}
             >
-              Du lieu cua ban nam rai rac khap noi:
+              Dữ liệu của bạn nằm rải rác khắp nơi:
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 20 }}>
               {locations.map((loc, i) => (
@@ -117,7 +117,7 @@ export function Slide04WhyContent() {
                 fontStyle: 'italic',
               }}
             >
-              Thuong thi rat lon xon.
+              Thường thì rất lộn xộn.
             </p>
             <p
               style={{
@@ -127,8 +127,8 @@ export function Slide04WhyContent() {
                 marginTop: 10,
               }}
             >
-              Moi nguoi mat thoi gian tim du lieu dung, sao chep qua lai,
-              va sua cho lech nhau.
+              Mọi người mất thời gian tìm dữ liệu đúng, sao chép qua lại,
+              và sửa cho lệch nhau.
             </p>
           </motion.div>
         </motion.div>
@@ -190,7 +190,7 @@ export function Slide04WhyContent() {
                 marginBottom: 10,
               }}
             >
-              Giai phap
+              Giải pháp
             </div>
             <p
               style={{
@@ -201,7 +201,7 @@ export function Slide04WhyContent() {
                 marginBottom: 12,
               }}
             >
-              Data fabric giong nhu mot <em>smart layer</em> phu len cac he thong do.
+              Data fabric giống như một <em>smart layer</em> phủ lên các hệ thống đó.
             </p>
             <p
               style={{
@@ -210,7 +210,7 @@ export function Slide04WhyContent() {
                 lineHeight: 1.7,
               }}
             >
-              No giup ket noi, sap xep, va lam du lieu de tim, de dung hon.
+              Nó giúp kết nối, sắp xếp, và làm dữ liệu dễ tìm, dễ dùng hơn.
             </p>
           </div>
         </motion.div>

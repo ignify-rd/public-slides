@@ -4,30 +4,30 @@ import { container, scaleIn, fadeInUp } from '../lib/animations'
 
 const resolutions = [
   {
-    problem: 'Du lieu mai thuan',
-    before: 'Sales: 15M, Ke toan: 18M',
-    after: 'Fabric chuan hoa: gross = 18M, net = 15M',
+    problem: 'Dữ liệu mâu thuẫn',
+    before: 'Sales: 15M, Kế toán: 18M',
+    after: 'Fabric chuẩn hóa: gross = 18M, net = 15M',
     solution: 'Business Rules Engine',
     color: '#DC2626',
   },
   {
-    problem: 'Du lieu tre do',
-    before: 'Bao cao dung du lieu tuan truoc',
-    after: 'Truy cap real-time tu nguon goc',
+    problem: 'Dữ liệu trễ độ',
+    before: 'Báo cáo dùng dữ liệu tuần trước',
+    after: 'Truy cập real-time từ nguồn gốc',
     solution: 'Data Virtualization',
     color: '#D97706',
   },
   {
-    problem: 'Truy cap sai pham',
-    before: 'Moi nguoi xem duoc tat ca',
-    after: 'Phan quyen theo vai tro (RBAC)',
+    problem: 'Truy cập sai phạm',
+    before: 'Mọi người xem được tất cả',
+    after: 'Phân quyền theo vai trò (RBAC)',
     solution: 'Data Governance Layer',
     color: '#7C3AED',
   },
   {
-    problem: 'Khong biet nguon goc',
-    before: 'Con so tu dau ra khong ro',
-    after: 'Truy vet duoc toan bo hanh trinh du lieu',
+    problem: 'Không biết nguồn gốc',
+    before: 'Con số từ đâu ra không rõ',
+    after: 'Truy vết được toàn bộ hành trình dữ liệu',
     solution: 'Data Lineage Tracking',
     color: '#0EA5E9',
   },
@@ -63,7 +63,7 @@ export function Slide16DiagramResolution() {
             letterSpacing: '-0.02em',
           }}
         >
-          Data Fabric giai quyet nhu the nao?
+          Data Fabric giải quyết như thế nào?
         </h2>
       </motion.div>
 
@@ -111,7 +111,7 @@ export function Slide16DiagramResolution() {
                 lineHeight: 1.4,
               }}
             >
-              <span style={{ fontWeight: 600 }}>Truoc: </span>{res.before}
+              <span style={{ fontWeight: 600 }}>Trước: </span>{res.before}
             </div>
             <div style={{ textAlign: 'center', color: theme.colors.accentGreen, fontWeight: 700 }}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">

@@ -7,32 +7,32 @@ const vendors = [
     vendor: 'Microsoft',
     logo: '🪟',
     solution: 'Microsoft Fabric',
-    philosophy: 'Su don gian: Moi thu trong mot (All-in-one).',
-    strength: 'Tich hop sau voi Azure, Power BI, Office 365',
+    philosophy: 'Sự đơn giản: Mọi thứ trong một (All-in-one).',
+    strength: 'Tích hợp sâu với Azure, Power BI, Office 365',
     color: '#0078D4',
   },
   {
     vendor: 'IBM',
     logo: '🔵',
     solution: 'Cloud Pak for Data',
-    philosophy: 'Su thong minh: Dung AI quan tri metadata cuc sau.',
-    strength: 'AI Governance, Watson, do chin muoi cho enterprise',
+    philosophy: 'Sự thông minh: Dùng AI quản trị metadata cực sâu.',
+    strength: 'AI Governance, Watson, độ chín muồi cho enterprise',
     color: '#1F70C1',
   },
   {
     vendor: 'AWS',
     logo: '🟠',
     solution: 'Amazon DataZone',
-    philosophy: 'Su linh hoat: Ket noi moi dich vu AWS khong can copy.',
-    strength: 'Phu hop khi da dung nhieu dich vu AWS',
+    philosophy: 'Sự linh hoạt: Kết nối mọi dịch vụ AWS không cần copy.',
+    strength: 'Phù hợp khi đã dùng nhiều dịch vụ AWS',
     color: '#FF9900',
   },
   {
     vendor: 'SAP',
     logo: '🟦',
     solution: 'SAP Datasphere',
-    philosophy: 'Ngu canh kinh doanh: Giu nguyen y nghia du lieu ke toan/ERP.',
-    strength: 'Tot nhat khi cong ty dang dung SAP ERP',
+    philosophy: 'Ngữ cảnh kinh doanh: Giữ nguyên ý nghĩa dữ liệu kế toán/ERP.',
+    strength: 'Tốt nhất khi công ty đang dùng SAP ERP',
     color: '#0FAAFF',
   },
 ]
@@ -69,7 +69,7 @@ export function Slide21VendorsTable() {
               marginBottom: 10,
             }}
           >
-            Tren thi truong
+            Trên thị trường
           </div>
           <h2
             style={{
@@ -80,7 +80,7 @@ export function Slide21VendorsTable() {
               letterSpacing: '-0.02em',
             }}
           >
-            Cac giai phap Data Fabric hang dau
+            Các giải pháp Data Fabric hàng đầu
           </h2>
         </motion.div>
 
@@ -94,7 +94,7 @@ export function Slide21VendorsTable() {
               padding: '8px 16px',
             }}
           >
-            {['Nha cung cap', 'Giai phap chinh', 'Triet ly', 'Diem manh'].map((h) => (
+            {['Nhà cung cấp', 'Giải pháp chính', 'Triết lý', 'Điểm mạnh'].map((h) => (
               <div
                 key={h}
                 style={{
