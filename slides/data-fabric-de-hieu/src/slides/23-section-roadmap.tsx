@@ -77,8 +77,8 @@ export function Slide23SectionRoadmap() {
             letterSpacing: '-0.02em',
           }}
         >
-          Lo trinh{' '}
-          <span style={{ color: theme.colors.accent }}>trien khai (Roadmap)</span>
+          Lộ trình{' '}
+          <span style={{ color: theme.colors.accent }}>triển khai (Roadmap)</span>
         </motion.h2>
         <motion.div
           initial={{ scaleX: 0 }}

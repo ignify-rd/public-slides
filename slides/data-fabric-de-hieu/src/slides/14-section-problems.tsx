@@ -77,8 +77,8 @@ export function Slide14SectionProblems() {
             letterSpacing: '-0.02em',
           }}
         >
-          Nhung van de{' '}
-          <span style={{ color: theme.colors.accent }}>thuong phai xu ly</span>
+          Những vấn đề{' '}
+          <span style={{ color: theme.colors.accent }}>thường phải xử lý</span>
         </motion.h2>
         <motion.div
           initial={{ scaleX: 0 }}

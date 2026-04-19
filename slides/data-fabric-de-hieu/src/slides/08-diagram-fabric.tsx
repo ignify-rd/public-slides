@@ -41,7 +41,7 @@ export function Slide08DiagramFabric() {
         >
           Data Fabric:{' '}
           <span style={{ color: theme.colors.accent }}>Smart Layer</span>{' '}
-          ket noi moi nguon
+          kết nối mọi nguồn
         </h2>
       </motion.div>
 

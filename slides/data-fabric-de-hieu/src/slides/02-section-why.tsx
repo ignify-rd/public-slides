@@ -81,7 +81,7 @@ export function Slide02SectionWhy() {
             letterSpacing: '-0.02em',
           }}
         >
-          Tai sao can{' '}
+          Tại sao cần{' '}
           <span style={{ color: theme.colors.accent }}>Data Fabric?</span>
         </motion.h2>
         <motion.div

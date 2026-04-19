@@ -50,7 +50,7 @@ export function Slide22DiagramEcosystem() {
             letterSpacing: '-0.02em',
           }}
         >
-          He sinh thai Data Fabric
+          Hệ sinh thái Data Fabric
         </h2>
       </motion.div>
 
@@ -69,7 +69,7 @@ export function Slide22DiagramEcosystem() {
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 12 }}>
           <motion.div variants={scaleIn}>
             <div style={{ fontSize: '0.65rem', fontWeight: 700, color: theme.colors.accentGreen, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: 8 }}>
-              Tang ung dung
+              Tầng ứng dụng
             </div>
             <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
               {rings[0].items.map((item) => (
@@ -102,7 +102,7 @@ export function Slide22DiagramEcosystem() {
 
           <motion.div variants={scaleIn}>
             <div style={{ fontSize: '0.65rem', fontWeight: 700, color: theme.colors.accentAlt, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: 8 }}>
-              Tang tieu thu du lieu
+              Tầng tiêu thụ dữ liệu
             </div>
             <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
               {rings[1].items.map((item) => (
@@ -164,7 +164,7 @@ export function Slide22DiagramEcosystem() {
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 12 }}>
           <motion.div variants={scaleIn}>
             <div style={{ fontSize: '0.65rem', fontWeight: 700, color: '#D97706', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: 8 }}>
-              Nguon du lieu
+              Nguồn dữ liệu
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               {['SQL / NoSQL Databases', 'Cloud Storage (S3, Azure Blob)', 'SaaS Applications', 'Streaming / Kafka', 'Legacy Systems'].map((src) => (

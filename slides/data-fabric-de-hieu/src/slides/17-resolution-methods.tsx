@@ -5,20 +5,20 @@ import { container, fadeInUp, scaleIn } from '../lib/animations'
 const methods = [
   {
     icon: '🔍',
-    title: 'Phan tich Metadata (Lineage)',
-    desc: 'No kiem tra xem du lieu nay den tu dau. He thong SQL chinh thuc thuong duoc may cham diem tin cay cao hon mot tep Excel nhap tay.',
+    title: 'Phân tích Metadata (Lineage)',
+    desc: 'Nó kiểm tra xem dữ liệu này đến từ đâu. Hệ thống SQL chính thức thường được máy chấm điểm tin cậy cao hơn một tệp Excel nhập tay.',
     color: theme.colors.accent,
   },
   {
     icon: '📋',
-    title: 'Ap dung Quy tac kinh doanh (Business Rules)',
-    desc: 'Ban co the cai dat: "Neu co sai lech ve luong, luon uu tien du lieu tu he thong Ke toan". Quy tac nay duoc ap dung tu dong cho moi truy van.',
+    title: 'Áp dụng Quy tắc kinh doanh (Business Rules)',
+    desc: 'Bạn có thể cài đặt: "Nếu có sai lệch về lương, luôn ưu tiên dữ liệu từ hệ thống Kế toán". Quy tắc này được áp dụng tự động cho mọi truy vấn.',
     color: '#7C3AED',
   },
   {
     icon: '🤖',
-    title: 'Hoc may (AI/ML)',
-    desc: 'AI quan sat lich su chinh sua. Neu no thay tep Excel thuong xuyen bi sai va da duoc sua lai nhieu lan, no se tu dong canh bao day la nguon du lieu "kem chat luong".',
+    title: 'Học máy (AI/ML)',
+    desc: 'AI quan sát lịch sử chỉnh sửa. Nếu nó thấy tệp Excel thường xuyên bị sai và đã được sửa lại nhiều lần, nó sẽ tự động cảnh báo đây là nguồn dữ liệu "kém chất lượng".',
     color: theme.colors.accentGreen,
   },
 ]
@@ -71,7 +71,7 @@ export function Slide17ResolutionMethods() {
               marginBottom: 10,
             }}
           >
-            Co che xu ly sai lech
+            Cơ chế xử lý sai lệch
           </div>
           <h2
             style={{
@@ -82,7 +82,7 @@ export function Slide17ResolutionMethods() {
               letterSpacing: '-0.02em',
             }}
           >
-            Cach Data Fabric xu ly sai lech
+            Cách Data Fabric xử lý sai lệch
           </h2>
         </motion.div>
 

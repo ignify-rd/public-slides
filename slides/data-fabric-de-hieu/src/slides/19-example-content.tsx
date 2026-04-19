@@ -4,23 +4,23 @@ import { container, fadeInUp, scaleIn } from '../lib/animations'
 
 const steps = [
   {
-    step: 'Buoc 1',
-    title: 'Ao hoa (Virtualization)',
-    desc: 'Ban khong can tai du lieu ve may. Data Fabric tao ra cac "pipelines" ket noi truc tiep den 3 nguon nay: SQL Server, Excel SharePoint, va SaaS.',
+    step: 'Bước 1',
+    title: 'Ảo hóa (Virtualization)',
+    desc: 'Bạn không cần tải dữ liệu về máy. Data Fabric tạo ra các "pipelines" kết nối trực tiếp đến 3 nguồn này: SQL Server, Excel SharePoint, và SaaS.',
     color: theme.colors.accent,
     icon: '🔌',
   },
   {
-    step: 'Buoc 2',
-    title: 'Thau hieu / AI',
-    desc: 'Bo nao AI cua Fabric nhan dien: "Du ten cot khac nhau va dinh gia tien te khac nhau, nhung tat ca deu mang nhan (tag) la #Salary". No tu dong quy doi USD ve VND dua tren ty gia moi nhat.',
+    step: 'Bước 2',
+    title: 'Thấu hiểu / AI',
+    desc: 'Bộ não AI của Fabric nhận diện: "Dù tên cột khác nhau và định giá tiền tệ khác nhau, nhưng tất cả đều mang nhãn (tag) là #Salary". Nó tự động quy đổi USD về VND dựa trên tỷ giá mới nhất.',
     color: '#7C3AED',
     icon: '🤖',
   },
   {
-    step: 'Buoc 3',
-    title: 'Ket noi Power BI',
-    desc: 'Ban chi can mo Power BI, chon mot nguon duy nhat la "Data Fabric - Employee View". Moi su sai lech da duoc Fabric xu ly. Bieu do hien ra ngay chieu nay.',
+    step: 'Bước 3',
+    title: 'Kết nối Power BI',
+    desc: 'Bạn chỉ cần mở Power BI, chọn một nguồn duy nhất là "Data Fabric - Employee View". Mọi sự sai lệch đã được Fabric xử lý. Biểu đồ hiện ra ngay chiều này.',
     color: theme.colors.accentGreen,
     icon: '📊',
   },
@@ -64,7 +64,7 @@ export function Slide19ExampleContent() {
           <div style={{ fontSize: '1.4rem', flexShrink: 0 }}>💬</div>
           <div>
             <div style={{ fontSize: '0.65rem', color: theme.colors.accent, fontWeight: 700, marginBottom: 4, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-              Yeu cau tu Manager
+              Yêu cầu từ Manager
             </div>
             <p
               style={{
@@ -75,7 +75,7 @@ export function Slide19ExampleContent() {
                 lineHeight: 1.55,
               }}
             >
-              "Hay cho toi xem bieu do luong trung binh toan tap doan tren Power BI ngay chieu nay."
+              "Hãy cho tôi xem biểu đồ lương trung bình toàn tập đoàn trên Power BI ngay chiều này."
             </p>
           </div>
         </motion.div>
@@ -94,11 +94,11 @@ export function Slide19ExampleContent() {
             lineHeight: 1.6,
           }}
         >
-          <strong>Kich ban:</strong> Phong Sales luu luong trong SQL Server (cot{' '}
+          <strong>Kịch bản:</strong> Phòng Sales lưu lương trong SQL Server (cột{' '}
           <code style={{ background: '#FEF3C7', padding: '1px 4px', borderRadius: 3 }}>base_pay</code>),
-          phong Tech luu trong file Excel tren SharePoint (cot{' '}
+          phòng Tech lưu trong file Excel trên SharePoint (cột{' '}
           <code style={{ background: '#FEF3C7', padding: '1px 4px', borderRadius: 3 }}>Salary_USD</code>),
-          phong Marketing dung phan mem SaaS (cot{' '}
+          phòng Marketing dùng phần mềm SaaS (cột{' '}
           <code style={{ background: '#FEF3C7', padding: '1px 4px', borderRadius: 3 }}>Income</code>).
         </motion.div>
 
@@ -182,7 +182,7 @@ export function Slide19ExampleContent() {
         >
           <span style={{ fontSize: '1.2rem' }}>✅</span>
           <span style={{ fontSize: '0.78rem', color: theme.colors.accentGreen, fontWeight: 600 }}>
-            Ket qua: Bieu do hien len ngay, du lieu nhat quan, chinh xac - va ban da lam xong truoc chieu!
+            Kết quả: Biểu đồ hiện lên ngay, dữ liệu nhất quán, chính xác - và bạn đã làm xong trước chiều!
           </span>
         </motion.div>
       </motion.div>

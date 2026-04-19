@@ -78,7 +78,7 @@ export function Slide11SectionLocation() {
           }}
         >
           Data Fabric{' '}
-          <span style={{ color: theme.colors.accent }}>nam o dau?</span>
+          <span style={{ color: theme.colors.accent }}>nằm ở đâu?</span>
         </motion.h2>
         <motion.div
           initial={{ scaleX: 0 }}

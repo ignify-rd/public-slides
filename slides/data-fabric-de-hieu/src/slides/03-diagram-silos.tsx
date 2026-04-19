@@ -46,7 +46,7 @@ export function Slide03DiagramSilos() {
             marginBottom: 10,
           }}
         >
-          Thuc trang hien tai
+          Thực trạng hiện tại
         </div>
         <h2
           style={{
@@ -56,7 +56,7 @@ export function Slide03DiagramSilos() {
             letterSpacing: '-0.02em',
           }}
         >
-          Du lieu phan tan - khong ket noi
+          Dữ liệu phân tán - không kết nối
         </h2>
       </motion.div>
 
@@ -159,7 +159,7 @@ export function Slide03DiagramSilos() {
             <line x1="12" y1="9" x2="12" y2="13"/>
             <line x1="12" y1="17" x2="12.01" y2="17"/>
           </svg>
-          Khong "noi chuyen" duoc voi nhau
+          Không "nói chuyện" được với nhau
         </motion.div>
       </motion.div>
     </div>

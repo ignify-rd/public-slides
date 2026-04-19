@@ -40,7 +40,7 @@ export function Slide12DiagramArchitecture() {
             letterSpacing: '-0.02em',
           }}
         >
-          Cong ty su dung Data Fabric - Truoc va Sau
+          Công ty sử dụng Data Fabric - Trước và Sau
         </h2>
       </motion.div>
 
@@ -63,7 +63,7 @@ export function Slide12DiagramArchitecture() {
               marginBottom: 16,
             }}
           >
-            Truoc (Khong co Fabric)
+            Trước (Không có Fabric)
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
             {departments.map((dept, i) => (
@@ -108,7 +108,7 @@ export function Slide12DiagramArchitecture() {
               fontStyle: 'italic',
             }}
           >
-            Moi phong ban dung ten cot khac nhau - khong noi chuyen duoc!
+            Mỗi phòng ban dùng tên cột khác nhau - không nói chuyện được!
           </div>
         </div>
 
@@ -161,7 +161,7 @@ export function Slide12DiagramArchitecture() {
               marginBottom: 16,
             }}
           >
-            Sau (Co Data Fabric)
+            Sau (Có Data Fabric)
           </div>
           <motion.div
             variants={scaleIn}
@@ -194,7 +194,7 @@ export function Slide12DiagramArchitecture() {
             >
               base_pay = Salary_USD = Income = gross_salary
               <br />
-              Fabric nhan dang tat ca la mot truong du lieu
+              Fabric nhận dạng tất cả là một trường dữ liệu
             </div>
             {departments.map((dept, i) => (
               <div
@@ -221,7 +221,7 @@ export function Slide12DiagramArchitecture() {
               fontStyle: 'italic',
             }}
           >
-            Mot nguon nhin thong nhat - nhat quan, chinh xac!
+            Một nguồn nhìn thống nhất - nhất quán, chính xác!
           </div>
         </div>
       </motion.div>

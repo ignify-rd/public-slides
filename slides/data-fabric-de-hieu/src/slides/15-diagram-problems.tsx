@@ -5,30 +5,30 @@ import { container, scaleIn, fadeInUp } from '../lib/animations'
 const problems = [
   {
     icon: '⚠',
-    title: 'Du lieu mai thuan',
-    scenario: 'Phong Sales: luong = 15M VND, Phong Ke toan: luong = 18M VND',
-    cause: 'Hai he thong dung don vi khac nhau (gross vs net)',
+    title: 'Dữ liệu mâu thuẫn',
+    scenario: 'Phòng Sales: lương = 15M VND, Phòng Kế toán: lương = 18M VND',
+    cause: 'Hai hệ thống dùng đơn vị khác nhau (gross vs net)',
     color: '#DC2626',
   },
   {
     icon: '🕒',
-    title: 'Tre do - Du lieu cu',
-    scenario: 'Bao cao hom nay dung du lieu cua... tuan truoc',
-    cause: 'Pipeline ETL chay batch hang dem, khong phai real-time',
+    title: 'Trễ độ - Dữ liệu cũ',
+    scenario: 'Báo cáo hôm nay dùng dữ liệu của... tuần trước',
+    cause: 'Pipeline ETL chạy batch hằng đêm, không phải real-time',
     color: '#D97706',
   },
   {
     icon: '🚫',
-    title: 'Truy cap sai pham',
-    scenario: 'Nhan vien co the xem luong cua toan cong ty',
-    cause: 'Chua co chinh sach phan quyen du lieu theo phong ban',
+    title: 'Truy cập sai phạm',
+    scenario: 'Nhân viên có thể xem lương của toàn công ty',
+    cause: 'Chưa có chính sách phân quyền dữ liệu theo phòng ban',
     color: '#7C3AED',
   },
   {
     icon: '❓',
-    title: 'Khong biet du lieu den tu dau',
-    scenario: 'Con so "doanh thu Q3" nay lay tu bao cao nao?',
-    cause: 'Khong co Data Lineage de truy vet nguon goc',
+    title: 'Không biết dữ liệu đến từ đâu',
+    scenario: 'Con số "doanh thu Q3" này lấy từ báo cáo nào?',
+    cause: 'Không có Data Lineage để truy vết nguồn gốc',
     color: '#0EA5E9',
   },
 ]
@@ -63,7 +63,7 @@ export function Slide15DiagramProblems() {
             letterSpacing: '-0.02em',
           }}
         >
-          Cac van de thuong gap trong thuc te
+          Các vấn đề thường gặp trong thực tế
         </h2>
       </motion.div>
 
@@ -136,7 +136,7 @@ export function Slide15DiagramProblems() {
                 </div>
               </div>
               <div style={{ display: 'flex', gap: 6, alignItems: 'flex-start' }}>
-                <span style={{ color: prob.color, fontSize: '0.75rem', flexShrink: 0 }}>Nguyen nhan:</span>
+                <span style={{ color: prob.color, fontSize: '0.75rem', flexShrink: 0 }}>Nguyên nhân:</span>
                 <span style={{ fontSize: '0.68rem', color: theme.colors.textMuted, lineHeight: 1.5 }}>
                   {prob.cause}
                 </span>
