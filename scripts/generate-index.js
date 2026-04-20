@@ -41,7 +41,7 @@ function buildCard(slug) {
   const [c1, c2] = colorFor(slug);
   const href = `/public-slides/${slug}/`;
   return `
-    <a class="card" href="${href}" aria-label="${title}">
+    <a class="card" data-title="${title.toLowerCase()}" href="${href}" aria-label="${title}">
       <div class="thumb" style="background: linear-gradient(135deg, ${c1} 0%, ${c2} 100%);">
         <span class="thumb-text">${slug}</span>
       </div>
@@ -186,6 +186,39 @@ function generate() {
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
+
+    .search-wrapper {
+      margin-bottom: 24px;
+    }
+
+    #search {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px 16px;
+      font-size: 0.9375rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #1e293b;
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    #search:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    }
+
+    #search::placeholder {
+      color: #94a3b8;
+    }
+
+    #no-results {
+      margin-top: 32px;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.9375rem;
+    }
   </style>
 </head>
 <body>
@@ -194,11 +227,33 @@ function generate() {
     <span class="badge">${slugs.length} decks</span>
   </header>
   <main>
+    <div class="search-wrapper">
+      <input
+        id="search"
+        type="text"
+        placeholder="Tìm kiếm deck..."
+        oninput="filterDecks(this.value)"
+      />
+    </div>
     <p class="section-title">All Slide Decks</p>
     <div class="grid">
       ${cards}
     </div>
+    <p id="no-results" style="display:none">Không tìm thấy deck</p>
   </main>
+  <script>
+    function filterDecks(query) {
+      var q = query.trim().toLowerCase();
+      var cards = document.querySelectorAll('.card');
+      var visible = 0;
+      cards.forEach(function(card) {
+        var match = !q || card.dataset.title.includes(q);
+        card.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+      document.getElementById('no-results').style.display = visible ? 'none' : '';
+    }
+  </script>
 </body>
 </html>
 `;
