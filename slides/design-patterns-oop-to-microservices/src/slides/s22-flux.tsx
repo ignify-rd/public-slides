@@ -9,12 +9,17 @@ import type { SlideProps } from './types'
 export default function S22Flux(_: SlideProps) {
   const phase = useTicker([2200, 2200, 2200, 2200])
   const N = {
-    view: { x: 250, y: 20, w: 190, h: 78 },
-    action: { x: 500, y: 170, w: 170, h: 78 },
-    reducer: { x: 250, y: 322, w: 190, h: 78 },
-    store: { x: 20, y: 170, w: 170, h: 78 },
+    view: { x: 250, y: 10, w: 190, h: 78 },
+    action: { x: 500, y: 158, w: 170, h: 78 },
+    reducer: { x: 250, y: 306, w: 190, h: 78 },
+    store: { x: 20, y: 158, w: 170, h: 78 },
   }
   const c = (n: { x: number; y: number; w: number; h: number }) => ({ x: n.x + n.w / 2, y: n.y + n.h / 2 })
+  // packet chạy đoạn giữa wire (né phần đè lên node ở 2 đầu)
+  const lerp = (a: { x: number; y: number }, b: { x: number; y: number }, t: number) => ({
+    x: a.x + (b.x - a.x) * t,
+    y: a.y + (b.y - a.y) * t,
+  })
   const LOOP = [
     { from: c(N.view), to: c(N.action), label: 'dispatch(action)', color: T.accentBright },
     { from: c(N.action), to: c(N.reducer), label: '{ type: ADD_TODO }', color: T.warn },
@@ -56,7 +61,7 @@ export default function S22Flux(_: SlideProps) {
             {LOOP.map((e, i) => (
               <Packet
                 key={`${i}-${phase === i}`}
-                pts={[e.from, e.to]}
+                pts={[lerp(e.from, e.to, 0.24), lerp(e.from, e.to, 0.76)]}
                 dur={1.4}
                 repeatDelay={0.8}
                 color={e.color}
@@ -64,7 +69,7 @@ export default function S22Flux(_: SlideProps) {
                 visible={phase === i}
               />
             ))}
-            <Chip x={345} y={200} text={`${phase + 1}/4 — ${CAP[phase]}`} tone="accent" />
+            <Chip x={345} y={404} text={`${phase + 1}/4 — ${CAP[phase]}`} tone="accent" />
           </FlowCanvas>
         }
       />

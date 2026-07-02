@@ -14,9 +14,9 @@ const CALLERS = [
 
 const CODE = `class Config {
   private static instance: Config
-  private constructor() {}          // chặn new từ bên ngoài
+  private constructor() {}   // chặn new từ ngoài
   static getInstance(): Config {
-    this.instance ??= new Config()  // tạo đúng 1 lần
+    this.instance ??= new Config()  // tạo 1 lần
     return this.instance
   }
 }`

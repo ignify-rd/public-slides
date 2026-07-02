@@ -69,7 +69,7 @@ export default function S14ObserverPain(_: SlideProps) {
               <Packet
                 key={`resp-${i}-${phase}`}
                 pts={[
-                  { x: 470, y: 214 },
+                  { x: 456, y: 214 },
                   { x: 444, y: 214 },
                   { x: 444, y: c.y + 46 },
                   { x: 176, y: c.y + 46 },
@@ -79,7 +79,7 @@ export default function S14ObserverPain(_: SlideProps) {
                 repeatDelay={0.55}
                 size={10}
                 color={phase === 1 ? T.danger : T.muted}
-                label={phase === 1 ? 'vẫn “chưa” ✗' : '204: chưa'}
+                label={phase === 1 ? 'vẫn ✗' : '204'}
               />
             ))}
             <Chip

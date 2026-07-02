@@ -95,7 +95,6 @@ export default function S25Strangler(_: SlideProps) {
                   repeatDelay={0.6}
                   color={T.ok}
                   size={10}
-                  label={s.route}
                 />
               ) : (
                 <Packet
@@ -106,7 +105,6 @@ export default function S25Strangler(_: SlideProps) {
                   repeatDelay={1}
                   color={T.warn}
                   size={10}
-                  label={s.route}
                 />
               ),
             )}
