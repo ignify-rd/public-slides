@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-base: #0a0a0a;
+  --color-panel: #10131a;
+  --color-accent: #4361ee;
+  --color-accent-bright: #6d8cff;
+  --color-ink: #f2f5fa;
+  --color-muted: #8b93a7;
+  --color-ok: #2ec27e;
+  --color-danger: #ff5252;
+  --color-warn: #f0a832;
+  --font-display: 'Manrope', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #050506;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(67, 97, 238, 0.45);
+}
+
+.slide-bg {
+  background:
+    radial-gradient(ellipse at 15% 85%, rgba(67, 97, 238, 0.14) 0%, transparent 52%),
+    radial-gradient(ellipse at 85% 10%, rgba(67, 97, 238, 0.08) 0%, transparent 45%),
+    #0a0a0a;
+}
+
+.slide-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.028) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
