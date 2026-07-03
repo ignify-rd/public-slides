@@ -2,9 +2,8 @@ import type { Variants } from 'framer-motion'
 
 export const EASE = [0.25, 0.1, 0.25, 1] as const
 
-export const REDUCED =
-  typeof window !== 'undefined' &&
-  window.matchMedia('(prefers-reduced-motion: reduce)').matches
+// Motion always on — OS "reduce motion" setting intentionally ignored.
+export const REDUCED = false
 
 export const container: Variants = {
   hidden: { opacity: 0 },
