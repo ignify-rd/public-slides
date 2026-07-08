@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { SlideLayout } from '../components/SlideLayout'
 import { Tag, item } from '../components/primitives'
+import { useReveal } from '../components/anim'
 
 const gates = [
   { cmd: 'npm run typecheck', d: 'TS báo sai kiểu → agent tự sửa' },
@@ -10,6 +11,8 @@ const gates = [
 ]
 
 export function SlideVerification() {
+  // gates + dòng "all green" = gates.length + 1 bước in ra
+  const shown = useReveal(gates.length + 1, { delay: 700, step: 300 })
   return (
     <SlideLayout path="~/harness/verify" badge="VÒNG LẶP KIỂM CHỨNG">
       <div className="grid flex-1 min-h-0" style={{ gridTemplateColumns: '1fr 1fr', gap: 48 }}>
@@ -45,7 +48,15 @@ export function SlideVerification() {
           </div>
           <div style={{ padding: '16px 18px' }}>
             {gates.map((g, i) => (
-              <div key={i} style={{ marginBottom: i === gates.length - 1 ? 0 : 16 }}>
+              <div
+                key={i}
+                className={i === shown - 1 && shown <= gates.length ? 'type-caret' : ''}
+                style={{
+                  marginBottom: i === gates.length - 1 ? 0 : 16,
+                  opacity: i < shown ? 1 : 0,
+                  transition: 'opacity 0.2s ease',
+                }}
+              >
                 <div style={{ fontSize: '0.74rem' }}>
                   <span style={{ color: 'var(--green-dim)' }}>$ </span>
                   <span style={{ color: 'var(--text)' }}>{g.cmd}</span>
@@ -56,7 +67,16 @@ export function SlideVerification() {
               </div>
             ))}
           </div>
-          <div style={{ padding: '10px 18px', borderTop: '1px solid rgba(255,255,255,0.06)', fontSize: '0.66rem', color: 'var(--green)' }}>
+          <div
+            style={{
+              padding: '10px 18px',
+              borderTop: '1px solid rgba(255,255,255,0.06)',
+              fontSize: '0.66rem',
+              color: 'var(--green)',
+              opacity: shown > gates.length ? 1 : 0,
+              transition: 'opacity 0.3s ease',
+            }}
+          >
             ✓ all green → an toàn để review
           </div>
         </motion.div>

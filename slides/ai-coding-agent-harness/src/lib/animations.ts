@@ -9,15 +9,17 @@ export const container: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    transition: { staggerChildren: reduce ? 0 : 0.09, delayChildren: 0.05 },
+    // delayChildren > slide transition (0.45s) → entrance nội dung tách hẳn
+    // khỏi chuyển slide, chạy tuần tự rõ ràng thay vì đè lên nhau.
+    transition: { staggerChildren: reduce ? 0 : 0.12, delayChildren: 0.34 },
   },
 }
 
 export const item: Variants = reduce
   ? { hidden: { opacity: 0 }, show: { opacity: 1 } }
   : {
-      hidden: { opacity: 0, y: 18 },
-      show: { opacity: 1, y: 0, transition: { duration: 0.5, ease } },
+      hidden: { opacity: 0, y: 26 },
+      show: { opacity: 1, y: 0, transition: { duration: 0.55, ease } },
     }
 
 export const itemX: Variants = reduce

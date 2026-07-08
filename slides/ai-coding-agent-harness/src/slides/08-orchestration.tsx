@@ -36,7 +36,7 @@ export function SlideOrchestration() {
               <GitBranch size={18} color="var(--green)" />
               <span style={{ fontSize: '0.86rem', color: '#fff', fontWeight: 600 }}>Planner</span>
             </div>
-            <span style={{ width: 1, height: 26, background: 'var(--green-dim)', opacity: 0.6 }} />
+            <span className="flow-line" style={{ width: 1, height: 26, background: 'var(--green-dim)', opacity: 0.6 }} />
             <div className="flex items-start gap-4">
               {['auth', 'ui', 'tests'].map((w) => (
                 <div key={w} className="flex flex-col items-center">
@@ -49,7 +49,7 @@ export function SlideOrchestration() {
                 </div>
               ))}
             </div>
-            <span style={{ width: 1, height: 26, background: 'var(--green-dim)', opacity: 0.6 }} />
+            <span className="flow-line" style={{ width: 1, height: 26, background: 'var(--green-dim)', opacity: 0.6 }} />
             <div className="flex items-center gap-3" style={{ padding: '12px 20px', border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.02)' }}>
               <BookMarked size={16} color="var(--cyan)" />
               <span style={{ fontSize: '0.76rem', color: 'var(--text-dim)' }}>gộp + review → merge</span>

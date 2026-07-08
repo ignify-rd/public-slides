@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { SlideLayout } from '../components/SlideLayout'
 import { Tag, item } from '../components/primitives'
+import { useReveal } from '../components/anim'
 
 type Line = { kind: 'you' | 'agent' | 'tool' | 'plan' | 'edit' | 'ok' | 'check'; t: string }
 
@@ -24,6 +25,7 @@ const prefix: Record<Line['kind'], string> = {
 }
 
 function Transcript({ title, lines }: { title: string; lines: Line[] }) {
+  const shown = useReveal(lines.length, { delay: 620, step: 210 })
   return (
     <motion.div
       variants={item}
@@ -38,7 +40,17 @@ function Transcript({ title, lines }: { title: string; lines: Line[] }) {
       </div>
       <div style={{ padding: '16px 20px', fontSize: '0.76rem', lineHeight: 1.75, overflow: 'hidden' }}>
         {lines.map((l, i) => (
-          <div key={i} style={{ whiteSpace: 'pre-wrap', display: 'flex', gap: 8 }}>
+          <div
+            key={i}
+            className={i === shown - 1 && shown < lines.length ? 'type-caret' : ''}
+            style={{
+              whiteSpace: 'pre-wrap',
+              display: 'flex',
+              gap: 8,
+              opacity: i < shown ? 1 : 0,
+              transition: 'opacity 0.2s ease',
+            }}
+          >
             <span style={{ color: color[l.kind], flexShrink: 0, minWidth: l.kind === 'you' ? 48 : 20 }}>
               {prefix[l.kind]}
             </span>

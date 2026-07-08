@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { SlideLayout } from '../components/SlideLayout'
 import { Tag, item } from '../components/primitives'
+import { CountUp, ProgressBar } from '../components/anim'
 import { CheckCircle2, Scale, Activity } from 'lucide-react'
 
 const cols = [
@@ -64,13 +65,24 @@ export function SlideEval() {
         })}
       </div>
 
-      <motion.p
-        variants={item}
-        style={{ fontSize: 'var(--body-size)', color: 'var(--text-dim)', marginTop: 26, maxWidth: '76ch', lineHeight: 1.6 }}
-      >
-        Verifier còn định nghĩa <span style={{ color: 'var(--text)' }}>điều kiện dừng</span>: test xanh = xong.
-        SWE-bench Verified đã leo từ một chữ số lên <span style={{ color: 'var(--green)' }}>~79%</span> nhờ harness tốt hơn.
-      </motion.p>
+      <motion.div variants={item} style={{ marginTop: 26, maxWidth: '76ch' }}>
+        <p style={{ fontSize: 'var(--body-size)', color: 'var(--text-dim)', lineHeight: 1.6 }}>
+          Verifier còn định nghĩa <span style={{ color: 'var(--text)' }}>điều kiện dừng</span>: test xanh = xong.
+          SWE-bench Verified đã leo từ một chữ số lên{' '}
+          <span style={{ color: 'var(--green)', fontWeight: 700 }}>
+            <CountUp value={79} prefix="~" suffix="%" delay={700} duration={1300} />
+          </span>{' '}
+          nhờ harness tốt hơn.
+        </p>
+        <div className="flex items-center gap-3" style={{ marginTop: 12 }}>
+          <span style={{ fontSize: '0.58rem', letterSpacing: '0.1em', color: 'var(--text-faint)', whiteSpace: 'nowrap' }}>
+            SWE-BENCH VERIFIED
+          </span>
+          <div style={{ flex: 1 }}>
+            <ProgressBar pct={79} delay={800} duration={1.3} />
+          </div>
+        </div>
+      </motion.div>
     </SlideLayout>
   )
 }

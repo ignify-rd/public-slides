@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion'
 import { container, item } from '../lib/animations'
+import { useReveal } from '../components/anim'
 
 export function SlideTitle() {
+  const boot = useReveal(3, { delay: 250, step: 340 })
   return (
     <div className="w-full h-full relative flex flex-col justify-center" style={{ padding: '0 96px' }}>
       {/* faint boot log, decorative */}
@@ -17,9 +19,13 @@ export function SlideTitle() {
           opacity: 0.5,
         }}
       >
-        <div>[ ok ] loading model weights ........................ done</div>
-        <div>[ ok ] mounting context window ...................... done</div>
-        <div>
+        <div style={{ opacity: boot > 0 ? 1 : 0, transition: 'opacity 0.2s ease' }}>
+          [ ok ] loading model weights ........................ done
+        </div>
+        <div style={{ opacity: boot > 1 ? 1 : 0, transition: 'opacity 0.2s ease' }}>
+          [ ok ] mounting context window ...................... done
+        </div>
+        <div style={{ opacity: boot > 2 ? 1 : 0, transition: 'opacity 0.2s ease' }}>
           [ <span style={{ color: 'var(--green)' }}>run</span> ] starting agent harness<span className="cursor-blink" />
         </div>
       </div>

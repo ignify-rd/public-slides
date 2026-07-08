@@ -70,6 +70,61 @@ body,
   background-size: 44px 44px, 44px 44px, 100% 100%, 100% 100%;
   overflow: hidden;
   border: 1px solid var(--line);
+  /* grid trôi chậm — chuyển động nền liên tục, không gây chú ý */
+  animation: grid-drift 32s linear infinite;
+}
+
+@keyframes grid-drift {
+  0% {
+    background-position:
+      0 0,
+      0 0,
+      0 0,
+      0 0;
+  }
+  100% {
+    background-position:
+      44px 44px,
+      44px 44px,
+      0 0,
+      0 0;
+  }
+}
+
+/* Tia quét sáng chạy dọc màn hình (CRT sweep) */
+.deck-stage::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 180px;
+  top: -180px;
+  pointer-events: none;
+  z-index: 42;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(57, 211, 83, 0.05) 60%,
+    rgba(57, 211, 83, 0.11) 100%
+  );
+  animation: scan-sweep 7.5s linear infinite;
+}
+
+@keyframes scan-sweep {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(900px);
+    opacity: 0;
+  }
 }
 
 /* CRT scan lines overlay */
@@ -92,6 +147,27 @@ body,
 
 .glow-text {
   text-shadow: 0 0 18px rgba(57, 211, 83, 0.45);
+  animation: glow-breathe 3.4s ease-in-out infinite;
+}
+
+@keyframes glow-breathe {
+  0%,
+  100% {
+    text-shadow: 0 0 14px rgba(57, 211, 83, 0.32);
+  }
+  50% {
+    text-shadow:
+      0 0 26px rgba(57, 211, 83, 0.6),
+      0 0 40px rgba(57, 211, 83, 0.25);
+  }
+}
+
+/* caret gõ terminal — chạy theo dòng đang "in" */
+.type-caret::after {
+  content: '▋';
+  color: var(--green);
+  margin-left: 1px;
+  animation: blink 1.05s steps(1) infinite;
 }
 
 .cursor-blink::after {
@@ -108,6 +184,38 @@ body,
   }
   50.01%,
   100% {
+    opacity: 0;
+  }
+}
+
+/* Đốm dữ liệu chạy dọc connector trong sơ đồ điều phối */
+.flow-line {
+  position: relative;
+}
+.flow-line::after {
+  content: '';
+  position: absolute;
+  left: -1px;
+  width: 3px;
+  height: 9px;
+  background: var(--green);
+  border-radius: 2px;
+  box-shadow: 0 0 7px var(--green);
+  animation: flow-down 1.7s ease-in-out infinite;
+}
+@keyframes flow-down {
+  0% {
+    top: -6px;
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
     opacity: 0;
   }
 }

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { SlideLayout } from '../components/SlideLayout'
 import { Tag, item } from '../components/primitives'
+import { useReveal } from '../components/anim'
 
 const file = [
   { t: '# CLAUDE.md', c: 'comment' },
@@ -27,6 +28,7 @@ const points = [
 ]
 
 export function SlideClaudeMd() {
+  const shown = useReveal(file.length, { delay: 720, step: 85 })
   return (
     <SlideLayout path="~/context/memory" badge="NỀN · MEMORY FILE">
       <div className="grid flex-1 min-h-0" style={{ gridTemplateColumns: '1fr 1fr', gap: 48 }}>
@@ -58,7 +60,16 @@ export function SlideClaudeMd() {
           </div>
           <div style={{ padding: '16px 18px', fontSize: '0.72rem', lineHeight: 1.75 }}>
             {file.map((l, i) => (
-              <div key={i} style={{ minHeight: '1.3em', whiteSpace: 'pre-wrap' }}>
+              <div
+                key={i}
+                className={i === shown - 1 && shown < file.length ? 'type-caret' : ''}
+                style={{
+                  minHeight: '1.3em',
+                  whiteSpace: 'pre-wrap',
+                  opacity: i < shown ? 1 : 0,
+                  transition: 'opacity 0.15s ease',
+                }}
+              >
                 <span
                   style={{
                     color:

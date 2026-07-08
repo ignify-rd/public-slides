@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { SlideLayout } from './SlideLayout'
 import { Tag, item } from './primitives'
+import { useReveal } from './anim'
 
 export type ToolData = {
   name: string
@@ -16,6 +17,7 @@ export type ToolData = {
 
 /** color per line comment vs command */
 export function ToolSlide(d: ToolData) {
+  const shown = useReveal(d.snippet.lines.length, { delay: 640, step: 175 })
   return (
     <SlideLayout path="~/harness/tools" badge={d.badge}>
       <div className="grid flex-1 min-h-0" style={{ gridTemplateColumns: '1.05fr 0.95fr', gap: 48 }}>
@@ -94,7 +96,16 @@ export function ToolSlide(d: ToolData) {
           </div>
           <div style={{ padding: '18px 18px', fontSize: '0.72rem', lineHeight: 1.85 }}>
             {d.snippet.lines.map((l, i) => (
-              <div key={i} style={{ whiteSpace: 'pre-wrap', minHeight: '1.2em' }}>
+              <div
+                key={i}
+                className={i === shown - 1 && shown < d.snippet.lines.length ? 'type-caret' : ''}
+                style={{
+                  whiteSpace: 'pre-wrap',
+                  minHeight: '1.2em',
+                  opacity: i < shown ? 1 : 0,
+                  transition: 'opacity 0.18s ease',
+                }}
+              >
                 {l.c !== undefined ? (
                   <span style={{ color: 'var(--text-faint)' }}>{l.c || ' '}</span>
                 ) : (
